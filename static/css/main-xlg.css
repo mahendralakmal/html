@@ -1,0 +1,92 @@
+body {font-size: 16px;}
+/*#content-container h1, 
+#site-title {font-size: 22px;}*/
+/*#bread-crumbs {font-size: 15px;}*/
+
+/* Primary Col Styles */
+#primary-column h2 {font-size: 20px;}
+#primary-column h3 {font-size: 16px;}
+#primary-column h4 {font-size: 16px;}
+
+#primary-column p,
+#primary-column li,
+#primary-column table,
+#primary-column dl {
+font-size: 16px;
+}
+.photo-left p, 
+.photo-right p {
+font-size: 14px !important;
+}
+#primary-column .list-type-toggle li {font-size: 13px;}
+#primary-column .rss-feed {font-size: 16px;}
+#primary-column .rss-feed div.gf-title a {font-size: 17px;}
+.index-groups dt {font-size: 24px;}
+.index-groups dl.programs dt {font-size: 17px;}
+
+#primary-column .tables th {
+font-size: 16px;	
+}
+
+/* Callout Column */
+/*#callout-column ul {font-size: 18px;}
+#callout-column h3 {font-size: 18px;}
+#callout-column ul.callout-related {font-size: 16px;}*/
+
+#thumbs-individual address {font-size: 17px;}
+
+/* SPECIAL STYLES */
+#physician-key, 
+#primary-column #physician-key p, 
+#physician-key table, 
+#physician-key th, 
+#physician-key td,
+.affiliation-key, 
+#primary-column .affiliation-key p, 
+.affiliation-key table, 
+.affiliation-key th, 
+.affiliation-key td {
+font-size: 15px;
+}
+.photo-left p, 
+.photo-right p {
+font-size: 13pt;
+}
+/*#secondary-navigation ul li {font-size: 17px;}*/
+
+/* -- TERTIARY and QUARTERNARY NAV -- */
+/*#navigation-column ul {font-size: 17px;}
+#navigation-column li ul {font-size: 16px;}*/
+
+.adam-images li {font-size: 15px;}
+.reviewInfo, .adam-disclaimer {font-size: 14px !important;}
+#ctl00_ContentPlaceHolder1_ContentGridView .heading {font-size: 18px;}
+
+/* Faculty Profiles */
+.wrapall,
+.fac_links a, 
+.fac_degree, 
+.fac_post_grad, 
+.fac_certification,
+.member_name,
+.fac_header,
+.fac_copy {
+font-size: 15px;
+}
+.fac_contact_title, 
+.fac_affiliations, 
+.fac_links, 
+.fac_education, 
+.fac_post_grads, 
+.fac_certifications, 
+#primary-column h3.fac_expertise_header, 
+#primary-column .fac_publications h3, 
+.fac_td_result {
+font-size: 16px;
+}
+.fac_subheader {
+font-size: 17px; 
+}
+#primary-column h2.fac_name {
+font-size: 20px;
+}

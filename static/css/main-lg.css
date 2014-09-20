@@ -1,0 +1,89 @@
+body {font-size: 14px;}
+/*#content-container h1, 
+#site-title {font-size: 21px;}*/
+/*#bread-crumbs {font-size: 13px;}*/
+
+/* Primary Col Styles */
+#primary-column h2 {font-size: 18px;}
+#primary-column h3 {font-size: 14px;}
+#primary-column h4 {font-size: 14px;}
+
+#primary-column p,
+#primary-column li,
+#primary-column table,
+#primary-column dl {
+font-size: 14px;
+}
+.photo-left p, 
+.photo-right p {
+font-size: 11px !important;
+}
+#primary-column .list-type-toggle li {font-size: 13px;}
+#primary-column .rss-feed {font-size: 14px;}
+#primary-column .rss-feed div.gf-title a {font-size: 15px;}
+.index-groups dt {font-size: 22px;}
+.index-groups dl.programs dt {font-size: 15px;}
+
+#primary-column .tables th {
+font-size: 14px;	
+}
+
+/* Callout Column */
+/*#callout-column ul {font-size: 16px;}
+#callout-column h3 {font-size: 16px;}
+#callout-column ul.callout-related {font-size: 14px;}*/
+
+#thumbs-individual address {font-size: 15px;}
+
+/* SPECIAL STYLES */
+#physician-key, 
+#primary-column #physician-key p, 
+#physician-key table, 
+#physician-key th, 
+#physician-key td,
+.affiliation-key, 
+#primary-column .affiliation-key p, 
+.affiliation-key table, 
+.affiliation-key th, 
+.affiliation-key td {
+font-size: 13px;
+}
+
+/*#secondary-navigation ul li {font-size: 15px;}*/
+
+/* -- TERTIARY and QUARTERNARY NAV -- */
+/*#navigation-column ul {font-size: 15px;}
+#navigation-column li ul {font-size: 14px;}*/
+
+.adam-images li {font-size: 13px;}
+.reviewInfo, .adam-disclaimer {font-size: 12px !important;}
+#ctl00_ContentPlaceHolder1_ContentGridView .heading {font-size: 16px;}
+
+/* Faculty Profiles */
+.wrapall,
+.fac_links a, 
+.fac_degree, 
+.fac_post_grad, 
+.fac_certification,
+.member_name,
+.fac_header,
+.fac_copy {
+font-size: 14px;
+}
+.fac_contact_title, 
+.fac_affiliations, 
+.fac_links, 
+.fac_education, 
+.fac_post_grads, 
+.fac_certifications, 
+#primary-column h3.fac_expertise_header, 
+#primary-column .fac_publications h3, 
+.fac_td_result {
+font-size: 15px;
+}
+.fac_subheader {
+font-size: 16px; 
+}
+#primary-column h2.fac_name {
+font-size: 19px;
+}

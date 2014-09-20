@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sports Unleash</title>
+    <link href="../static/css/bootstrap.css" rel="stylesheet" media="all">
+    <link href="../static/css/bootstrap-theme.css" rel="stylesheet" media="all">
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+	<script type="text/javascript" src="../static/js/global.js"></script>
+    <script type="text/javascript" src="../static/js/addthis_widget.js"></script>
+
+
+
+    <link href="../static/css/global-styles.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="../static/css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <!--[if lt IE 7]>
+	<link href="/styles/shared/global-styles-ie6.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+<!--[if IE 7]>
+	<link href="/styles/shared/global-styles-ie7.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+	<link href="../static/css/site-override.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="../static/css/main-lg.css" rel="alternate stylesheet" type="text/css" media="screen" title="A">
+	<link href="../static/css/main-xlg.css" rel="alternate stylesheet" type="text/css" media="screen" title="A+">
+	<link href="../static/css/print.css" rel="stylesheet" type="text/css" media="print">
+
+    <!-- Flexslider script -->
+    <script type="text/javascript" src="../static/js/jquery_002.js"></script>
+    <link href="../static/css/flexslider-636.css" rel="stylesheet" type="text/css" media="screen">
+    <script type="text/javascript">
+		$(window).load(function(){
+			$('.flexslider').flexslider({
+				controlsContainer: "flexSlider",
+				controlNav: true,
+				manualControls: $("flex-control-nav li")
+			});
+		})
+    </script>
+
+    <!-- News - Google Feed script -->
+	<link media="all" href="../static/css/widget005.css" type="text/css" rel="stylesheet">
+	<link href="../static/css/defaulten.css" type="text/css" rel="stylesheet">
+	<script src="../static/js/defaulten.js" type="text/javascript"></script>
+
+    <link href="../static/css/site.css" rel="stylesheet" type="text/css" media="all">
+</head>
+    <body id="home">
+        <header>
+            <div class="topheader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 logo">
+                            <a href="/" title="Sports Unleash" itemprop="url">
+                                <img itemprop="logo" src="../static/images/logo.png" alt="Sport Unleash Logo" id="logo">
+                            </a>
+                        </div>
+                        <div class="col-md-7 mega-title">Have your child SportUnleash tested today!</div>
+                        <!-- <div class="col-md-2 right-pane sign-in">
+                            <a href="" data-toggle="modal" data-target=".bs-example-modal-sm">Sign In Here</a>
+                        </div> -->
+                        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content  container">
+                                <form class="form-signin row">       
+                                  <h2 class="form-signin-heading">Please login</h2>
+                                  <input type="text" class="col-md-3 form-control" name="username" placeholder="Username" required="" autofocus="" />
+                                  <input type="password" class="col-md-3 form-control" name="password" placeholder="Password" required=""/>      
+                                     <label class="checkbox">
+                                    <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                                  </label>
+                                  <button class="btn btn-lg btn-primary btn-block col-md-2" type="submit">Login</button>   
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="centerheader">
+                <div class="bottomheader">
+                    <div class="container">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5 left-pane">The Sports Talent Identifying System</div>
+                                    <div class="col-md-5 right-pane">"Unlocking your child's sport gifting today"</div>
+                                </div>
+                                <div class="col-md-12 text-center center-pane">for 9 - 11 years olds</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-xs-12 col-md-12 col-sm-12 main-navigation">
+                            <div class="nav-bar">
+                                <ul>
+                                    <li rel="div1"><a href="#">अलगोरिथम</a></li>
+                                    <li rel="div2"><a href="#">रिपोर्ट</a></li>
+                                    <li rel="div3"><a href="#">लाभ</a></li>
+                                    <li rel="div4"><a href="#">रिपोर्ट नमूना – सेक्सन 1</a></li>
+                                    <li rel="div5"><a href="#">सेक्सन 2 – विषय</a></li>
+                                    <li rel="div6"><a href="#">कदम – जांच</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="select_country">
+                <select name="formal" id="dynamic_select">
+                    <option value="/">English</option>
+                    <option value="/sin/">Sinhala</option>
+                    <option selected="True" value="/hi/">हिन्दी</option>
+                </select>
+            </div>
+        </header>        
+        
+        <div id="wrapper">
+            <div id="site-container">
+                <div id="content-container">
+
+                    <div id="primary-column">
+                        <div id="primary-content">
+                        <!-- TOP NAVIGATION CONTENTS -->
+                        <div class="div1 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>अलगोरिथम</h1>
+                            <p>स्पोर्टअनलिश बालको केलिए एक स्पोर्ट्स टेलेंट और शारीरिक गुण निर्धारण अलगोरिथम है। यहआक्रमकरहित प्रणाली, प्रमाण आधारित रिसर्च, स्व-मूल्यांकन, विजेता खिलाड़ियोंकेशारीरिकआंकड़ो केमापन, शारीरिक लचरता गुण जांच, निकालेगए निष्कर्ष को समर्थन, बल और वैध जतातेहुए एक विवरण तैयार करती हैजो वैज्ञानिक रूप सेसही है।</p>
+                        </div>
+                        <div class="div2 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>रिपोर्ट</h1>
+                            <p>यह रिपोर्ट एक आदर्श खेल केचयन और साथ मेंउस खेल केअंतर्गत एक आदर्श स्थिति/घटनाकी पहचान मेंआपकी सहायता करती हैकि जो आपकेबालक केलिए आदर्श हो और उसकेशारीरिक सामर्थ्य केअनुसार उसेसफलता प्रदान करनेमेंसहायता कर सके। शुरुआत सेही आपकेबालक केलिएसही खेल का चुनाव उसेपर्याप्त समय और अवसर प्रदान करता हैताकि वह अपनी क्षमताओंकोअपनेप्राथमिक और माध्यमिक स्कूल शिक्षा केदरम्यान विश्वस्तरीय स्तर तक लेजा सके।</p>
+                            <p>यह रिपोर्ट आपके वित्तीय संसाधनो का सही तरह से उपयोग करना भी सिखाती हैचाहेवह सहीप्रशिक्षक का चुनाव हो, या फिर वेक्षेत्र जो खास ध्यान मांग लेतेहै। आपकेबालक की नैसर्गिकखूबियाँउन खेलो के साथ मेल कराई जाती है कि जो आपकेबालक मेंउसी प्रकार की खूबियों कीमांग कर रहा हो। रिपोर्ट यह भी बताती है कि आपकेबालक मेंअपनेस्कूल का प्रतिनिधित्व करनेकी क्षमता, न्यूनतम क्लब स्तरीय क्षमता, या फिर किसी दिन देश का प्रतिनिधित्व करने की क्षमता हैया नहीं, यदि वह इस स्पोर्टअनलिश रिपोर्ट का कर्मठतापूर्वक पालन करेंऔर चुने गए स्पोर्ट के प्रति अपने स्कूल समय में पूरे तन-मन से समर्पित रहे।</p>
+                        </div>
+                        <div class="div3 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>लाभ</h1>
+                            <ol>
+                                <li>
+                                    <div><b>त्वरित कार्य-संपादन</b></div>
+                                    <div><p>जैसे-जैसेआपका बालक स्पोर्टअनलिश द्वारा सुझाए गए खेल मेंस्पर्धाकरना शुरूकरता है, आपका बालक तीव्रता सेनई ऊंचाइयों को छूते हुए अपने समकालीन बालको के बीच एक सर्वोत्तम प्रतियोगी के रूप में उभरकर आना शुरूकर देगा।</p></div>
+                                </li>
+                                <li>
+                                    <div><b>सही रवैयेका निर्माण</b></div>
+                                    <div><p>उस खेल मेंस्पर्धा करना जिसमेंआपका बालक कुदरती रूप सेसफलताकी संभावना रखता हो, जो उसको अधिक प्रशिक्षण केलिए प्रेरित कर सर्वोच्च स्थान तक लेजासके। इस प्रकार, प्रेरित करने या फिर अपने कार्य के प्रति समर्पित रहने केलिए उसेकमसेकम अभिभावकीय उपदेशोंकी जरूरत पड़ेगी।</p></div>
+                                </li>
+                                <li>
+                                    <div><b>निराशा सेदूर रखना</b></div>
+                                    <div><p>सामान्यतः, बालक की किशोरावस्था में प्रतिभा की पहचान हो जाती है।दुर्भाग्य सेइस समय तक, असफलता के कारण बहुत लोग रुचि खो देतेहै, और बहुत कम उत्सुकबालको केपास, स्कूल में, अपनेकौशल को निखारनेकेलिए बहुत कम साल बचेरह पातेहै। इसप्रकार, उनका संभावित सफल स्पोर्टिंग कैरियर काफी छोटा रह जाता है। स्पोर्टअनलिश रिपोर्टआपको अग्रिम सूचना प्रदान करतेहुए होनेवाली सामान्य निराशाओंसेआपको बचाती है।</p></div>
+                                </li>
+                                <li>
+                                    <div><b>खेल केसाथ व्यस्त रखना</b></div>
+                                    <p>बच्चेयह विचार जमा पातेहैकि वेजीत सकतेहै। अपनेकठिनपरिश्रम सेहासिल की हुई जीत का वे मजा लेनेलगतेहैकि जो उन्हेऔर अधिक परिश्रम करनेकेलिए प्रेरित करती है। दूसरी तरफ, वेटीम-कार्य केलाभ भी महसूस करनेलगतेहैऔर प्रगति केइससोपान मेंजीत और हार को पचानेकि क्षमता भी हासिल करनेलगतेहै। यह एक चरित्र विकास कीप्रक्रिया है, जिसका प्रभाव आपकेबालक पर सकारात्मक ही रहता है।</p>
+                                </li>
+                                <li>
+                                    <div><b>निवेश को उच्चतम सीमा तक बढ़ाना</b></div>
+                                    <p>स्पोर्टअनलिश रिपोर्ट आपको यह बताता हैकि आपकेकीमती संशाधनोंको कहाँनिवेश करना ताकि आपका बालक खेल का आनंद उठातेहुए आगेबढ़ सके, और सफलता प्राप्त कर सके।</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="div4 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>रिपोर्ट नमूना – सेक्सन 1</h1>                            
+                            <div class="sample-report">
+                                <img src="../static/images/Sports-Talent-Profile-Sample-Report.png">
+                            </div>
+                        </div>
+                        <div class="div5 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>सेक्सन 2 – विषय</h1>
+                            <ol>
+                                <li>सपोर्टअनलिश रिपोर्ट और उसकेलाभ क्या है?</li>
+                                <li>सपोर्टअनलिश रिपोर्ट केविविध पहलूको किस प्रकार अच्छी तरह समझना?
+                                    <ul>
+                                        <li>आपकेबालक केसर्वोत्तम स्पोर्टस और स्थितियाँ/घटनाए</li>
+                                        <li>आपकेबालक केअगलेसर्वोत्तम स्पोर्टस और स्थितियाँ/घटनाए</li>
+                                        <li>आपकेबालक केअन्य संभावित स्पोर्टस और स्थितियाँ/घटनाए</li>
+                                    </ul>
+                                </li>
+                                <li>बढ़तेबालक की आनुवांशिक क्षमता को बढ़ानेकेलिए कुंजियाँ</li>
+                                <li>सूक्ष्मपोषण तत्व जो स्थिति को बदलतेहै।</li>
+                                <li>प्रोटीन:
+                                    <ul>
+                                        <li>कितना</li>
+                                        <li>आपकेबालक की जरूरत</li>
+                                        <li>आहार</li>
+                                     </ul>
+                                </li>
+                                <li>कार्बोहाइड्रेट्स: आपके बालक की जरूरत।</li>
+                                <li>पोषण ग्रहण करना:
+                                    <ul>
+                                        <li>आहार पद्धति</li>
+                                        <li>प्रशिक्षण और प्रतियोगिता केपहलेभोजन</li>
+                                        <li>प्रशिक्षण और प्रतियोगिता केदौरान</li>
+                                        <li>प्रशिक्षण और प्रतियोगिता केबाद</li>
+                                        <li>सभी प्रकार केपोषण ग्रहण करने मेंभूले</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    चोट सेबचना:
+                                    <ul>
+                                        <li>प्रशिक्षण</li>
+                                        <li>खेल केहिसाब सेशरीर का पुनर्गठन करना</li>
+                                        <li>मासपेशी</li>
+                                        <li>लचरता और खिंचाव</li>
+                                        <li>प्ल्याओमेट्रिक</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    सतर्कता:
+                                    <ul>
+                                        <li>अधिक चर्बी</li>
+                                        <li>चर्बी का वजन अनुपात</li>
+                                        <li>शक्ति प्रशिक्षण</li>
+                                        <li>अतिप्रशिक्षण</li>
+                                        <li>अतिआहार</li>
+                                        <li>खिंचाव</li>
+                                    </ul>
+                                </li>
+                                <li>सप्लीमेंट्स, स्पोर्ट्स पेय, ऊर्जा पेय</li>
+                                <li>पितालोगों, आप अपनेबालक को किस तरह प्रोत्साहित कर सकतेहै</li>
+                                <li>संपर्क सूचना: प्रशिक्षक</li>
+                            </ol>
+                        </div>
+                        <div class="div6 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>कदम – जांच</h1>
+                            <div>
+                                <dl>
+                                    <dt>कदम 1</dt><dd>अपनेक्षेत्र केस्पोर्टअनलिश विशेषज्ञ (SUS) सेसंपर्क करें, और जांच केलिए फॉर्म कोभरे।</dd>
+                                    <dt>कदम 2</dt><dd>SUS अफ़सर आपकेबालक की जांच करनेकेलिए समय लेगा।</dd>
+                                    <dt>कदम 3</dt><dd>जब SUS अफ़सर आपकेबालक केआंकड़ेको स्पोर्टअनलिश मुख्य कार्यालय को भेजेगा तबएक संदेश आपकेदूरभाष पर प्रेषित होगा यह बतातेहुए कि हमनेआपकेबालक केजांच आंकड़ेप्राप्तकर लिए है।</dd>
+                                    <dt>कदम 4</dt><dd>जब आप यह संदेश पा लेकि हमे आपकेबालक केजांच आंकड़ेप्राप्त हो गए हैतोस्पोर्टअनलिश विशेषज्ञ को भुगतान कर दे।</dd>
+                                    <dt>कदम 5</dt><dd>स्पोर्टअनलिश विशेषज्ञ को एक बार आपका भुगतान प्राप्त हो जाता हैतब वह इस बात कीपुष्टि करेगा कि भुगतान मुख्य कार्यालय को प्राप्त हो गया हैतब आपको भुगतान की पावती एक संदेश के द्वारा फोन पर प्राप्त हो जाएगी।</dd>
+                                    <dt>कदम 6</dt><dd>कोई 7 दिनो केअंदर आपकेबालक की स्पोर्टअनलिश रिपोर्ट SUS अफ़सर को भेज दी जाएगी औरइसकी पुष्टि भी संदेश केजरिए आपको प्राप्त होगी।</dd>
+                                    <dt>कदम 7</dt><dd>SUS अफ़सर तब आपको रिपोर्ट हस्तांतरित करेगा।</dd>
+                                    <dt>कदम 8</dt><dd>एकबार आपको रिपोर्ट मिल जाए तो “yes” टाइप कर जवाब भेज दे।</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- END OF TOP NAVIGATION CONTENTS -->
+                        <!-- ENDOSEMENTS CONTENTS -->
+                        <div class="endosement1 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <p>“I find the SportUnleash system consistent with the accepted science and in line with the present belief on how physical attributes express themselves when under stress of a sport. Its ability to identify the talent of a 9 year old for a particular sport, before that child has had exposure to an organised sport or activity makes the SportUnleash testing program stand out. …Those who get SportUnleash tested would even experience minimum injuries taking place in the long run as their natural physical makeup would match and will be able to withstand the physical demands of their chosen sport”</p>
+                            <div class="row">
+                                <div class="col-md-3"><img src="../static/images/Endorsement/Dr-David-Young.jpg"></div>
+                                <div class="col-md-7 right-pane">
+                                    <p>Dr. David Young</p>
+                                    <p>Melbourne Orthopaedic Group, Australia Orthopaedic Surgeon, Special Area of Interest: Sports Injuries, Hip & Knee Surgery</p>
+                                    <p>Orthopaedic Surgeon for the Australian and Sri Lankan cricket teams</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="endosement2 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <p>“The idea of Sports Talent identification at an early age has been discussed extensively within the circles of the sports science and medical fraternity for many years. SportUnleash has taken that which was in its concept stage and made it a reality. This innovation makes it now possible to unlock and push the true potential of the human body to achieve a new level of performance. …The non invasive nature of the testing to arrive at its conclusions, and being consistent with the science of anatomy which has been a part of my life for four decades, makes this the perfect tool for a country like ours to realise noteworthy performances in the sports arena. Having our children SportUnleash tested is of national importance for the development of sports and therefore should be made available to all of our children”</p>
+                            <div class="row">
+                                <div class="col-md-3"><img src="../static/images/Endorsement/Prof-Rohan-Jayasekara.jpg"></div>
+                                <div class="col-md-7 right-pane">
+                                    <p>Prof. Rohan Jayasekara</p>
+                                    <p>Dean, Faculty of Medicine, University of Colombo.</p>
+                                    <p>Chair and Senior Professor in Anatomy</p>
+                                    <p>Founder Director and Medical Geneticist, Human Genetics Unit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="endosement3 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <p>“…I have evaluated and exhaustively and critically analysed the science, the algorithm, reports and final application possibilities of the above system…. I have found it to be sound scientifically and robust in application. The investor has applied all possible mechanisms to minimize any discrepancies that may arise in analyzing biological and anthropometric data, considering the vast variability that are inherent in biological systems… This system is timely and relevant. I believe the SportUnleash will be instrumental in identifying young people who can be guided to achieve greatness and satisfaction in the most suitable sporting activity for them”</p>
+                            <div class="row">
+                                <div class="col-md-3"><img src="../static/images/Endorsement/Dr-Nishantha-Gunasekera.jpg"></div>
+                                <div class="col-md-7 right-pane">
+                                    <p>Dr. Nishantha Gunasekera</p>
+                                    <p>Consultant Neurosurgeon, specializing in traumatic spinal injuries and Stem Cell therapy.</p>
+                                    <p><a href="http://www.neurosurgerysl.com/">www.neurosurgerysl.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="endosement4 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <p>“I am amazed at the ability of the SportUnleash talent identification system to achieve accurate results each and every time. …If most of the parents of the emerging countries get their 9- 11 year olds SportUnleash tested to identify the sport gifting of their children, then it is going to be only a matter of time before the emerging countries catch up to the developed world’s sporting powers”</p>
+                            <div class="row">
+                                <div class="col-md-3"><img src="../static/images/Endorsement/dav-whatmore.jpg"></div>
+                                <div class="col-md-7 right-pane">
+                                    <p>Dav Whatmore</p>
+                                    <p>Australian Cricketer (fmr) and a Cricket World Cup winning coach with expertise in transforming  cricketing talent from meritocracy to greatness</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="endosement5 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <p>“..the benefit to a child, the parents and the sports organisation or country of knowing early which sport he/she can excel in remains the singular most important need in order to produce the champions of today. ..It is here that the talent identification system put out by SportUnleash is a unique innovation of combining physical performance measurements with a unique Algorithm to come up with a system of guidance for early talent identification which matches the aspiration of an athlete to the relevant sport”</p>
+                            <div class="row">
+                                <div class="col-md-3"><img src="../static/images/Endorsement/Major-General-Dr-C-Thurairaja.jpg"></div>
+                                <div class="col-md-7 right-pane">
+                                    <p>Major General Dr. C. Thurairaja</p>
+                                    <p>Consultant Sport Medicine and Radiology</p>
+                                    <p>President, Asian Federation of Sports Medicine</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ENDOSEMENTS CONTENTS -->
+                        <!-- DISPLAY TOP NAVIGATION / ENDOSEMENTS CONTENTS -->
+                        <div class="info_ly"></div>
+                        <!-- END OF DISPLAY TOP NAVIGATION / ENDOSEMENTS CONTENTS -->
+                       <!-- Flexslider Start -->
+                        <div class="flexslider">
+                            <!-- If there is no JS, this slide will show up -->
+
+
+
+                           <a class="non-js-slide-link" href="/" onclick="pageTracker._trackEvent('home-slide', '0', '/../static/images/slides/Bigstock_5331125.jpg')" title="">
+                               <div id="no_js_slide">
+                                <div id="slide-0">
+                                    <!-- <p class="flex-caption">The Hospitals of the University of Pennsylvania-Penn Presbyterian are ranked among the top hospitals in the United States by <em>U.S. News &amp; World Report</em>.</p> -->
+                                </div>
+                            </div></a>
+
+                            <!-- end of no JS -->
+
+                            <ul class="slides">
+
+
+                               <!-- slide 1 -->
+                               <li rel="slide-1" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-1">
+                                         <a class="slide-link" href="" title="">
+                                         <img draggable="false" src="../static/images/slides/Bigstock_5331125.jpg" alt="" height="424" width="636">
+                                         </a>
+                                         <!-- <p class="flex-caption">The Hospitals of the University of Pennsylvania-Penn Presbyterian are ranked among the top hospitals in the United States by <em>U.S. News &amp; World Report.</em></p> -->
+                                    </div>
+                               </li>
+
+
+                                <!-- slide 2 -->
+                              <li rel="slide-2" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-2"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/Bigstock_48988001.jpg" alt="SLIDE2" height="424" width="636"></a>
+                                        <!-- <p class="flex-caption">Watch "The Cure is Within" video and see how our teams are taking precision medicine to the next level, identifying specific gene mutations, developing customized treatments, and taking outcomes from "inoperable" to "incredible."</p> -->
+                                    </div>
+                                </li>
+
+                                <!-- slide 3 -->
+                                <li rel="slide-3" class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+                                    <div id="slide-3"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/Bigstock_50260607.jpg" alt="SLIDE3" height="424" width="636"></a>
+                                        <!-- <p class="flex-caption">Hear why Derek and other Penn Heart and Vascular patients did not settle when looking for the best heart care.</p> -->
+                                    </div>
+                                </li>
+
+                                <!-- slide 4 -->
+                                <li rel="slide-4" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-5"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/Bigstock_50568647.jpg" alt="SLIDE4" height="424" width="636"></a>
+                                        <!-- <p class="flex-caption">Learn more about the 175 Penn physicians who were included in <em>Philadelphia</em> magazine's Top Doctors 2014.</p> -->
+                                    </div>
+                                </li>
+                                <!-- slide 5 -->
+                                <li rel="slide-5" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-5"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/Bigstock_52963762.jpg" alt="SLIDE5" height="424" width="636"></a>
+                                        <!-- <p class="flex-caption">At more than 30 locations throughout the region, Penn Medicine primary care physicians partner with patients to provide the highest level of care.</p> -->
+                                    </div>
+                                </li>
+                                <!-- slide 6 -->
+                                <li rel="slide-6" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-6"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/Bigstock_68208271.jpg" alt="SLIDE6" height="424" width="636"></a>
+                                        <!-- <p class="flex-caption">At more than 30 locations throughout the region, Penn Medicine primary care physicians partner with patients to provide the highest level of care.</p> -->
+                                    </div>
+                                </li>
+                                <!-- slide 7 -->
+                                <li rel="slide-7" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-7"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/bigstock-Father-and-son-playing-footbal-66095608.jpg" alt="SLIDE7" height="424" width="636"></a>
+                                        <!-- <p class="flex-caption">At more than 30 locations throughout the region, Penn Medicine primary care physicians partner with patients to provide the highest level of care.</p> -->
+                                    </div>
+                                </li>
+                            </ul>
+                        <ol class="flex-control-nav flex-control-paging"><li><a class="">1</a></li><li><a class="">2</a></li><li><a class="flex-active">3</a></li><li><a class="">4</a></li><li><a class="">5</a></li><li><a class="">6</a></li><li><a class="">7</a></li></ol>
+
+                        <ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
+                        </div>
+                        <!-- Flexslider end -->
+
+
+                        <div class="contact-sus"><a href="#">
+                            <p>Contact</p>
+                            <p>SportUnleash Specialist</p>
+                            <p>Today...!</p>
+                        </a></div>
+
+                        <div class="slide-1 div-hide"><h1>Slide 1</h1></div>
+                        <div class="slide-2 div-hide"><h1>Slide 2</h1></div>
+                        <div class="slide-3 div-hide"><h1>Slide 3</h1></div>
+                        <div class="slide-4 div-hide"><h1>Slide 4</h1></div>
+                        <div class="slide-5 div-hide"><h1>Slide 5</h1></div>
+                        <div class="slide-6 div-hide"><h1>Slide 6</h1></div>
+
+                        <div class="slide-content"></div>
+
+
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="active left-tab"><a class="tab1" href="#">The Game Has<br>Changed</a></li>
+                          <li class="second-tab"><a class="tab2" href="#">The Price Money Biger<br>Than Ever!</a></li>
+                          <li class="third-tab"><a class="tab3" href="#">Emerging/Developing Nation<br>Changing The Game</a></li>
+                          <li class="fourth-tab"><a class="tab4" href="#">Stunted By Lack<br>OF Expertise</a></li>
+                        </ul>
+
+                        <div class="tab-content jumbotron">
+                            <div class="tab1 tab-hide active">
+                                <h1>The Game Has Changed</h1>
+                                <p>Today’s teenagers live in a fast paced, technologically driven world where everything is accessible at their finger tips. Smartphones, iPads, tablets and Facebook offer a plethora of entertainment making the need to get out and sweat uninviting. Today’s teenagers are more likely to pursue a sport only if they believe they have a good chance of succeeding and making it to their school team.</p>
+                                <p>This kind of thinking is reaching epidemic levels whereby teenagers have started to lose out on the benefits sports offer. Many have difficulty working in a group, taking constructive criticism and even handling victory or defeat in their stride. When playing a sport these aspects are carefully nurtured in a controlled environment which helps to build strong character. The physical and mental health benefits lost out are too numerous to count for those children who give up doing a sport early in their school life. This loss tends to also affect their health in the long term as well.</p>
+                                <p>It is not just about doing any sport, but choosing the appropriate sport for which each child is gifted with the appropriate physical attributes. New technology today allows us to match a child´s physical attributes with a particular set of sports. This knowledge will automatically help motivate and stimulate passion and commitment within children to continue in a sport throughout their school life and to become the best.</p>
+                            </div>
+                            <div class="tab2 tab-hide">
+                                <h1>The Prize Money Bigger Than Ever</h1>
+                                <p>Over the last decade we have seen an exponential growth in the income generated by sports personalities and sports franchises the world over. As a result of this phenomenon, the desire and the possibility of becoming mega rich sportspeople have begun to drive parents and children alike to dream of such achievements and participate in a sport having such a target in mind; going to great lengths to see this become a reality.</p>
+                                <p>However, neither the parents, nor the coaches have a dependable way of predicting the sport a child is best/better suited for. It is a random game of chance where fate is left in the “hands of the gods”. Therefore, the only way forward is for them to then pursue, invest time, energy and commit resources towards such a dream for years, in the blind hope that maybe their child will one day be the next prodigy of the nation or of a wealthy super successful sports franchise.</p>
+                            </div>
+                            <div class="tab3 tab-hide">
+                                <h1>Emerging/Developing Nations Changing The Game</h1>
+                                <p>Sports high performance is the ability for an individual or team to compete in the world arena, and realise noteworthy achievements that are second to none. When such highly motivated and well-trained individuals compete for honours, the margin between victory and defeat is small. Such performances demand precision training and a pioneering spirit that re-invents and challenges the accepted norms for excellence.</p>
+                                <p>Sadly however, whenever developing nations such as ours compete against champion teams from the developed world, the margin of defeat is enormous and, after decades of competing, we have become mere spectators at world events. As our economies have become wealthier however, we have invested in acquiring knowledge from coaches in the very countries that create world champions. Unfortunately, our teams’ and sportspeople’s real progress in comparison to the investments made annually is negligible.</p>
+                            </div>
+                            <div class="tab4 tab-hide">
+                                <h1>Stunted by lack of expertise</h1>
+                                <p>Expertise to be able to identify the talent of children at any age level is rare and when this does take place, it is only along the lines of selecting the best talent out of a pool of existing sportsmen in a particular sport or event. If any type of identification of talent is being carried out, it is taking place in a few developed countries behind closed doors and even in such instances by a handful of individuals working on an individual sportsman at a time. No mechanism or expertise is widely available to the public to test the sports talent across schools or a nation within a short period of time, by analysing their physical capabilities and matching them with all the types of sports that exist.</p>
+                                <p>This inability to advise, guide and promote the talent of sportsmen at early ages not only stunts our sports development programs, but also hinders our country’s capabilities to uplift its competitiveness in the world arena.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div><!-- primary-column -->
+                    <div id="callout-column">
+                        <ul class="callout-actions">
+                            <li class="container" rel="endosement1">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-11 descript">
+                                            <p>“I find the SportUnleash system consistent with the accepted science and its ability to identify the talent of a 9 year old for a particular sport, before that child has had exposure to an organised sport or activity, makes the SportUnleash testing program stand out”</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="../static/images/Endorsement/Dr-David-Young.jpg">
+                                        </div>
+                                        <div class="col-md-7 right-pane">
+                                            <p>Dr. David Young</p>
+                                            <p>Melbourne Orthopaedic Group, Australia Orthopaedic Surgeon, Special Area of Interest: Sports Injuries, Hip & Knee Surgery</p>
+                                            <p>Orthopaedic Surgeon for the Australian and Sri Lankan cricket teams</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="container" rel="endosement2">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <p>“SportUnleash has taken that which was in its concept stage and made it a reality. This innovation makes it now possible to unlock and push the true potential of the human body to achieve a new level of performance”</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="../static/images/Endorsement/Prof-Rohan-Jayasekara.jpg">
+                                        </div>
+                                        <div class="col-md-7 right-pane">
+                                            <p>Prof. Rohan Jayasekara</p>
+                                            <p>Dean, Faculty of Medicine, University of Colombo.</p>
+                                            <p>Chair and Senior Professor in Anatomy</p>
+                                            <p>Founder Director and Medical Geneticist, Human Genetics Unit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="container" rel="endosement3">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <p>“I have evaluated and exhaustively and critically analysed the science, the algorithm, reports and final application possibilities of the SportUnleash system…. I have found it to be sound scientifically and robust in application”</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="../static/images/Endorsement/Dr-Nishantha-Gunasekera.jpg">
+                                        </div>
+                                        <div class="col-md-7 right-pane">
+                                        <p>Dr. Nishantha Gunasekera</p>
+                                        <p>Consultant Neurosurgeon, specializing in traumatic spinal injuries and Stem Cell therapy.</p>
+                                        <p><a href="http://www.neurosurgerysl.com/">www.neurosurgerysl.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="container" rel="endosement4">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <p>“I am amazed at the ability of the SportUnleash talent identification system to achieve accurate results each and every time. …if all parents get their 9-11 year olds tested... it is going to be only a matter of time before the emerging countries catch up to the developed world’s sporting powers”</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="../static/images/Endorsement/dav-whatmore.jpg">
+                                        </div>
+                                        <div class="col-md-7 right-pane">
+                                            <p>Dav Whatmore</p>
+                                            <p>Australian Cricketer (fmr) and a Cricket World Cup winning coach with expertise in transforming  cricketing talent from meritocracy to greatness</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="container" rel="endosement5">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-11">
+                                            <p>“..the benefit to a child, the parents and the sports organisation or country of knowing early which sport he/she can excel in remains the singular most important need in order to produce the champions of today. ..It is here that the talent identification system put out by SportUnleash is a unique innovation of combining physical performance measurements with a unique Algorithm to come up with a system of guidance for early talent identification which matches the aspiration of an athlete to the relevant sport”</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="../static/images/Endorsement/Major-General-Dr-C-Thurairaja.jpg">
+                                        </div>
+                                        <div class="col-md-7 right-pane">
+                                            <p>Major General Dr. C. Thurairaja</p>
+                                            <p>Consultant Sport Medicine and Radiology</p>
+                                            <p>President, Asian Federation of Sports Medicine</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- callout-column -->
+                </div> <!-- content-container -->
+            </div> <!-- end site-container -->
+        </div> <!-- end wrapper -->
+        <footer>
+            <div id="global-footer">
+                <!-- <ul id="global-footer-links">
+                    <li><a href="/" title="">About Penn Medicine</a></li>
+                    <li><a href="/" title="">Financial Assistance</a></li>
+                    <li><a href="/" title="">Contact Us</a></li>
+                    <li><a href="/" title="">Site Map</a></li>
+                    <li><a href="/" title="">Privacy Statement</a></li>
+                    <li><a href="/" title="">Legal Disclaimer</a></li>
+                    <li class="gf-last"><a href="" title="">Terms of Use</a></li>
+                </ul> -->
+                <p id="global-footer-disclaimer">
+                    © SportUnleash globals.
+                </p>
+            </div>
+        </footer>        
+        <script src="../static/js/site.js"></script>
+        <script src="../static/js/bootstrap.js"></script>       
+    </body>
+</html>
