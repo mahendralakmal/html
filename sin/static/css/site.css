@@ -2,7 +2,7 @@ body{ background-color: transparent; color: #ffffff; }
 
 .inner-container { max-width: 970px; }
 .topheader { background-image: url(../../../static/images/shared/thin-crust-bg.jpg); height: 55px; }
-#logo {float: left; }
+#logo {float: left; margin-top: 1px; }
 .logo { padding-right: 0px; }
 .topheader .right-pane { text-align: right; font-size: 15px; margin-top: 20px; margin-left: 10px; }
 .topheader .right-pane a { color: #ffffff;float: right; font-size: 15px; position: relative; text-decoration: none; }
