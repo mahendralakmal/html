@@ -1,16 +1,7 @@
-/*
- * jQuery FlexSlider v2.2.0
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the GPLv2 license.
- * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Contributing author: Tyler Smith (@mbmufffin)
- */
 
 
-/* SHOULD BE PLACED IN SITE OVERWRITE FOR SITE-SPECIFIC NON-JS SLIDE (or left as-is for default PM slide)
+
+
 ****************************************************************************/
 #primary-column .flexslider { 
 	/*background: url("/images/shared/flexslider/default-slide.jpg") no-repeat scroll 0 0 transparent; 

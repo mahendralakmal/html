@@ -73,11 +73,17 @@ $(document).ready(function(){
         $('.tab-content .tab4').addClass('active');
     });
 
-    $(".slides li").click(function(e) {
-        loadNavData($("." + $(this).attr('rel')).html());
-        $(".slide-content").focus();
-        e.preventDefault();
-    });
+    // $(".slides li").click(function(e) {
+    //     loadNavData($("." + $(this).attr('rel')).html());
+    //     $(".slide-content").focus();
+    //     e.preventDefault();
+    // });
+
+    // $(".contact-sus").click(function(e) {
+    //     loadNavData($("." + $(this).attr('rel')).html());
+    //     $(".slide-content").focus();
+    //     e.preventDefault();
+    // });
 
     function loadNavData(data) {
         if(lastData == data) {

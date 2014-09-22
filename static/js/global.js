@@ -138,23 +138,7 @@ $(document).ready(function() {
 				return false;
 			});  
 		}); 
-// Open New window //
 
-//		$(document).ready( function() {
-//			$('A[rel="external"]').click( function() {
-//				window.open( $(this).attr('href') );
-//				return false;
-//			});  
-//		}); 
-		
-// Open New window (Penn site - other domain) //
-
-//		$(document).ready( function() {
-//			$('A[rel="external-penn"]').click( function() {
-//				window.open( $(this).attr('href') );
-//				return false;
-//			});  
-//		}); 
 		
 // Open pop-up window //
 		$(document).ready( function() {
