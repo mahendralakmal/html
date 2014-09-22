@@ -79,11 +79,11 @@ $(document).ready(function(){
     //     e.preventDefault();
     // });
 
-    // $(".contact-sus").click(function(e) {
-    //     loadNavData($("." + $(this).attr('rel')).html());
-    //     $(".slide-content").focus();
-    //     e.preventDefault();
-    // });
+    $(".contact-sus").click(function(e) {
+        loadNavData($("." + $(this).attr('rel')).html());
+        $(".slide-content").focus();
+        e.preventDefault();
+    });
 
     function loadNavData(data) {
         if(lastData == data) {

@@ -3,7 +3,7 @@ body p { line-height: 20px; }
 
 .inner-container { max-width: 970px; }
 .topheader { background-image: url(../../static/images/shared/thin-crust-bg.jpg); height: 55px; }
-#logo {float: left; margin-top: 1px; }
+#logo {float: left; height: 55px; }
 .logo { padding-right: 0px; }
 .topheader .right-pane { text-align: right; font-size: 15px; margin-top: 20px; margin-left: 10px; }
 .topheader .right-pane a { color: #ffffff;float: right; font-size: 15px; position: relative; text-decoration: none; }
@@ -38,7 +38,7 @@ header .centerheader .bottomheader .main-navigation .nav-bar ul {  margin: 0; pa
 header .centerheader .bottomheader .main-navigation .nav-bar ul li { display: table-cell; /*display: table-cell; margin: 0; background: url(../images/separate.png) no-repeat right top; float: left;*/ }
 header .centerheader .bottomheader .main-navigation .nav-bar ul li:last-child { background: none; }
 header .centerheader .bottomheader .main-navigation .nav-bar ul li:last-child.active a, header .centerheader .bottomheader .main-navigation .nav-bar ul li:last-child a { margin-right: 0px; }
-header .centerheader .bottomheader .main-navigation .nav-bar ul li a { color: #ffffff; text-decoration: none; font-size: 12px; padding: 9px 2px 6px 0px; text-align: center; display: block; font-family: "NewsGothicBT-semibold"; background-color: #376a9d; border-radius: 10px 10px 0 0; border: 1px solid #ffffff; }
+header .centerheader .bottomheader .main-navigation .nav-bar ul li a { color: #ffffff; text-decoration: none; font-size: 13px; padding: 9px 2px 6px 0px; text-align: center; display: block; font-family: "NewsGothicBT-semibold"; background-color: #376a9d; border-radius: 10px 10px 0 0; border: 1px solid #ffffff; }
 header .centerheader .bottomheader .main-navigation .nav-bar ul li a:hover { text-decoration: underline; background-color: #5386b9; }
 header .centerheader .bottomheader .main-navigation .nav-bar ul li.active a { background-color:#003e7a; border-bottom: 1px solid #003e7a; }
 
@@ -160,6 +160,14 @@ header .select_country .form-control { -webkit-border-radius: 0; -moz-border-rad
 #primary-content .info_ly .sample-report img { border: 2px solid #8a8a8a; margin-bottom: 5px; margin-left: 20px; width: 92.5%; }
 #primary-column p { line-height: 2.0em; }
 #primary-column #primary-content .contact-sus p { line-height: 1.4em; }
-#primary-content .info_ly .product-line img {width: 16%; margin-left: 20px; margin-bottom: 5px; border:none; }
+#primary-content .info_ly .product-line { padding: 0; margin: 0; }
+#primary-content .info_ly .product-line .product { padding: 0; margin: 0; }
+#primary-content .info_ly .product-line .product p { padding: 0 0 0.5em !important; line-height: 1.0em; }
+#primary-content .info_ly .product-line img {width: 100%; margin-left: -30px; margin-bottom: 5px; border:none; }
+#primary-content .info_ly .founder img { margin-left: 0; }
+#primary-content .info_ly .founder p { margin-left: 35px; }
 #primary-content .info_ly .product-line .gympioneers_logo { padding-top: 20px; }
+
+#primary-content .slide-content .cntry { padding: 9px; }
+#primary-content .slide-content img { width: 110%; }
 hr { border-color: silver; }
