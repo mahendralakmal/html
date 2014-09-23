@@ -92,23 +92,23 @@ $(document).ready(function(){
         lastData = data;
     }
 
-    $(".contact-sus").click(function(e) {
-        loadCountryData($("." + $(this).attr('rel')).html());
-        $(".slide-content").focus();
-        e.preventDefault();
-    });
+    // $(".contact-sus").click(function(e) {
+    //     loadCountryData($("." + $(this).attr('rel')).html());
+    //     $(".slide-content").focus();
+    //     e.preventDefault();
+    // });
 
-    function loadCountryData(data) {
-        if(lastData == data) {
-            $(".slide-content").slideUp();
-            lastData = '';
-            return;
-        }
-        $(".slide-content").slideUp();
-        $(".slide-content").html(data);
-        $(".slide-content").slideDown();
-        lastData = data;
-    }
+    // function loadCountryData(data) {
+    //     if(lastData == data) {
+    //         $(".slide-content").slideUp();
+    //         lastData = '';
+    //         return;
+    //     }
+    //     $(".slide-content").slideUp();
+    //     $(".slide-content").html(data);
+    //     $(".slide-content").slideDown();
+    //     lastData = data;
+    // }
 
     $('#dynamic_select').bind('change', function () {
         var url = $(this).val(); // get selected value
