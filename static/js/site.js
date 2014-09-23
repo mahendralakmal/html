@@ -79,12 +79,6 @@ $(document).ready(function(){
     //     e.preventDefault();
     // });
 
-    $(".contact-sus").click(function(e) {
-        loadNavData($("." + $(this).attr('rel')).html());
-        $(".slide-content").focus();
-        e.preventDefault();
-    });
-
     function loadNavData(data) {
         if(lastData == data) {
             $(".slide-content").slideUp();
@@ -94,6 +88,24 @@ $(document).ready(function(){
         $(".slide-content").slideUp();
         $(".slide-content").html(data);
         $(".slide-content").addClass('jumbotron');
+        $(".slide-content").slideDown();
+        lastData = data;
+    }
+
+    $(".contact-sus").click(function(e) {
+        loadCountryData($("." + $(this).attr('rel')).html());
+        $(".slide-content").focus();
+        e.preventDefault();
+    });
+
+    function loadCountryData(data) {
+        if(lastData == data) {
+            $(".slide-content").slideUp();
+            lastData = '';
+            return;
+        }
+        $(".slide-content").slideUp();
+        $(".slide-content").html(data);
         $(".slide-content").slideDown();
         lastData = data;
     }

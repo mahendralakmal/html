@@ -75,13 +75,6 @@ background-repeat: no-repeat;
 background-position: bottom;
 }
 
-
-/* NON-JAVASCRIPT SLIDESHOW IMAGE */
-#primary-column .flexslider { 
-background: url("/health-system/flash/slides/usnews-2014-2015.jpg") no-repeat scroll 0 0 transparent; 
-}
-
-
 #primary-content {
 background-image: url(../../static/images/shared/template/home-primary-content-bg.gif);
 float: left;

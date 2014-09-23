@@ -38,7 +38,7 @@ header .centerheader .bottomheader .main-navigation .nav-bar ul {  margin: 0; pa
 header .centerheader .bottomheader .main-navigation .nav-bar ul li { display: table-cell; /*display: table-cell; margin: 0; background: url(../images/separate.png) no-repeat right top; float: left;*/ }
 header .centerheader .bottomheader .main-navigation .nav-bar ul li:last-child { background: none; }
 header .centerheader .bottomheader .main-navigation .nav-bar ul li:last-child.active a, header .centerheader .bottomheader .main-navigation .nav-bar ul li:last-child a { margin-right: 0px; }
-header .centerheader .bottomheader .main-navigation .nav-bar ul li a { color: #ffffff; text-decoration: none; font-size: 13px; padding: 9px 2px 6px 0px; text-align: center; display: block; font-family: "NewsGothicBT-semibold"; background-color: #376a9d; border-radius: 10px 10px 0 0; border: 1px solid #ffffff; }
+header .centerheader .bottomheader .main-navigation .nav-bar ul li a { color: #ffffff; text-decoration: none; font-size: 1.30rem; padding: 9px 2px 6px 0px; text-align: center; display: block; font-family: "NewsGothicBT-semibold"; background-color: #376a9d; border-radius: 10px 10px 0 0; border: 1px solid #ffffff; }
 header .centerheader .bottomheader .main-navigation .nav-bar ul li a:hover { text-decoration: underline; background-color: #5386b9; }
 header .centerheader .bottomheader .main-navigation .nav-bar ul li.active a { background-color:#003e7a; border-bottom: 1px solid #003e7a; }
 
@@ -160,6 +160,7 @@ header .select_country .form-control { -webkit-border-radius: 0; -moz-border-rad
 #primary-content .info_ly .sample-report img { border: 2px solid #8a8a8a; margin-bottom: 5px; margin-left: 20px; width: 92.5%; }
 #primary-column p { line-height: 2.0em; }
 #primary-column #primary-content .contact-sus p { line-height: 1.4em; }
+#primary-content .info_ly { text-align: justify; }
 #primary-content .info_ly .product-line { padding: 0; margin: 0; }
 #primary-content .info_ly .product-line .product { padding: 0; margin: 0; }
 #primary-content .info_ly .product-line .product p { padding: 0 0 0.5em !important; line-height: 1.0em; }
@@ -167,7 +168,19 @@ header .select_country .form-control { -webkit-border-radius: 0; -moz-border-rad
 #primary-content .info_ly .founder img { margin-left: 0; }
 #primary-content .info_ly .founder p { margin-left: 35px; }
 #primary-content .info_ly .product-line .gympioneers_logo { padding-top: 20px; }
-
+#primary-content .info_ly .product-line a { text-decoration: none; }
 #primary-content .slide-content .cntry { padding: 9px; }
 #primary-content .slide-content img { width: 110%; }
 hr { border-color: silver; }
+
+.country-tab { border-bottom: none; }
+.country-tab li { background-color: transparent; border:none; }
+.country-tab li a { color:#ffffff; background-color: transparent; padding-right: 9px; }
+.country-tab > li > a { border:none; padding: 0 0; padding-right: 9px; border-radius: 0; }
+.country-tab li a:hover { color:#ffffff; background-color: transparent; box-shadow: 0 0 5px #000000;  }
+.country-tab li.active { background-color: transparent; border: none; }
+.country-tab li.active a { background-color: transparent; }
+
+#primary-column p, #primary-column li, #primary-column table, #primary-column dl { color: #000000; }
+
+/*.slide-content { background-color: silver;}*/
