@@ -7,7 +7,7 @@ $('.nav-bar li').click(function(e) {
     e.preventDefault();
 });
 
-$('.nav-tabs li').click(function(e) {
+    $('.nav-tabs li').click(function(e) {
     $('.nav-tabs li.active').removeClass('active');
     var $this = $(this);
     if (!$this.hasClass('active')) {
@@ -15,6 +15,7 @@ $('.nav-tabs li').click(function(e) {
     }
     e.preventDefault();
 });
+
 
 $(document).on('click', '.info_ly .close', function () {
     $(this).parent('div').slideUp();
@@ -32,8 +33,6 @@ $(document).ready(function(){
     $(".callout-actions li").click(function(e) {
         loadData($("." + $(this).attr('rel')).html());
         $(".info_ly").focus();
-
-        // $(window).scrollTop($(".logo").offset().top);
         $("html, body").animate({ scrollTop: $(".logo").offset().top}, 1000);
         e.preventDefault();
     });
@@ -92,23 +91,23 @@ $(document).ready(function(){
         lastData = data;
     }
 
-    // $(".contact-sus").click(function(e) {
-    //     loadCountryData($("." + $(this).attr('rel')).html());
-    //     $(".slide-content").focus();
-    //     e.preventDefault();
-    // });
+    $(".contact-sus").click(function(e) {
+        loadCountryData($("." + $(this).attr('rel')).html());
+        $(".slide-content").focus();
+        e.preventDefault();
+    });
 
-    // function loadCountryData(data) {
-    //     if(lastData == data) {
-    //         $(".slide-content").slideUp();
-    //         lastData = '';
-    //         return;
-    //     }
-    //     $(".slide-content").slideUp();
-    //     $(".slide-content").html(data);
-    //     $(".slide-content").slideDown();
-    //     lastData = data;
-    // }
+    function loadCountryData(data) {
+        if(lastData == data) {
+            $(".slide-content").slideUp();
+            lastData = '';
+            return;
+        }
+        $(".slide-content").slideUp();
+        $(".slide-content").html(data);
+        $(".slide-content").slideDown();
+        lastData = data;
+    }
 
     $('#dynamic_select').bind('change', function () {
         var url = $(this).val(); // get selected value

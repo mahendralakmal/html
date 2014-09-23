@@ -42,19 +42,18 @@ header .centerheader .bottomheader .main-navigation .nav-bar ul li a { color: #f
 header .centerheader .bottomheader .main-navigation .nav-bar ul li a:hover { text-decoration: underline; background-color: #5386b9; }
 header .centerheader .bottomheader .main-navigation .nav-bar ul li.active a { background-color:#003e7a; border-bottom: 1px solid #003e7a; }
 
-.nav-tabs { border-bottom:none; margin-left: auto; margin-right: auto; background-image: url("../../static/images/shared/nav-tab.png"); background-position: center bottom; margin: 0 auto; padding-bottom: 5px; position: relative; }
-.nav-tabs ul li a { padding: 9px 2px 6px 0; }
-.nav-tabs li { background-color: #ffffff; border-bottom: 1px solid #ffffff; }
-
-.nav-tabs li a { color:#ffffff; background-color: #376a9d; margin-right: 1px; padding: 10px; }
-.nav-tabs li a:hover { color:#ffffff; background-color: #5386b9; border-color: #5386b9; }
-.nav-tabs li.active { background-color: transparent; border-bottom: 1px solid #003e7a; }
-.nav-tabs li.active a { background-color: #003e7a; }
-.nav-tabs > li { float: none !important; display: inline-block; margin-bottom: 0; margin-left: -2px; margin-right: -1px; }
-.nav-tabs { text-align: center; }
-
-#primary-content .con-lat-tab { padding-left: 0; padding-right: 0; }
+#primary-content .con-lat-tab { padding-left: 4px; padding-right: 6px; }
 #primary-content .con-lat-tab ul { margin-left: 4px; margin-right: 6px; }
+#primary-content .con-lat-tab .nav-tabs { border-bottom:none; margin-left: auto; margin-right: auto; background-image: url("../../static/images/shared/nav-tab.png"); background-position: center bottom; margin: 0 auto; padding-bottom: 5px; position: relative; }
+#primary-content .con-lat-tab .nav-tabs ul li a { padding: 9px 2px 6px 0; }
+#primary-content .con-lat-tab .nav-tabs li { background-color: #ffffff; border-bottom: 1px solid #ffffff; }
+#primary-content .con-lat-tab .nav-tabs li a { color:#ffffff; background-color: #376a9d; margin-right: 1px; padding: 10px; }
+#primary-content .con-lat-tab .nav-tabs li a:hover { color:#ffffff; background-color: #5386b9; border-color: #5386b9; }
+#primary-content .con-lat-tab .nav-tabs li.active { background-color: transparent; border-bottom: 1px solid #003e7a; }
+#primary-content .con-lat-tab .nav-tabs li.active a { background-color: #003e7a; }
+#primary-content .con-lat-tab .nav-tabs > li { float: none !important; display: inline-block; margin-bottom: 0; margin-left: -2px; margin-right: -1px; }
+#primary-content .con-lat-tab .nav-tabs { text-align: center; }
+
 
 .div-hide{ display: none; }
 
@@ -192,3 +191,7 @@ hr { border-color: silver; }
 .country-tab li.active a { background-color: transparent; box-shadow: 0 0 5px #000000; border: 2px solid #ffffff; }
 
 #primary-column p, #primary-column li, #primary-column table, #primary-column dl { color: #000000; }
+
+#primary-content .inner-content { margin-bottom: 30px; }
+#primary-content .inner-content .close { margin-right: 13px; }
+#primary-content .inner-content li { color: #333333;}
