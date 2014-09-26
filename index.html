@@ -55,24 +55,44 @@
                             </a>
                         </div>
                         <div class="col-md-7 mega-title">Have your child SportUnleash tested today!</div>
-                        <!-- <div class="col-md-2 right-pane sign-in">
-                            <a href="" data-toggle="modal" data-target=".bs-example-modal-sm">Sign In Here</a>
-                        </div> -->
-                        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="col-md-2 right-pane sign-in">
+                            <!-- <a href="" data-toggle="modal" data-target=".bs-example-modal-sm">Sign In Here</a> -->
+                        </div>
+                        
+                        <!-- <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                           <div class="modal-dialog modal-sm">
-                            <div class="modal-content  container">
-                                <form class="form-signin row">       
-                                  <h2 class="form-signin-heading">Please login</h2>
-                                  <input type="text" class="col-md-3 form-control" name="username" placeholder="Username" required="" autofocus="" />
-                                  <input type="password" class="col-md-3 form-control" name="password" placeholder="Password" required=""/>      
-                                     <label class="checkbox">
-                                    <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-                                  </label>
-                                  <button class="btn btn-lg btn-primary btn-block col-md-2" type="submit">Login</button>   
-                                </form>
+                            <div class="modal-content">Login Login
+                            <div class="main-body-inner">
+                                <div class="container login-box">
+                                    <div class="login-main-box">
+                                        <h3>Log In.</h3> 
+                                        <form method="post" class="form-horizontal">
+                                            <input type="hidden" value="5dlgbgMnKPk4WnBisfaw4HppggGKeQsY" name="csrfmiddlewaretoken">
+                                            <fieldset>
+                                                <div class="form-group" id="div_id_username">
+                                                    <label class="control-label  requiredField" for="id_username">Username<span class="asteriskField">*</span></label>
+                                                    <div class="controls ">
+                                                        <input type="text" name="username" maxlength="254" id="id_username" class="textinput textInput form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group" id="div_id_password">
+                                                    <label class="control-label  requiredField" for="id_password">Password<span class="asteriskField">*</span></label>
+                                                    <div class="controls ">
+                                                        <input type="password" name="password" id="id_password" class="textinput textInput form-control">
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="form-actions">
+                                                <input type="submit" id="submit-id-submit" class="btn btn-primary" value="Sign In" name="submit">
+                                                <a class="btn btn-primary" href="/">Cancel</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                           </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -85,7 +105,18 @@
                                     <div class="col-md-5 left-pane">The Sports Talent Identifying System</div>
                                     <div class="col-md-5 right-pane">"Unlocking your child's sport gifting today"</div>
                                 </div>
-                                <div class="col-md-12 text-center center-pane">for 9 - 11 year olds</div>
+                                <div class="col-md-12 text-center center-pane">for 9 - 11 year olds
+                                    <div class="select_country">
+                                        <select name="formal" id="dynamic_select">
+                                            <option selected="True" value="/">English</option>
+                                            <option value="/si/">Sinhala</option>
+                                            <option value="/hi/">हिन्दी</option>
+                                            <option value="/ta/">தமிழ்</option>
+                                            <option value="/zh/">中國</option>
+                                            <option value="/fr/">français</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -94,8 +125,8 @@
                             <div class="nav-bar">
                                 <ul>
                                     <li rel="div1"><a href="#">The Algorithm</a></li>
-                                    <li rel="div2"><a href="#">About The Report</a></li>
-                                    <li rel="div3"><a href="#">The Report Benefits</a></li>
+                                    <li rel="div2"><a href="#">About Report</a></li>
+                                    <li rel="div3"><a href="#">Report Benefits</a></li>
                                     <li rel="div4"><a href="#">Sample Talent Profile</a></li>
                                     <li rel="div5"><a href="#">Full Report Contents</a></li>
                                     <li rel="div6"><a href="#">Test Your Child</a></li>
@@ -131,13 +162,13 @@
                             </div>
                             <div class="div2 div-hide">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h1>About The Report</h1>
+                                <h1>About Report</h1>
                                 <p>This report helps identify the ideal sport and ideal position/event within that sport, which best suits your child, to help him/her succeed, according to his/her physical attributes. Identifying your child’s sporting talent well in advance gives the child sufficient time and opportunity to hone his/her skill to that of world-class levels during the primary and secondary schooling years.</p>
                                 <p>This report further provides a guide on how best to invest your finances, be it choosing the right coach or in the areas which require nurturing. Your child’s natural physical abilities are matched to the sports which mimic and demand the identical physical abilities of your child. The report also tells you  whether your child has the talent to be able to represent the school, achieve a minimum club level performance, or be able to represent the country one day, should he/she diligently follow the recommendations made by this SportUnleash report and be wholeheartedly committed to the chosen sport during the years at school.</p>
                             </div>
                             <div class="div3 div-hide">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h1>The Report Benefits</h1>
+                                <h1>Report Benefits</h1>
                                 <ol>
                                     <li>
                                         <div><b>Accelerated Performance</b></div>
@@ -250,7 +281,7 @@
                         			</div>
                                     <div class="col-md-3 founder">
                                         <img src="static/images/founder/Talavou-Alailima.jpg">
-                                        <p><b>F. Alailima</b></p>
+                                        <p><b>Talavou F. Alailima</b></p>
                                     </div>
                         		</div>
             					<p>During the past five years, he has contributed substantially to the “Manual of Sports Medicine” published by the Colombo Medical Faculty. He is an NCAA All American Athlete, South Asian Games Medalist, and the former national record holder for the Shot Putt and Discus events. For the past twenty years, he has been the Sports Nutrition and Strength training consultant for many national clubs, school teams and champion athletes.</p>
@@ -443,15 +474,16 @@
                             <p>Today...!</p>
                         </a></div>
 
-                        <div class="slide-1 div-hide"><h1>Slide 1</h1></div>
-                        <div class="slide-2 div-hide"><h1>Slide 2</h1></div>
-                        <div class="slide-3 div-hide"><h1>Slide 3</h1></div>
-                        <div class="slide-4 div-hide"><h1>Slide 4</h1></div>
-                        <div class="slide-5 div-hide"><h1>Slide 5</h1></div>
-                        <div class="slide-6 div-hide"><h1>Slide 6</h1></div>
-                        <div class="slide-7 div-hide"><h1>Slide 7</h1></div>
+                        <div class="slide-1 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 1</h1></div>
+                        <div class="slide-2 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 2</h1></div>
+                        <div class="slide-3 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 3</h1></div>
+                        <div class="slide-4 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 4</h1></div>
+                        <div class="slide-5 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 5</h1></div>
+                        <div class="slide-6 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 6</h1></div>
+                        <div class="slide-7 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 7</h1></div>
                         <!-- COUNTRY LIST OF SUS CONTACT -->
                         <div class="sus-cntry div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             <script type="text/javascript">
                                 $('.slide-content .nav-tabs li').click(function(e) {
                                     $('.slide-content .nav-tabs li.active').removeClass('active');
@@ -481,7 +513,7 @@
                                 }
                             </script>
                             
-                            <ul class="nav nav-tabs country-tab" role="tablist">
+                            <ul class="nav nav-tabs country-tab row" role="tablist">
                               <li rel="africa" class="left-tab col-md-2 cntry">
                                   <a class="" href="#">
                                       <img class="responsive-img" src="static/images/countries/africa_img.png">
@@ -589,8 +621,9 @@
                                         <li class="col-md-3">Papua New Guinea</li>
                                         <li class="col-md-3">Fiji</li>
                                         <li class="col-md-3">Vanuatu</li>
-                                        <li class="col-md-3">Solomon Islands</li>
                                         <li class="col-md-3">Samoa</li>
+                                        <li class="col-md-3">Solomon Islands</li>
+                                        <li class="col-md-3">Sri Lanka</li>
                                         <li class="col-md-3">Tonga</li>
                                     </ul>
                                 </div>
@@ -685,7 +718,7 @@
                                 <div class="col-md-11 container">
                                     <div class="row">
                                         <div class="col-md-12 descript">
-                                            <p>“I find the SportUnleash system consistent with the accepted science and its ability to identify the talent of a 9 year old for a particular sport, before that child has had exposure to an organised sport or activity, makes the SportUnleash testing program stand out”</p>
+                                            <p>“I find the SportUnleash system consistent with the accepted science and its ability to identify the talent of a 9 year old for a particular sport, before that child has had exposure to an organised sport or activity, makes the SportUnleash testing program stand out”<span class="callout-relative-bullet-base">&nbsp;Read More</span></p>
                                         </div>
                                         <div class="col-md-4 descript">
                                             <img src="static/images/Endorsement/Dr-David-Young.jpg">
@@ -702,7 +735,7 @@
                                 <div class="col-md-11 container">
                                     <div class="row">
                                         <div class="col-md-12 descript">
-                                            <p>“SportUnleash has taken that which was in its concept stage and made it a reality. This innovation makes it now possible to unlock and push the true potential of the human body to achieve a new level of performance”</p>
+                                            <p>“SportUnleash has taken that which was in its concept stage and made it a reality. This innovation makes it now possible to unlock and push the true potential of the human body to achieve a new level of performance”<span class="callout-relative-bullet-base">&nbsp;Read More</span></p>
                                         </div>
                                         <div class="col-md-4 descript">
                                             <img src="static/images/Endorsement/Prof-Rohan-Jayasekara.jpg">
@@ -720,7 +753,7 @@
                                 <div class="col-md-11 container">
                                     <div class="row">
                                         <div class="col-md-12 descript">
-                                            <p>“I have evaluated and exhaustively and critically analysed the science, the algorithm, reports and final application possibilities of the SportUnleash system…. I have found it to be sound scientifically and robust in application”</p>
+                                            <p>“I have evaluated and exhaustively and critically analysed the science, the algorithm, reports and final application possibilities of the SportUnleash system…. I have found it to be sound scientifically and robust in application”<span class="callout-relative-bullet-base">&nbsp;Read More</span></p>
                                         </div>
                                         <div class="col-md-4 descript">
                                             <img src="static/images/Endorsement/Dr-Nishantha-Gunasekera.jpg">
@@ -737,7 +770,7 @@
                                 <div class="col-md-11 container">
                                     <div class="row">
                                         <div class="col-md-12 descript">
-                                            <p>“I am amazed at the ability of the SportUnleash talent identification system to achieve accurate results each and every time. …if all parents get their 9-11 year olds tested... it is going to be only a matter of time before the emerging countries catch up to the developed world’s sporting powers”</p>
+                                            <p>“I am amazed at the ability of the SportUnleash talent identification system to achieve accurate results each and every time. …if all parents get their 9-11 year olds tested... it is going to be only a matter of time before the emerging countries catch up to the developed world’s sporting powers”<span class="callout-relative-bullet-base">&nbsp;Read More</span></p>
                                         </div>
                                         <div class="col-md-4 descript">
                                             <img src="static/images/Endorsement/dav-whatmore.jpg">
@@ -753,7 +786,7 @@
                                 <div class="col-md-11 container">
                                     <div class="row">
                                         <div class="col-md-12 descript">
-                                            <p>“This talent identification system put out by SportUnleash is a unique innovation of combining physical performance measurements with a unique Algorithm to come up with a system of guidance for early talent identification which matches the aspiration of an athlete to the relevant sport”</p>
+                                            <p>“This talent identification system put out by SportUnleash is a unique innovation of combining physical performance measurements with a unique Algorithm to come up with a system of guidance for early talent identification which matches the aspiration of an athlete to the relevant sport”<span class="callout-relative-bullet-base">&nbsp;Read More</span></p>
                                         </div>
                                         <div class="col-md-4 descript">
                                             <img src="static/images/Endorsement/Major-General-Dr-C-Thurairaja.jpg">
@@ -770,7 +803,7 @@
                                 <div class="col-md-11 container">
                                     <div class="row">
                                         <div class="col-md-12 descript">
-                                            <p>““A predictive test is exactly what is needed for the long term development of sports.”</p>
+                                            <p>““A predictive test is exactly what is needed for the long term development of sports.”<span class="callout-relative-bullet-base">&nbsp;Read More</span></p>
                                         </div>
                                         <div class="col-md-4 descript">
                                             <img src="static/images/Endorsement/Arjuna-P-de-silva.jpg">

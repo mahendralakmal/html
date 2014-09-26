@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sports Unleash</title>
+    <link href="../static/css/bootstrap.css" rel="stylesheet" media="all">
+    <link href="../static/css/bootstrap-theme.css" rel="stylesheet" media="all">
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/global.js"></script>
+    <script type="text/javascript" src="../static/js/addthis_widget.js"></script>
+
+
+
+    <link href="../static/css/global-styles.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="../static/css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <!--[if lt IE 7]>
+    <link href="/styles/shared/global-styles-ie6.css" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+    <!--[if IE 7]>
+        <link href="/styles/shared/global-styles-ie7.css" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+    <link href="../static/css/site-override.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="../static/css/main-lg.css" rel="alternate stylesheet" type="text/css" media="screen" title="A">
+    <link href="../static/css/main-xlg.css" rel="alternate stylesheet" type="text/css" media="screen" title="A+">
+    <link href="../static/css/print.css" rel="stylesheet" type="text/css" media="print">
+
+    <!-- Flexslider script -->
+    <script type="text/javascript" src="../static/js/jquery_002.js"></script>
+    <link href="../static/css/flexslider-636.css" rel="stylesheet" type="text/css" media="screen">
+    <script type="text/javascript">
+        $(window).load(function(){
+            $('.flexslider').flexslider({
+                controlsContainer: "flexSlider",
+                controlNav: true,
+                manualControls: $("flex-control-nav li")
+            });
+        })
+    </script>
+
+    <!-- News - Google Feed script -->
+    <link media="all" href="../static/css/widget005.css" type="text/css" rel="stylesheet">
+    <link href="../static/css/defaulten.css" type="text/css" rel="stylesheet">
+    <script src="../static/js/defaulten.js" type="text/javascript"></script>
+
+    <link href="../static/css/site.css" rel="stylesheet" type="text/css" media="all">
+    <link href="static/css/site.css" rel="stylesheet" type="text/css" media="all">
+</head>
+    <body id="home">
+        <header>
+            <div class="topheader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 logo">
+                            <a href="/" title="Sports Unleash" itemprop="url">
+                                <img itemprop="logo" src="../static/images/logo.png" alt="Sport Unleash Logo" id="logo">
+                            </a>
+                        </div>
+                        <div class="col-md-7 mega-title">Have your child SportUnleash tested today!</div>
+                        <div class="col-md-2 right-pane sign-in">
+                            <!-- <a href="" data-toggle="modal" data-target=".bs-example-modal-sm">Sign In Here</a> -->
+                        </div>
+                        <!-- <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">Login Login
+                            <div class="main-body-inner">
+                                <div class="container login-box">
+                                    <div class="login-main-box">
+                                        <h3>Log In.</h3> 
+                                        <form method="post" class="form-horizontal">
+                                            <input type="hidden" value="5dlgbgMnKPk4WnBisfaw4HppggGKeQsY" name="csrfmiddlewaretoken">
+                                            <fieldset>
+                                                <div class="form-group" id="div_id_username">
+                                                    <label class="control-label  requiredField" for="id_username">Username<span class="asteriskField">*</span></label>
+                                                    <div class="controls ">
+                                                        <input type="text" name="username" maxlength="254" id="id_username" class="textinput textInput form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group" id="div_id_password">
+                                                    <label class="control-label  requiredField" for="id_password">Password<span class="asteriskField">*</span></label>
+                                                    <div class="controls ">
+                                                        <input type="password" name="password" id="id_password" class="textinput textInput form-control">
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="form-actions">
+                                                <input type="submit" id="submit-id-submit" class="btn btn-primary" value="Sign In" name="submit">
+                                                <a class="btn btn-primary" href="/si">Cancel</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="centerheader">
+                <div class="bottomheader">
+                    <div class="container">
+                        <div class="row">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5 left-pane">The Sports Talent Identifying System</div>
+                                    <div class="col-md-5 right-pane">"Unlocking your child's sport gifting today"</div>
+                                </div>
+                                <div class="col-md-12 text-center center-pane">for 9 - 11 year olds
+                                    <div class="select_country">
+                                        <select name="formal" id="dynamic_select">
+                                            <option value="/">English</option>
+                                            <option value="/si/">Sinhala</option>
+                                            <option value="/hi/">हिन्दी</option>
+                                            <option selected="True" value="/ta/">தமிழ்</option>
+                                            <option value="/zh/">中國</option>
+                                            <option value="/fr/">français</option>
+                                        </select>
+                                    </div>
+                                </div>                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-xs-12 col-md-12 col-sm-12 main-navigation">
+                            <div class="nav-bar">
+                                <ul>
+                                    <li rel="div1"><a href="#">நெறிமுறை</a></li>
+                                    <li rel="div2"><a href="#">அறிக்கை</a></li>
+                                    <li rel="div3"><a href="#">நன்மைகள்</a></li>
+                                    <li rel="div4"><a href="#">அறிக்கை மாதிரி</a></li>
+                                    <li rel="div5"><a href="#">பிரிவு 2 – தலைப்புகள்</a></li>
+                                    <li rel="div6"><a href="#">படிநிலைகள் - பரீட்சித்தல்</a></li>
+                                    <li rel="div7"><a href="#">Founder &amp; CEO</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="wrapper">
+            <div id="site-container">
+                <div id="content-container">
+
+                    <div id="primary-column">
+                        <div id="primary-content">
+                        <!-- TOP NAVIGATION CONTENTS -->
+                        <section id="nav-contents">
+                            <div class="div1 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h1>நெறிமுறை</h1>
+                                <p>SportUnleash என்பது பிள்ளையின்ஆற்றல்மற்றும்உடலியல்பண்புகளை இனம்கண்டுகொள்ளும்ஒரு நெறிமுறையாகும். இது ஒரு விஞ்ஞான ரீதியான பலமான அறிக்கையை உருவாக்குவதற்கு சிகிச்சையற்ற முறையியல்கள், காண்பு அடிப்படையிலான ஆய்வுகள், சுயமதிப்பீடு, உடல்விளையாட்டு வெற்றி வீரர்களின்உடல்அளவீட்டு தரவுகள், உடல் இயக்க இயல்பு பரிசோதிப்புக்கள்மற்றும்முடிவுக்கு வருவதற்காக சேகரிக்கப்படும்சான்று வழங்கப்படும்உறுதிப்படுத்தப்படும் நிருபிக்கப்படும்முடிவு எடுப்பதற்கு பயன்படுத்தப்படுகிறது.</p>
+                            </div>
+                            <div class="div2 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h1>அறிக்கை</h1>
+                                <p>இவ்அறிக்கையானது உங்களது பிள்ளையின்உடல்இயல்புகளின் பிரகாரம்அவன் / அவள்வெற்றியடைவதற்கு அவன் / அவளுக்குப் பொருத்தமான இவ்விளையாட்டுக்குள்ளான மிக உன்னதமான விளையாட்டையோ, நிலையையோ, நிகழ்வையோ இனம்காணுவதற்கு உதவுகிறது. உங்களது பிள்ளையின்விளையாட்டு ஆற்றலை முன்னதாகவே கண்டுபிடித்துக்கொள்வதானது ஆரம்ப மற்றும் இரண்டாம்தர பாடசாலைக்காலத்தின்பொழுதே உலகத்தர மட்டங்களில் அவரது திறன்களை வளர்த்துக்கொள்வதற்கான போதிய தரத்தையும் சந்தர்ப்பத்தையும்வழங்குகிறது.</p>
+                                <p>மேலும்இந்த அறிக்கையானது சரியான பயிற்சியாளரைத் தெரிவு செய்தல்அல்லது பேணி வளர்ப்பு தேவைப்படும் விடயங்கள்என்பவற்றைத்தெரிவு செய்வதிலும்உங்களுடைய நிதிகளை சிறந்த முறையில்முதலிடுவது என்பதிலும்ஒரு வழிகாட்டுதலை வழங்குகிறது. உங்களது பிள்ளையின்இயற்கை உடல்தகைமைகளாவன அவ்வியல்புகள்வேண்டப்படும் விளையாட்டுக்கள்மற்றும்உங்களது பிள்ளையின்இனங்காணப்பட்ட உடல்இயலுமை வேண்டும்விளையாட்டுக்கள்என்பவற்றுடன் பொருந்திக்கொள்ள வேண்டும். அத்துடன்இந்த அறிக்கையானது பாடசாலையை பிரதிநிதித்துவப்படுத்துவதற்கான ஆற்றலைக் கொண்டுள்ளதா எனச்சொல்லுவதுடன், குறைந்தபட்ச கழக மட்ட செயற்பாட்டை சாதிக்கக்கூடியதா அல்லது ஒரு நாளைக்கு நாட்டை பிரதிநிதித்துவப்படுத்தக்கூடியதாக உள்ளதா எனச்சொல்லுவதற்கு அவர்உரிய முறையில்இவ் sportunleash அறிக்கையிலுள்ள சிபார்சுகளை பின்பற்ற வேண்டும்என்பதுடன்பாடசாலயில்குறிப்பிட்ட காலப்பகுதியில்தெரிவு செய்யப்பட்ட விளையாட்டில்முழு மனதுடன் அர்ப்பணித்து செயற்பட வேண்டும்.</p>
+                            </div>
+                            <div class="div3 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h1>நன்மைகள்</h1>
+                                <ol>
+                                    <li>
+                                        <div><b>அதிகரிக்கப்பட்ட செயற்பாடு</b></div>
+                                        <div><p>sportunleash இல் பரிசோதிக்கப்பட்ட விளையாட்டுக்களில்உங்களது பிள்ளை போட்டியிடுவதினால்உங்களது பிள்ளையானது திறம்படச்செயற்பட விரைவில்ஆரம்பிப்பதுடன் வெற்றிப்படிகளையும்மேற்கொள்வதுடன்தனது வயதுக்குழுவில் உள்ள இந்த விளையாட்டில்மிகச்சிறந்த செயற்பாட்டாளர்களில்ஒருவராக வருவார்.</p></div>
+                                    </li>
+                                    <li>
+                                        <div><b>சரியான மனோபாவத்தை விருத்தி செய்தல்</b></div>
+                                        <div><p>உங்களது பிள்ளைக்கு இயலாமையாகவே வெற்றியடைக்கூடியதாக உள்ள ஒரு விளையாட்டில் போட்டியிடும்பொழுது அது அவனை அல்லது அவளை இன்னும் அதிகம்கடுமையாகப்பயிற்சி செய்ய ஊக்குவிப்பதுடன்மிகச்சிறந்த ஒருவராகப்பார்க்கப்படவும் செய்கிறது. அவருக்கு வேண்டிய ஊக்கத்தை அளிப்பதற்கோ அல்லது அச்செயலில்அர்ப்பணிப்புடன்இருப்பதற்கோ சொற்ப பெற்றோரது அறிவுரைகள்மாத்திரமே தேவைப்படும்.</p></div>
+                                    </li>
+                                    <li>
+                                        <div><b>ஏமாற்றங்களைத்தவிர்த்தல்</b></div>
+                                        <div><p>பொதுவாக ஆற்றலானது பிள்ளையின்மத்திய பதின்பருவ காலத்திலே பொதுவாக இனங்காணப்படுகிறது. துரதிஷ்டவசமாக இக்காலப்பகுதியில்பலர்பல தோல்விகளுக்குப்பிற்பாடு விளையாட்டுக்கான விருப்பத்தை இழந்துவிடுவதுடன்சில சொற்ப ஆர்வமுடைய பிள்ளைகள்தமது திறன்களை வளர்ப்பதற்கு பாடசாலையில்சிறிதளவு காலத்தையே கொண்டிருக்கின்றனர். இதனால்ஒரு சிறந்த விளையாட்டுத்துறைக்கான சாதகமான பகுதியானது சுருக்கமடைகிறது. இந்த வளமையான ஏமாற்றங்களைத்தவிர்ப்பதற்கான முன்னதான அறிவிப்பை இந்த sportunleash அறிக்கை வழங்குகிறது.</p></div>
+                                    </li>
+                                    <li>
+                                        <div><b>அவர்களை விளையாட்டில்ஈடுபடுத்தி வைத்திருத்தல்</b></div>
+                                        <p>தாம் வெற்றியாளராக வரமுடியும்என்ற எண்ணத்திற்கு பிள்ளைகள் பழக்கப்பட்டு இருக்கிறார்கள். தமது கடும்முயற்சியிலிருந்து பெற்றுக்கொண்ட வெற்றிகளில்அவர்கள்மகிழ்ச்சியடைத் தொடங்குகிறார்கள். அது அவர்களை இன்னும்கடுமையாக வேலை செய்ய வேண்டும்என மாற்றிக்கொள்கிறது. விளிம்பு பக்கத்தில் குழுவேலையின்நன்மையை உணரத்தொடங்குவதுடன்தமது சொந்த வெற்றிப்படிநிலைகளில்வெற்றியையும்தோல்வியையும் எடுத்துக்கொள்வதற்கான இயலுமையை விருத்தி செய்கின்றனர். உங்களது பிள்ளை மீதான மிகவும்சாதகமான விளைவாக இருக்கக்கூடிய ஒரு ஆளுமையைக்கட்டியெழுப்பும்மிகச்சிறந்த செயன்முறையாக இது உள்ளது.</p>
+                                    </li>
+                                    <li>
+                                        <div><b>உங்களது முதலீட்டை உச்சப்படுத்துதல்</b></div>
+                                        <p>இந்த sportunleash அறிக்கையானது உங்களது பிள்ளை விளையாட்டில்தொடர்ந்து மகிழ்ந்திருக்க தொடர்ந்து செயற்பட, வெற்றியடையச்செய்யும்முகமான உங்களது பெறுமதியான வளங்களை எங்கே முதலிடுவது என்பதை இவ் அறிக்கை காட்டுகிறது.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="div4 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h1>அறிக்கை மாதிரி</h1>
+                                <div class="sample-report">
+                                    <img src="/static/images/Sports-Talent-Profile-Sample-Report.png">
+                                </div>
+                            </div>
+                            <div class="div5 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h1>பிரிவு 2 – தலைப்புகள்</h1>
+                                <ol>
+                                    <li>sportunleash அறிக்கை மற்றும்அதன்நன்மைகள்என்ன?</li>
+                                    <li>sportunleash அறிக்கையின்பல்வேறு அம்சங்களை எவ்வாறு சிறந்த முறையில்புரிந்துகொள்வது?
+                                        <ul>
+                                            <li>உங்களது பிள்ளைக்கு மிகவும்இயலக்கூடிய விளையாட்டுக்கள்மற்றும்நிலைகள் / நிகழ்வுகள்.</li>
+                                            <li>உங்களது பிள்ளைக்கு அடுத்த நிலையிலான மிகப் பொருத்தமான விளையாட்டுக்கள்மற்றும்நிலைகள் / நிகழ்வுகள்</li>
+                                            <li>உங்களது பிள்ளைக்கு உள்ள ஏனைய இயலுமையுடைய விளையாட்டுக்கள்மற்றும் நிலைகள்/ நிகழ்வுகள்.</li>
+                                        </ul>
+                                    </li>
+                                    <li>பிள்ளையினுடைய மரபணு இயலுமையை உச்சப்படுத்துவதற்கான வழிவகைகள்.</li>
+                                    <li>விளையாட்டை மாற்றியமைத்துக்கொள்ளும் நுண்போசணைகள்.</li>
+                                    <li>புரதம்:
+                                        <ul>
+                                            <li>எவ்வளவு</li>
+                                            <li>உங்களது பிள்ளையின் தேவைப்பாடுகள்</li>
+                                            <li>உணவுகள்.</li>
+                                         </ul>
+                                    </li>
+                                    <li>காபோவைதரேற்றுக்கள்: உங்களுடைய பிள்ளையின் தேவைப்பாடுகள்.</li>
+                                    <li>போசணை உள்ளெடுப்பு:
+                                        <ul>
+                                            <li>உணவு உண்ணும்முறை</li>
+                                            <li>பயிற்சி அல்லது போட்டிக்கு முன்னான உணவுகள்</li>
+                                            <li>பயிற்சி அல்லது போட்டியின்போதானது</li>
+                                            <li>பயிற்சி அல்லது போட்டியின்பின்னானது</li>
+                                            <li>எல்லாப்போசணைகளினதும்மிகப்பெரிய தவறு</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        காயத்தை தவிர்த்தல்
+                                        <ul>
+                                            <li>பயிற்சி</li>
+                                            <li>ஒரு விளையாட்டுக்கு ஏற்றவகையில் உடலை மீள்மாதிரிப்படுத்தல்</li>
+                                            <li>தசைநார்</li>
+                                            <li>நெகிழ்ச்சித்தன்மையும் நீட்டுகையும்</li>
+                                            <li>பாய்ச்சல் பயிற்சிகள்</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        எச்சரிக்கை:
+                                        <ul>
+                                            <li>மிகமிஞ்சிய கொழுப்பு</li>
+                                            <li>நிறைக்கான கொழுப்பு நூற்றுவீதம்</li>
+                                            <li>பலப்பயிற்சி</li>
+                                            <li>அதீத பயிற்சி</li>
+                                            <li>அதீத வெம்மை</li>
+                                            <li>தசைப்பிடிப்பு</li>
+                                        </ul>
+                                    </li>
+                                    <li>மிகை நிரப்பிகள், விளையாட்டு குடிபானங்கள், சக்தி குடிபானங்கள்</li>
+                                    <li>தந்தையர்கள் உங்களது பிள்ளைகளை ஊக்கப்படுத்த முடியும்</li>
+                                    <li>தொடர்பு தகவல்கள்: பயிற்றுவிப்பாளர்கள்</li>
+                                </ol>
+                            </div>
+                            <div class="div6 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h1>படிநிலைகள் - பரீட்சித்தல்</h1>
+                                <div>
+                                    <dl>
+                                        <dt>படிநிலை 1</dt><dd>உங்களது பகுதியில்உள்ள ஒரு sportunleash விசேடத்துவம் பெற்றவரை (SUS நிபுணர் ) தொடர்பு கொள்க. உங்களது பகுதியில் படிவத்தை நிரப்புக.</dd>
+                                        <dt>படிநிலை 2</dt><dd>SUS நிபுணர் உங்களது பிள்ளையை பரிட்சிப்பதற்கான நேரத்தை ஒழுங்கு செய்வார்.</dd>
+                                        <dt>படிநிலை 3</dt><dd>அவ்உத்தியோகத்தர்உங்களது பிள்ளையின்தரவுகளை sportunleash தலைமைச்செயலகத்திற்கு அனுப்பும்பொழுது அப்பிள்ளையின்தரவுகளைப்பெற்றுக்கொண்டமைக்காக உறுதிப்படுத்தி உங்களுக்கு ஒரு குறுஞ்செய்தி(SMS) அனுப்பி வைக்கப்படும்.</dd>
+                                        <dt>படிநிலை 4</dt><dd>உங்களது பிள்ளையின்தரவு பெற்றுக்கொள்ளப்பட்டதாக நீங்கள்உறுதிப்படுத்தலை பெற்றுக்கொள்ளும்பொழுது SUS நிபுணரிடம் கொடுப்பனவை செய்யுங்கள்.</dd>
+                                        <dt>படிநிலை 5</dt><dd>அவர்உங்களது கொடுப்பனவை பெற்றுக்கொண்டதும் கொடுப்பனவு பெற்றுக்கொண்டதை அவர்தலைமைச்செயலகத்திற்கு அறிவிப்பதுடன்அப்பொழுதே நீங்கள்உங்களது தொலைபேசி அல்லது குறும்செய்தி ஊடாக கொடுப்பனவிற்கான பற்றுசான்றைப் பெற்றுக்கொள்ளுங்கள்.</dd>
+                                        <dt>படிநிலை 6</dt><dd>ஏழு நாட்களுக்குள்உங்களது பிள்ளையின்sportunleash அறிக்கையானது SUS நிபுணர்ருக்கு அனுப்பி வைக்கப்படுவதுடன் உங்களுக்கும்ஒரு குறுஞ்செய்தி ஊடான உறுதிப்படுத்தலைப் பெற்றுக்கொள்வீர்கள்.</dd>
+                                        <dt>படிநிலை 7</dt><dd>அவ்அதிகாரியானவர்உங்களுக்கு அறிக்கையை கையளிப்பார்.</dd>
+                                        <dt>படிநிலை 8</dt><dd>அறிக்கை பெற்றுக்கொள்ளப்பட்டு விட்டதும் “YES” என பதிவு செய்து குறும்செய்தி ஒன்றை பதிலளியுங்கள்.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="div7 div-hide">
+                            <div class="CEO">
+                        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h1>Founder &amp; CEO</h1>
+                        		<div class="row">
+                        			<div class="col-md-7">
+                    					<p>Talavou Alailima, the inventor and the architect of the SportUnleash talent identification system, pioneered the emerging world fitness industry with his chain of “Power World’ Fitness Centres (1994), “Edge” Sports Nutrition Supplements (2005), and “Lion Warrior” Sports High performance program (2008). He is a US qualified Strength Training and Sports Nutrition Consultant, educated at Franklin & Marshall College in Pennsylvania, USA and holds a Master of Sports Management degree from the IE Business School in Madrid, Spain.</p>
+                        			</div>
+                                    <div class="col-md-3 founder">
+                                        <img src="../static/images/founder/Talavou-Alailima.jpg">
+                                        <p><b>Talavou F. Alailima</b></p>
+                                    </div>
+                        		</div>
+            					<p>During the past five years, he has contributed substantially to the “Manual of Sports Medicine” published by the Colombo Medical Faculty. He is an NCAA All American Athlete, South Asian Games Medalist, and the former national record holder for the Shot Putt and Discus events. For the past twenty years, he has been the Sports Nutrition and Strength training consultant for many national clubs, school teams and champion athletes.</p>
+            					<p>The SportUnleash Algorithm is a result of over two decades of first-hand experience in the physical attribute transformation of sportspersons, education in a wide range of sports science and performance disciplines and research in Sports high performance and Fitness.</p>
+                                <hr>
+                                <h1>Talavou's Pioneering Businesses</h1>
+                                <div class="product-line container">
+                					<div class="col-md-12">
+                						<div class="col-md-3 product"><a href="http://edgenutritioninc.com/" title="http://edgenutritioninc.com/"><img src="../static/images/edge.png"><p>Sports Nutrition</p></a></div>
+                						<div class="col-md-3 product"><a href="http://www.lionwarriors.com/cms/" title="http://www.lionwarriors.com/"><img class="col-md-3" src="../static/images/lion_warrior.png"><p>Sports High<br>Performance</p></a></div>
+                						<div class="col-md-3 product"><a href="http://gympioneers.com/dir/" title="http://gympioneers.com/"><img class="col-md-3 gympioneers_logo" src="../static/images/gympioneers_logo.png"></a></div>
+                						<div class="col-md-3 product"><a href="http://www.powerworldgyms.com/dir/" title="http://www.powerworldgyms.com/"><img class="col-md-3" src="../static/images/pwg.png"></a></div>
+                					</div>
+                                </div>
+                                <hr>
+                            </div>
+                            </div>
+                        </section>
+                        <!-- END OF TOP NAVIGATION CONTENTS -->
+                        <!-- ENDOSEMENTS CONTENTS -->
+                        <section id="endosement-contents">
+                            <div class="endosement1 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <p>“sportunleash முறை ஏற்றுக் கொள்ளப்பட்ட அறிவியலுக்கு இசைவாயும், விளையாட்டு அழுத்தத்தின் போது எப்படி உடல் சார்ந்த பண்புக் கூறுகள் தங்களை வெளிப்படுத்துகின்றன என்னும் தற்போதைய நம்பிக்கையுடன் ஒத்தும் இருப்பதாக நான் காண்கிறேன். ஒரு 9வயது பிள்ளையின் விளையாட்டுத் திறமையை, அது எந்த ஒரு பிரபல விளையாட்டிலும் ஈடுபடுவதற்கு முன்பதாகவே கண்டு பிடிக்கக் கூடியதாயிருப்பதால் விளையாட்டு கட்டவிழ்ப்பு முறை மிச் சிறந்ததாகத் தெரிகிறது...... விளையாட்டு கட்டவிழ்ப்பு முறையில் அவர்கள் தெரிவு செய்யும் விளையாட்டு அவர்களுடைய உடல் அமைப்புக்கு ஒத்ததாய் இருக்குமானால், காலப் போக்கில் அந்த விளையாட்டினால் ஏற்படக்கூடிய காயங்களினால் அவர்களுக்கு வரக்கூடிய பாதிப்பு மிகக்குறைவாகவே இருக்கும்.”</p>
+                                <div class="row">
+                                    <div class="col-md-3"><img src="../static/images/Endorsement/Dr-David-Young.jpg"></div>
+                                    <div class="col-md-7 right-pane">
+                                        <p class="font-highlight"><b>Dr. டேவிட் யங்</b></p>
+                                        <p>மெல்பன் எலும்பியல் பிரிவு, அவுஸ்திரேலியாஎலும்பு மூட்டு அறுவை சிகிச்சை மருத்துவர் முக்கிய ஆர்வம்: விளையாட்டுக் காயங்கள், இடுப்பு மற்றும் மூட்டு அறுவைச் சிகிச்சை</p>
+                                        <p>எலும்பு முட்டு அறுவைச் சிகிச்சை அருத்துவர். அவுஸ்திரேலிய மற்றும் இலங்கை கிரிகெட் அணிகள்</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="endosement2 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <p>“விளையாட்டுத் திறமைகளை சிறு வயதிலேயே அடையாளம் காண்பதைக் குறித்த கருத்து விளையாட்டு அறிவியல் மற்றும் வைத்திய சகோதர அமைப்புகளின் மத்தியில் பல வருடங்களாக விவாதிக்கப்பட்டு  வந்திருக்கிறது. sportunleash கருத்துக் கட்டத்திலிருந்த அதை  மெய்ம்மையாக்கியிருக்கிறது. இந்த கண்டுபிடிப்பு மனித உடலின் உண்மையான ஆற்றலைத் திறந்து அதை ஒரு புதிய  செயல் திறன் நிலைக்குத் தள்ளிவிடும். சாத்தியதையை இப்போது ஏற்படுத்தியிருக்கிறது.... முடிவைத் தெரிந்து  கொள்ள உபயோகிக்கும் ஊடுருவலற்ற பரிசோதனை முறையையும், நான் நான்கு தசாப்தங்களாக இணைந்திருக்கும்  உடற் கூறியலுடன் ஒத்துப் போகும் தன்மையும் இதில் இருப்பதால், நமது நாட்டைப் போன்றதொரு நாட்டிற்கு  அதன் விளையாட்டுத் துறையில் குறிப்பிடத்தக்க முன்னேற்றமடைய இது ஒரு சரியான ஆயுதமாகும். நமது பிள்ளைகளை  sportunleash முறையில் பரிசோதனை செய்து தேசிய மட்டத்தில் விளையாட்டை  விருத்தி செய்ய மிக முக்கியமானதாயிருப்பதால், அதை நமது எல்லாப் பிள்ளைகளுக்கும் கிடைக்கப்பண்ண வேண்டும்.”</p>
+                                <div class="row">
+                                    <div class="col-md-3"><img src="../static/images/Endorsement/Prof-Rohan-Jayasekara.jpg"></div>
+                                    <div class="col-md-7 right-pane">
+                                        <p><b>பேராசிரியர் ரொஹான் ஐயசேகர</b></p>
+                                        <p>முதல்வர் மருத்துவப் பிரிவு, கொழும்பு பல்கலைக்கழகம்</p>
+                                        <p>தலைவர் மூத்த பேராசிரியர், உடற்கூறியியல்</p>
+                                        <p>நிறுவனர் இயக்குனர் மற்றும் மருத்துவ மரபியலர், மானிட மரபியல் பகுதி</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="endosement3 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <p>“.....நான் இந்த முறையைக் குறித்த அறிவியல், நெரிமுறை, அறிக்கைகள், இறுதிப் பிரயோக சாத்தியங்கள் முதலியவற்றைப் பூரணமாகவும், நுண்ணியமாகவும் ஆராய்ந்து பார்த்தால், அது அறிவியல் பூர்வமாக திடமனதாகவும், பிரயோகிப்பதில் ஆரோக்கியமானதாகவும் இருப்பதாகக் காண்கிறோம். உயிரியல் அமைப்பகளில் இயற்கையாக இருக்கக்கூடிய பெரும் மாறுபாடுகளைக் கருத்தில் கொண்டு, உயிரியல் மற்றும் மனித இனவியல் விவரங்களை ஆய்வு செய்யும் போது ஏற்படக்கூடிய முரண்பாடுகளை கூடிய அளவு குறைப்பதற்கான எல்லா செயல்பாடுகளும் கண்டுபிடிப்பாளரால் முடிந்த அளவு கடைப்பிடிக்கப்பட்டுள்ளன.... இந்த முறை சமையத்திற் கேற்றதும், பொருத்தமுமானதாயிருக்கிறது. விளையாட்டுக் கட்டவிழ்ப்பு முறை, அவர்களுக்கு பொருத்தமான விளையாட்டுகளில் பெரும் சாதனைகள் புரிபவர்களாக விளங்குவதற்கு வழிநடத்தப்படக்கூடிய இளம் பிள்ளைகளை அடையாளம் காண்பதில் ஒரு கருவியாக செயல்படும் என்று நான் நம்புகின்றேன்.”</p>
+                                <div class="row">
+                                    <div class="col-md-3"><img src="../static/images/Endorsement/Dr-Nishantha-Gunasekera.jpg"></div>
+                                    <div class="col-md-7 right-pane">
+                                        <p><b>Dr. நிவுன்த குணசேகர</b></p>
+                                        <p>ஆலோசகர் நரம்பியல் அறுவை சிகிச்சை மருத்துவர் நிபுணத்துவம்: முதுகெழும்புக் காயங்கள் மற்றும் உயிரணு சிகிச்சை</p>
+                                        <p><a href="http://www.neurosurgerysl.com/">www.neurosurgerysl.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="endosement4 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <p>“ஒவ்வொரு முறையும் சரியான முடிவுகளைத் தெரிவிக்கும் விளையாட்டுக் கட்டவிழ்ப்பு திறமை அடையாளம் காணும் முறையின் திறமையைக் கண்டு நான் வியப்படைகிறேன்......... வளர்ந்து வரும் நாடுகளிலுள்ள அநேகமான பெற்றோர்கள் தங்கள் 9 - 11 வயதுடைய பிள்ளைகளை விளையாட்டுக் கட்டவிழ்ப்பு முறையின் மூலம் அவர்களுக்குப் பொருத்தமான விளையாட்டு என்னவென்று பரிசோதிக்கப் பண்ணுவார்களானால், கூடிய விரைவிலேயே உலகின் வளர்ச்சியடைந்த நாடுகளின் விளையாட்டு பலத்துக்கு ஈடாக வளர்ந்து வரும் நாடுகளும் வந்துவிடும்.”</p>
+                                <div class="row">
+                                    <div class="col-md-3"><img src="../static/images/Endorsement/dav-whatmore.jpg"></div>
+                                    <div class="col-md-7 right-pane">
+                                        <p><b>டேவ் வொட்மோர்</b></p>
+                                        <p>முந்தைய அவுஸ்திரேலிய கிரிகெட் வீரர் உலகக் கின்னம் வெற்றிபெற்ற கிரிகெட் அணியின் பயிற்சியாளர் சாதாண கிரிகெட் அறிவை பெரும் அறிவாக மாற்றக்கூடிய பயிற்சியாளர்</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="endosement5 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <p>“எந்த ஒரு விளையாட்டிலும் சிறந்து விளங்குவதற்கு அந்த குறிப்பிட்ட விளையாட்டின் தேவைக்கேட்ப ஒரு ஆண், பெண்ணின் உடலையும், திறமையையும் பழக்குவிப்பது அவசியமாகும். விளையாட்டில் முன்னேறிச் செல்வதற்கு அதிக பணம், விளையாட்டுச் சாதனங்கள், இடவசதிகள், பயிற்சியாளர்கள் போன்ற அநேக தேவைகளை சந்திக்க வேண்டி யிருக்கும்,  இந்த காலத்தில், ஒரு ஆண், பெண் பிள்ளை எந்த விளையாட்டிற்கு அதிக தகுதியானவர் என்பதை பெற்றோரும், விளையாட்டு நிறுவனம் அல்லது நாடும் முன்கூட்டியே அறிந்து கொள்வது திறமையான விளையாட்டு வீரர்களை உற்பத்தி செய்வதற்கான மிக முக்கிய தேவையாய் இன்று இருக்கிறது.</p>
+                                <p>இங்கே தான் sportunleash உருவாகியிருக்கும் திறமையை அடையாளம் காணும் முறை மிகவும் பயனுள்ளதாய் அமைகிறது. உடல் ரீதியான செயல்திறன் அளவீட்டை ஒரு தனித்தன்மை வாய்ந்த வழிமுறையுடன் இணைந்து ஒரு குறிப்பிட்ட விளையாட்டில் முன்னேற ஒருவருக்கிருக்கக்கூடிய ஆர்வத்துடன் பொருந்தும் விதத்தில் சிறு பிராயத்திலேயே திறமையை அடையாளம் காணும் இந்த முறை ஒரு தனித் தன்மை வாய்ந்த புதுமையானதொரு கண்டுபிடிப்பாயிருக்கிறது.”</p>
+                                <div class="row">
+                                    <div class="col-md-3"><img src="../static/images/Endorsement/Major-General-Dr-C-Thurairaja.jpg"></div>
+                                    <div class="col-md-7 right-pane">
+                                        <p><b>மேஜர் ஜெனரல் Dr.C. துரைராஜா</b></p>
+                                        <p>ஆலோசகர் விளையாட்டு மருத்துவம் மற்றும் கதிரியக்க மருத்துவம்</p>
+                                        <p>தலைவர், ஆசிய விளையாட்டு மருத்துவ கூட்டமைப்பு</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="endosement6 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <p>“A predictive test is exactly what is needed for the long term development of sports. It is not enough to tell children to do a sport, but the knowledge of which sport they should pursue at an early age is invaluable for them to successfully progress.”</p>
+                                <div class="row">
+                                    <div class="col-md-3"><img src="../static/images/Endorsement/Arjuna-P-de-silva.jpg"></div>
+                                    <div class="col-md-7 right-pane">
+                                        <p><b>Prof. Arjuna P De Silva</b></p>
+                                        <p>MBBS, MD, MSc (Oxon), FRCP (Lond),FCCP Professor in Medicine</p>
+                                        <p>Chairman SL Anti-doping Agency</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- END OF ENDOSEMENTS CONTENTS -->
+                        <!-- DISPLAY TOP NAVIGATION / ENDOSEMENTS CONTENTS -->
+                        <div class="info_ly"></div>
+                        <!-- END OF DISPLAY TOP NAVIGATION / ENDOSEMENTS CONTENTS -->
+                       <!-- Flexslider Start -->
+                        <div class="flexslider">
+                            <!-- If there is no JS, this slide will show up -->
+
+
+
+                           <a class="non-js-slide-link" href="/" onclick="pageTracker._trackEvent('home-slide', '0', '../static/images/slides/Bigstock_5331125.jpg')" title="">
+                               <div id="no_js_slide">
+                                <div id="slide-0">
+                                    <p class="flex-caption"></em>.</p>
+                                </div>
+                            </div></a>
+
+                            <!-- end of no JS -->
+
+                            <ul class="slides">
+
+
+                               <!-- slide 1 -->
+                               <li rel="slide-1" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-1">
+                                         <a class="slide-link" href="" title="">
+                                         <img draggable="false" src="../static/images/slides/Bigstock_5331125.jpg" alt="" height="424" width="636">
+                                         </a>
+                                         <p class="flex-caption"></em></p>
+                                    </div>
+                               </li>
+
+
+                                <!-- slide 2 -->
+                              <li rel="slide-2" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-2"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/Bigstock_48988001.jpg" alt="SLIDE2" height="424" width="636"></a>
+                                        <p class="flex-caption"></p>
+                                    </div>
+                                </li>
+
+                                <!-- slide 3 -->
+                                <li rel="slide-3" class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+                                    <div id="slide-3"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/Bigstock_50260607.jpg" alt="SLIDE3" height="424" width="636"></a>
+                                        <p class="flex-caption"></p>
+                                    </div>
+                                </li>
+
+                                <!-- slide 4 -->
+                                <li rel="slide-4" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-5"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/Bigstock_50568647.jpg" alt="SLIDE4" height="424" width="636"></a>
+                                        <p class="flex-caption"></p>
+                                    </div>
+                                </li>
+                                <!-- slide 5 -->
+                                <li rel="slide-5" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-5"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/Bigstock_52963762.jpg" alt="SLIDE5" height="424" width="636"></a>
+                                        <p class="flex-caption"></p>
+                                    </div>
+                                </li>
+                                <!-- slide 6 -->
+                                <li rel="slide-6" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-6"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/Bigstock_68208271.jpg" alt="SLIDE6" height="424" width="636"></a>
+                                        <p class="flex-caption"></p>
+                                    </div>
+                                </li>
+                                <!-- slide 7 -->
+                                <li rel="slide-7" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                    <div id="slide-7"><a class="slide-link" href="" title="">
+                                        <img draggable="false" src="../static/images/slides/bigstock-Father-and-son-playing-footbal-66095608.jpg" alt="SLIDE7" height="424" width="636"></a>
+                                        <p class="flex-caption"></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        <ul class="flex-direction-nav">
+                            <li><a class="flex-prev" href="#">Previous</a></li>
+                            <li><a class="flex-next" href="#">Next</a></li>
+                        </ul>
+                        </div>
+                        <!-- Flexslider end -->
+                        <div rel="sus-cntry" class="contact-sus"><a href="#">
+                            <p>Contact</p>
+                            <p>a SportUnleash Specialist</p>
+                            <p>Today...!</p>
+                        </a></div>
+
+                        <div class="slide-1 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 1</h1></div>
+                        <div class="slide-2 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 2</h1></div>
+                        <div class="slide-3 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 3</h1></div>
+                        <div class="slide-4 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 4</h1></div>
+                        <div class="slide-5 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 5</h1></div>
+                        <div class="slide-6 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 6</h1></div>
+                        <div class="slide-7 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 7</h1></div>
+                        <!-- COUNTRY LIST OF SUS CONTACT -->
+                        <div class="sus-cntry div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <script type="text/javascript">
+                                $('.slide-content .nav-tabs li').click(function(e) {
+                                    $('.slide-content .nav-tabs li.active').removeClass('active');
+                                    var $this = $(this);
+                                    if (!$this.hasClass('active')) {
+                                        $this.addClass('active');
+                                    }
+                                    e.preventDefault();
+                                });
+                                var lastData;
+                                $(".nav-tabs li").click(function(e) {
+                                    loadData($("." + $(this).attr('rel')).html());
+                                    $(".inner-content").focus();
+                                    e.preventDefault();
+                                });
+
+                                function loadData(data) {
+                                    if(lastData == data) {
+                                        $(".inner-content").slideUp();
+                                        lastData = '';
+                                        return;
+                                    }
+                                    $(".inner-content").slideUp();
+                                    $(".inner-content").html(data);
+                                    $(".inner-content").slideDown();
+                                    lastData = data;
+                                }
+                            </script>
+                            
+                            <ul class="nav nav-tabs country-tab row" role="tablist">
+                              <li rel="africa" class="left-tab col-md-2 cntry">
+                                  <a class="" href="#">
+                                      <img class="responsive-img" src="../static/images/countries/africa_img.png">
+                                      <img class="responsive-img" src="../static/images/countries/africa.png">
+                                  </a>
+                              </li>
+                              <li rel="asia" class="col-md-2 cntry">
+                                  <a class="" href="#">
+                                      <img class="responsive-img" src="../static/images/countries/asia_img.png">
+                                      <img class="responsive-img" src="../static/images/countries/asia.png">
+                                  </a>
+                              </li>
+                              <li rel="europe" class="col-md-2 cntry">
+                                  <a class="" href="#">
+                                      <img class="responsive-img" src="../static/images/countries/europe_img.png">
+                                      <img class="responsive-img" src="../static/images/countries/europe.png">
+                                  </a>
+                              </li>
+                              <li rel="middle_east" class="col-md-2 cntry">
+                                  <a class="" href="#">
+                                      <img class="responsive-img" src="../static/images/countries/middle_east_img.png">
+                                      <img class="responsive-img" src="../static/images/countries/middle_east.png">
+                                  </a>
+                              </li>
+                              <li rel="south_america" class="col-md-2 cntry">
+                                  <a class="" href="#">
+                                      <img class="responsive-img" src="../static/images/countries/south_america_img.png">
+                                      <img class="responsive-img" src="../static/images/countries/south_america.png">
+                                  </a>
+                              </li>
+                            </ul>
+                            <div class="africa div-hide">
+                                <div class="container">
+                                    <ul>
+                                        <li class="col-md-3">Egypt</li>
+                                        <li class="col-md-3">Nigeria</li>
+                                        <li class="col-md-3">Algeria</li>
+                                        <li class="col-md-3">Morocco</li>
+                                        <li class="col-md-3">Angola</li>
+                                        <li class="col-md-3">Tunisia</li>
+                                        <li class="col-md-3">Guinea</li>
+                                        <li class="col-md-3">Sudan</li>
+                                        <li class="col-md-3">Ghana</li>
+                                        <li class="col-md-3">Cameroon</li>
+                                        <li class="col-md-3">Gabon</li>
+                                        <li class="col-md-3">Botswana</li>
+                                        <li class="col-md-3">Tanzania</li>
+                                        <li class="col-md-3">Kenya</li>
+                                        <li class="col-md-3">Ivory Coast</li>
+                                        <li class="col-md-3">Senegal</li>
+                                        <li class="col-md-3">Congo, Dem, Rep</li>
+                                        <li class="col-md-3">Zambia</li>
+                                        <li class="col-md-3">Uganda</li>
+                                        <li class="col-md-3">Benin</li>
+                                        <li class="col-md-3">Madagascar</li>
+                                        <li class="col-md-3">Burkina Faso</li>
+                                        <li class="col-md-3">Namibia</li>
+                                        <li class="col-md-3">Mali</li>
+                                        <li class="col-md-3">Equatorial Guinea</li>
+                                        <li class="col-md-3">Mauritania</li>
+                                        <li class="col-md-3">Chad</li>
+                                        <li class="col-md-3">Rwanda</li>
+                                        <li class="col-md-3">Zimbabwe</li>
+                                        <li class="col-md-3">Togo</li>
+                                        <li class="col-md-3">Malawi</li>
+                                        <li class="col-md-3">Niger</li>
+                                        <li class="col-md-3">Gambia</li>
+                                        <li class="col-md-3">The Central African Rep.</li>
+                                        <li class="col-md-3">Cape Verde</li>
+                                        <li class="col-md-3">Lesotho</li>
+                                        <li class="col-md-3">Swaziland</li>
+                                        <li class="col-md-3">Liberia</li>
+                                        <li class="col-md-3">Guinea-Bissau</li>
+                                        <li class="col-md-3">Eritrea</li>
+                                        <li class="col-md-3">Comoros</li>
+                                        <li class="col-md-3">Sao Tome and Principe</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="asia div-hide">
+                                <div class="container">
+                                    <ul>
+                                        <li class="col-md-3">China</li>
+                                        <li class="col-md-3">India</li>
+                                        <li class="col-md-3">Iran</li>
+                                        <li class="col-md-3">Indonesia</li>                                       
+                                        <li class="col-md-3">Malaysia</li>                                       
+                                        <li class="col-md-3">Thailand</li>                                       
+                                        <li class="col-md-3">Philippines</li>                                       
+                                        <li class="col-md-3">Pakistan</li>                                       
+                                        <li class="col-md-3">Kazakhstan</li>                                       
+                                        <li class="col-md-3">Vietnam</li>                                       
+                                        <li class="col-md-3">Bangladesh</li>                                       
+                                        <li class="col-md-3">Uzbekistan</li>                                       
+                                        <li class="col-md-3">Turkmenistan</li>
+                                        <li class="col-md-3">Armenia</li>
+                                        <li class="col-md-3">Mongolia</li>
+                                        <li class="col-md-3">Cambodia</li>
+                                        <li class="col-md-3">Nepal</li>
+                                        <li class="col-md-3">Lao PDR</li>
+                                        <li class="col-md-3">Tajikstan</li>
+                                        <li class="col-md-3">Kyrgyz Republic</li>
+                                        <li class="col-md-3">Bhutan</li>
+                                        <li class="col-md-3">Maldives</li>
+                                        <li class="col-md-3">Papua New Guinea</li>
+                                        <li class="col-md-3">Fiji</li>
+                                        <li class="col-md-3">Vanuatu</li>
+                                        <li class="col-md-3">Samoa</li>
+                                        <li class="col-md-3">Solomon Islands</li>
+                                        <li class="col-md-3">Sri Lanka</li>
+                                        <li class="col-md-3">Tonga</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="europe div-hide">
+                                <div class="container">
+                                    <ul>
+                                        <li class="col-md-3">...</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="middle_east div-hide">
+                                <div class="container">
+                                    <ul>
+                                        <li class="col-md-3">Syria</li>
+                                        <li class="col-md-3">Lebanon</li>
+                                        <li class="col-md-3">Azerbaijan</li>
+                                        <li class="col-md-3">Jordan</li>
+                                        <li class="col-md-3">Yemen. Rep.</li>
+                                    </ul>
+                                </div>
+                            </div>   
+                            <div class="south_america div-hide">
+                                <div class="container">
+                                    <ul>
+                                        <li class="col-md-3">Venezuela</li>
+                                        <li class="col-md-3">Colombia</li>
+                                        <li class="col-md-3">Peru</li>
+                                        <li class="col-md-3">Ecuador</li>
+                                        <li class="col-md-3">Dominican Rep.</li>
+                                        <li class="col-md-3">Panama</li>
+                                        <li class="col-md-3">Guatemala</li>
+                                        <li class="col-md-3">Bolivia</li>
+                                        <li class="col-md-3">El Salvador</li>
+                                        <li class="col-md-3">Paraguay</li>
+                                        <li class="col-md-3">Honduras</li>
+                                        <li class="col-md-3">Nicaragua</li>
+                                        <li class="col-md-3">Jamaica</li>
+                                        <li class="col-md-3">Haiti</li>
+                                        <li class="col-md-3">Suriname</li>
+                                        <li class="col-md-3">Belize</li>
+                                        <li class="col-md-3">St.Vincent/Grenadines</li>
+                                        <li class="col-md-3">Dominica</li>
+                                        <li class="col-md-3">Grenada</li>
+                                        <li class="col-md-3">St.Lucia</li>
+                                    </ul>
+                                </div>
+                            </div>                            
+                            <div class="inner-content"></div>
+                        </div>
+                        <!-- END OF COUNTRY LIST OF SUS CONTACT -->
+                        <div class="slide-content"></div>
+
+                        <div class="container con-lat-tab">
+                            <ul class="nav nav-tabs latter-tab" role="tablist">
+                              <li class="active left-tab"><a class="tab1" href="#">The Game Has<br>Changed</a></li>
+                              <li class="second-tab"><a class="tab2" href="#">The Prize Money Bigger<br>Than Ever!</a></li>
+                              <li class="third-tab"><a class="tab3" href="#">Emerging/Developing Nation<br>Changing The Game</a></li>
+                              <li class="fourth-tab"><a class="tab4" href="#">Stunted By Lack<br>Of Expertise</a></li>
+                            </ul>
+
+                            <div class="tab-content jumbotron">
+                                <div class="tab1 tab-hide active">
+                                    <h1>The Game Has Changed</h1>
+                                    <p>Today’s teenagers live in a fast paced, technologically driven world where everything is accessible at their finger tips. Smartphones, iPads, tablets and Facebook offer a plethora of entertainment making the need to get out and sweat uninviting. Today’s teenagers are more likely to pursue a sport only if they believe they have a good chance of succeeding and making it to their school team.</p>
+                                    <p>This kind of thinking is reaching epidemic levels whereby teenagers have started to lose out on the benefits sports offer. Many have difficulty working in a group, taking constructive criticism and even handling victory or defeat in their stride. When playing a sport these aspects are carefully nurtured in a controlled environment which helps to build strong character. The physical and mental health benefits lost out are too numerous to count for those children who give up doing a sport early in their school life. This loss tends to also affect their health in the long term as well.</p>
+                                    <p>It is not just about doing any sport, but choosing the appropriate sport for which each child is gifted with the appropriate physical attributes. New technology today allows us to match a child´s physical attributes with a particular set of sports. This knowledge will automatically help motivate and stimulate passion and commitment within children to continue in a sport throughout their school life and to become the best.</p>
+                                </div>
+                                <div class="tab2 tab-hide">
+                                    <h1>The Prize Money Bigger Than Ever</h1>
+                                    <p>Over the last decade we have seen an exponential growth in the income generated by sports personalities and sports franchises the world over. As a result of this phenomenon, the desire and the possibility of becoming mega rich sportspeople have begun to drive parents and children alike to dream of such achievements and participate in a sport having such a target in mind; going to great lengths to see this become a reality.</p>
+                                    <p>However, neither the parents, nor the coaches have a dependable way of predicting the sport a child is best/better suited for. It is a random game of chance where fate is left in the “hands of the gods”. Therefore, the only way forward is for them to then pursue, invest time, energy and commit resources towards such a dream for years, in the blind hope that maybe their child will one day be the next prodigy of the nation or of a wealthy super successful sports franchise.</p>
+                                </div>
+                                <div class="tab3 tab-hide">
+                                    <h1>Emerging/Developing Nations Changing The Game</h1>
+                                    <p>Sports high performance is the ability for an individual or team to compete in the world arena, and realise noteworthy achievements that are second to none. When such highly motivated and well-trained individuals compete for honours, the margin between victory and defeat is small. Such performances demand precision training and a pioneering spirit that re-invents and challenges the accepted norms for excellence.</p>
+                                    <p>Sadly however, whenever developing nations such as ours compete against champion teams from the developed world, the margin of defeat is enormous and, after decades of competing, we have become mere spectators at world events. As our economies have become wealthier however, we have invested in acquiring knowledge from coaches in the very countries that create world champions. Unfortunately, our teams’ and sportspeople’s real progress in comparison to the investments made annually is negligible.</p>
+                                </div>
+                                <div class="tab4 tab-hide">
+                                    <h1>Stunted By Lack Of Expertise</h1>
+                                    <p>Expertise to be able to identify the talent of children at any age level is rare and when this does take place, it is only along the lines of selecting the best talent out of a pool of existing sportspeople in a particular sport or event. If any type of identification of talent is being carried out, it is taking place in a few developed countries behind closed doors and even in such instances by a handful of individuals working on an individual sportsperson at a time. No mechanism or expertise is widely available to the public to test the sports talent across schools or a nation within a short period of time, by analysing their physical capabilities and matching them with all the types of sports that exist.</p>
+                                    <p>This inability to advise, guide and promote the talent of sportspeople at early ages not only stunts our sports development programs, but also hinders our country’s capabilities to uplift its competitiveness in the world arena.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div><!-- primary-column -->
+                    <div id="callout-column">
+                        <ul class="callout-actions">
+                            <li class="container" rel="endosement1">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-12 descript">
+                                            <p>“sportunleash முறை ஏற்றுக் கொள்ளப்பட்ட அறிவியலுக்கு இசைவாயும், விளையாட்டு அழுத்தத்தின் போது எப்படி உடல் சார்ந்த பண்புக் கூறுகள் தங்களை வெளிப்படுத்துகின்றன என்னும் தற்போதைய நம்பிக்கையுடன் ஒத்தும் இருப்பதாக நான் காண்கிறேன். ஒரு 9வயது பிள்ளையின் விளையாட்டுத் திறமையை, அது எந்த ஒரு பிரபல விளையாட்டிலும் ஈடுபடுவதற்கு முன்பதாகவே கண்டு பிடிக்கக் கூடியதாயிருப்பதால் விளையாட்டு கட்டவிழ்ப்பு முறை மிச்சிறந்ததாகத்தெரிகிறது......” <span class="callout-relative-bullet">&nbsp;மேலும் படிக்க</span></p>
+                                        </div>
+                                        <div class="col-md-4 descript">
+                                            <img src="../static/images/Endorsement/Dr-David-Young.jpg">
+                                        </div>
+                                        <div class="col-md-8 right-pane">
+                                            <p><b>Dr. டேவிட் யங்</b></p>
+                                            <p>மெல்பன் எலும்பியல் பிரிவு, அவுஸ்திரேலியாஎலும்பு மூட்டு அறுவை சிகிச்சை மருத்துவர் முக்கிய ஆர்வம்: விளையாட்டுக் காயங்கள், இடுப்பு மற்றும் மூட்டு அறுவைச் சிகிச்சை</p>
+                                            <p>எலும்பு முட்டு அறுவைச் சிகிச்சை அருத்துவர். அவுஸ்திரேலிய மற்றும் இலங்கை கிரிகெட் அணிகள்</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="container" rel="endosement2">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-12 descript">
+                                            <p>“'sportunleash' கருத்துக் கட்டத்திலிருந்த அதை மெய்ம்மையாக்கியிருக்கிறது. இந்த கண்டுபிடிப்பு மனித உடலின்உண்மையான ஆற்றலைத்திறந்து அதை ஒரு புதிய செயல்திறன்நிலைக்குத்தள்ளிவிடும். சாத்தியதையை இப்போது ஏற்படுத்தியிருக்கிறது....” <span class="callout-relative-bullet">&nbsp;மேலும் படிக்க</span></p>
+                                        </div>
+                                        <div class="col-md-4 descript">
+                                            <img src="../static/images/Endorsement/Prof-Rohan-Jayasekara.jpg">
+                                        </div>
+                                        <div class="col-md-8 right-pane">
+                                            <p><b>பேராசிரியர் ரொஹான் ஐயசேகர</b></p>
+                                            <p>முதல்வர் மருத்துவப் பிரிவு, கொழும்பு பல்கலைக்கழகம்</p>
+                                            <p>தலைவர் மூத்த பேராசிரியர், உடற்கூறியியல்</p>
+                                            <p>நிறுவனர் இயக்குனர் மற்றும் மருத்துவ மரபியலர், மானிட மரபியல் பகுதி</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="container" rel="endosement3">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-12 descript">
+                                            <p>'நான் இந்த முறையைக் குறித்த அறிவியல், நெரிமுறை, அறிக்கைகள், இறுதிப் பிரயோக சாத்தியங்கள் முதலியவற்றைப் பூரணமாகவும், நுண்ணியமாகவும் ஆராய்ந்து பார்த்தால், அது அறிவியல் பூர்வமாக திடமனதாகவும், பிரயோகிப்பதில் ஆரோக்கியமானதாகவும் இருப்பதாகக் காண்கிறேன்." <span class="callout-relative-bullet">&nbsp;மேலும் படிக்க</span></p>
+                                        </div>
+                                        <div class="col-md-4 descript">
+                                            <img src="../static/images/Endorsement/Dr-Nishantha-Gunasekera.jpg">
+                                        </div>
+                                        <div class="col-md-8 right-pane">
+                                        <p><b>Dr. நிவுன்த குணசேகர</b></p>
+                                        <p>ஆலோசகர் நரம்பியல் அறுவை சிகிச்சை மருத்துவர் நிபுணத்துவம்: முதுகெழும்புக் காயங்கள் மற்றும் உயிரணு சிகிச்சை</p>
+                                        <p><a href="http://www.neurosurgerysl.com/">www.neurosurgerysl.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="container" rel="endosement4">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-12 descript">
+                                            <p>'ஒவ்வொரு முறையும் சரியான முடிவுகளைத் தெரிவிக்கும் sportunleash திறமை அடையாளம் காணும் முறையின் திறமையைக் கண்டு நான் வியப்படைகிறேன்......... வளர்ந்து வரும் நாடுகளிலுள்ள அநேகமான பெற்றோர்கள் தங்கள் 9-11 வயதுடைய பிள்ளைகளை விளையாட்டுக் கட்டவிழ்ப்பு முறையின் மூலம் அவர்களுக்குப் பொருத்தமான விளையாட்டு என்னவென்று பரிசோதிக்கப் பண்ணுவார்களானால், கூடிய விரைவிலேயே உலகின் வளர்ச்சியடைந்த நாடுகளின் விளையாட்டு பலத்துக்கு ஈடாக வளர்ந்து வரும் நாடுகளும் வந்துவிடும்." <span class="callout-relative-bullet">&nbsp;மேலும் படிக்க</span></p>
+                                        </div>
+                                        <div class="col-md-4 descript">
+                                            <img src="../static/images/Endorsement/dav-whatmore.jpg">
+                                        </div>
+                                        <div class="col-md-8 right-pane">
+                                            <p><b>டேவ் வொட்மோர்</b></p>
+                                            <p>முந்தைய அவுஸ்திரேலிய கிரிகெட் வீரர் உலகக் கின்னம் வெற்றிபெற்ற கிரிகெட் அணியின் பயிற்சியாளர் சாதாண கிரிகெட் அறிவை பெரும் அறிவாக மாற்றக்கூடிய பயிற்சியாளர்</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="container" rel="endosement5">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-12 descript">
+                                            <p>“இங்கே தான் sportunleash உருவாகியிருக்கும் திறமையை அடையாளம் காணும் முறை மிகவும் பயனுள்ளதாய் அமைகிறது. உடல் ரீதியான செயல்திறன் அளவீட்டை ஒரு தனித்தன்மை வாய்ந்த வழிமுறையுடன் இணைந்து ஒரு குறிப்பிட்ட விளையாட்டில் முன்னேற ஒருவருக்கிருக்கக்கூடிய ஆர்வத்துடன் பொருந்தும் விதத்தில் சிறு பிராயத்திலேயே திறமையை அடையாளம் காணும் இந்த முறை ஒரு தனித் தன்மை வாய்ந்த புதுமையானதொரு கண்டுபிடிப்பாயிருக்கிறது.” <span class="callout-relative-bullet">&nbsp;மேலும் படிக்க</span></p>
+                                        </div>
+                                        <div class="col-md-4 descript">
+                                            <img src="../static/images/Endorsement/Major-General-Dr-C-Thurairaja.jpg">
+                                        </div>
+                                        <div class="col-md-8 right-pane">
+                                            <p><b>மேஜர் ஜெனரல் Dr.C. துரைராஜா</b></p>
+                                            <p>ஆலோசகர் விளையாட்டு மருத்துவம் மற்றும் கதிரியக்க மருத்துவம்</p>
+                                            <p>தலைவர், ஆசிய விளையாட்டு மருத்துவ கூட்டமைப்பு</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="container" rel="endosement6">
+                                <div class="col-md-11 container">
+                                    <div class="row">
+                                        <div class="col-md-12 descript">
+                                            <p>““A predictive test is exactly what is needed for the long term development of sports.” <span class="callout-relative-bullet-base">&nbsp;Read More</span></p>
+                                        </div>
+                                        <div class="col-md-4 descript">
+                                            <img src="../static/images/Endorsement/Arjuna-P-de-silva.jpg">
+                                        </div>
+                                        <div class="col-md-8 right-pane">
+                                            <p><b>Prof. Arjuna P De Silva</b></p>
+                                            <p>MBBS, MD, MSc (Oxon), FRCP (Lond),FCCP Professor in Medicine</p>
+                                            <p>Chairman SL Anti-doping Agency</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- callout-column -->
+                </div> <!-- content-container -->
+            </div> <!-- end site-container -->
+        </div> <!-- end wrapper -->
+        <footer>
+            <div id="global-footer">
+                <p id="global-footer-disclaimer">
+                    SportUnleash © 2014. 
+                </p>
+            </div>
+        </footer>        
+        <script src="../static/js/site.js"></script>
+        <script src="../static/js/bootstrap.js"></script>       
+        <script src="../static/js/ga.js"></script>       
+    </body>
+</html>

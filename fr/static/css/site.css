@@ -1,0 +1,26 @@
+
+.topheader { background-image: url(../../../static/images/shared/thin-crust-bg.jpg); height: 55px; }
+
+.centerheader { color: #000000; font-weight: bold; padding: 15px 0 0 0; background-image: url("../../../static/images/shared/template/masthead-bg.gif"); }
+
+.bottomheader { background-image: url("../../../static/images/shared/template/masthead-bg.gif"); background-position: bottom; margin: 0 auto; padding-bottom: 10px; position: relative;}
+
+#primary-content .con-lat-tab .nav-tabs { border-bottom:none; margin-left: auto; margin-right: auto; background-image: url("../../../static/images/shared/nav-tab.png"); background-position: center bottom; margin: 0 auto; padding-bottom: 5px; position: relative; }
+
+
+#callout-column .callout-actions p { color: #ffffff; font-size: 12px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 7px 5px; text-align: justify; /*font-weight: bold;*/ }
+
+#callout-column .callout-actions .right-pane p b { font-size : 15px !important; }
+
+#primary-content .info_ly .right-pane p b { font-size: 19px !important; }
+#primary-content .info_ly li b { font-size: 16px !important; }
+#primary-column p { line-height: 2.0em; /*font-weight: bold;*/ }
+
+#primary-column p, #primary-column li, #primary-column table, #primary-column dl { color: #000000; /*font-weight: bold;*/ }
+.callout-relative-bullet { background-position: 38px 4px; }
+
+#primary-column .CEO p { color: #000000; font-weight: normal;  font-size: 13px; }
+#callout-column .callout-actions .descript span { margin-right: 1px; padding-right: 14px; }
+.callout-relative-bullet { background-position: 55px 4px; }
+.callout-relative-bullet-base { background-position: 66px 4px; }
+

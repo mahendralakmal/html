@@ -21,6 +21,10 @@ $(document).on('click', '.info_ly .close', function () {
     $(this).parent('div').slideUp();
 });
 
+$(document).on('click', '.slide-content .close', function () {
+    $(this).parent('div').slideUp();
+});
+
 $(document).ready(function(){
     var lastData;
 
@@ -104,7 +108,8 @@ $(document).ready(function(){
             return;
         }
         $(".slide-content").slideUp();
-        $(".slide-content").html(data);
+        $(".slide-content").html(data);        
+        $(".slide-content").addClass('jumbotron');
         $(".slide-content").slideDown();
         lastData = data;
     }
