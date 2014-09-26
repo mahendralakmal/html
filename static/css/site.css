@@ -75,8 +75,8 @@ header .centerheader .bottomheader .main-navigation .nav-bar ul li.active a { ba
 #callout-column .callout-actions .descript {padding: 0 !important;}
 #callout-column .callout-actions .descript span { margin-right: 1px; padding-right: 10px; }
 
-.callout-relative-bullet { background-image: url("../../static/images/shared/template/callout-relative-bullet.gif"); background-repeat: no-repeat; }
-.callout-relative-bullet-base { background-image: url("../../static/images/shared/template/callout-relative-bullet.gif"); background-position: 67px 4px; background-repeat: no-repeat; }
+.callout-relative-bullet { background-image: url("../../static/images/shared/template/callout-relative-bullet.gif"); background-repeat: no-repeat; color: #000000; }
+.callout-relative-bullet-base { background-image: url("../../static/images/shared/template/callout-relative-bullet.gif"); background-position: 67px 4px; background-repeat: no-repeat; color: #000000; }
 
 #callout-column{width: 370px;}
 #callout-column ul.callout-actions{width: 369px;}
@@ -168,7 +168,7 @@ header .centerheader .bottomheader .main-navigation .nav-bar ul li.active a { ba
 #primary-content .contact-sus { position: relative; margin-top: -110px; margin-bottom: 40px; margin-left: 465px; z-index: 1500; width: 170px; border-radius: 10px; border: 2px solid #ffffff; background: #003e7a; text-align: center; }
 #primary-content .contact-sus a p { color: #ffffff; font-size: 13px; font-weight: bold; padding: 0; margin: 0 -20px -6px;}
 header .select_country { border: medium none; margin: -20px -175px -1px 841px; position: relative; z-index: 100; }
-header .select_country .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 5px; color: #428bca; /*height: 25px;*/ padding: 0; width: 45%; }
+header .select_country .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 5px; color: #428bca; padding: 5px; width: 45%; }
 
 #primary-content .info_ly .sample-report img { border: 2px solid #8a8a8a; margin-bottom: 5px; margin-left: 20px; width: 92.5%; }
 #primary-column p { line-height: 2.0em; }
@@ -179,7 +179,7 @@ header .select_country .form-control { -webkit-border-radius: 0; -moz-border-rad
 #primary-content .info_ly .product-line .product p { padding: 0 0 0.5em !important; line-height: 1.0em; }
 #primary-content .info_ly .product-line img {width: 90%; margin-left: -30px; margin-bottom: 5px; border:none; }
 #primary-content .info_ly .founder img { margin-left: 0; }
-#primary-content .info_ly .founder p { margin-left: 4px; margin-right: -8px; }
+#primary-content .info_ly .founder p { margin-left: 4px; margin-right: -8px; font-size: 12px; text-align: center; }
 #primary-content .info_ly .product-line .gympioneers_logo { padding-top: 20px; }
 #primary-content .info_ly .product-line a { text-decoration: none; }
 #primary-content .slide-content { padding-top: 20px; padding-bottom: 0; display: none; }
