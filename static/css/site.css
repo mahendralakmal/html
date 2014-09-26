@@ -187,6 +187,7 @@ header .select_country .form-control { -webkit-border-radius: 0; -moz-border-rad
 #primary-content .slide-content img { width: 110%; }
 #primary-content .slide-content .close { margin-right: 15px; margin-top: -21px; }
 #primary-content .slide-content .modal-header .close { margin-top: 0; }
+#primary-content .slide-content .modal-body ol li { margin-bottom: 20px; }
 hr { border-color: silver; }
 
 .country-tab { border-bottom: none; }
