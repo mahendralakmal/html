@@ -1,3 +1,4 @@
+
 <!-- COUNTRY LIST OF SUS CONTACT -->
 <div class="sus-cntry">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -12,6 +13,13 @@
         });
         var lastData;
         $(".nav-tabs li").click(function(e) {
+            loadData($("." + $(this).attr('rel')).html());
+            $(".inner-content").focus();
+            e.preventDefault();
+        });
+
+        $(".asia li").click(function(e) {
+            $(this).parents('.inner-content').slideUp();
             loadData($("." + $(this).attr('rel')).html());
             $(".inner-content").focus();
             e.preventDefault();
@@ -140,7 +148,7 @@
                 <li class="col-md-3">Vanuatu</li>
                 <li class="col-md-3">Samoa</li>
                 <li class="col-md-3">Solomon Islands</li>
-                <li class="col-md-3">Sri Lanka</li>
+                <li class="col-md-3"><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Sri Lanka</a></li>
                 <li class="col-md-3">Tonga</li>
             </ul>
         </div>
@@ -188,7 +196,69 @@
                 <li class="col-md-3">St.Lucia</li>
             </ul>
         </div>
-    </div>                            
+    </div>                          
     <div class="inner-content"></div>
 </div>
 <!-- END OF COUNTRY LIST OF SUS CONTACT -->
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="col-lg-12 jumbotron">
+            <div class="row">
+            <ul>
+                <li class="col-md-4">
+                    <h1>Badulla</h1>
+                    <ol>
+                        <li><div>A.M.S. Priyadarshana</div><div>(+94)717328859</div></li>
+                        <li><div>R.M.N.B. Rathnayake</div><div>(+94)788479455</div></li>
+                        <li><div>G.H.W. Silva</div><div>(+94)726167604/515671660</div></li>
+                    </ol>
+                </li>
+                <li class="col-md-4">
+                    <h1>Colombo</h1>                            
+                    <ol>                                
+                        <li><div>S.P. Ariyarathne</div><div>(+94)7255702002/771853964</div></li>
+                        <li><div>J.A.L. Kumara</div><div>(+94)775353476</div></li>
+                        <li><div>M.M.M.H. Muis</div><div>(+94)725975739</div></li>
+                        <li><div>R.N. Nandasiri</div><div>(+94)728021866</div></li>
+                        <li><div>K.U.C. Perera</div><div>(+94)715567419</div></li>
+                        <li><div>W.D.I. Priyadarshana</div><div>(+94)718713058</div></li>
+                        <li><div>A.S. Saman</div><div>(+94)714647205</div></li>
+                    </ol>
+                </li>
+                <li class="col-md-4">
+                    <h1>Galle</h1>                            
+                    <ol>
+                        <li><div>A. Hewawitharana</div><div>(+94)771035348</div></li>
+                    </ol>
+                </li>
+                <li class="col-md-4">
+                    <h1>Gampaha</h1>                            
+                    <ol>
+                        <li><div>K.D.P. Kumara</div><div>(+94)772858798</div></li>
+                        <li><div>G.L.N.N. Prabhath</div><div>(+94)115245930</div></li>
+                    </ol>
+                </li>
+                <li class="col-md-4">
+                    <h1>Kandy</h1>                            
+                    <ol>
+                        <li><div>N.N. Dhananjaya</div><div>(+94)777889520</div></li>
+                        <li><div>J.A.R. Jayakody</div><div>(+94)772307541</div></li>
+                    </ol>
+                </li>
+                <li class="col-md-4">
+                    <h1>Rathnapura</h1>                            
+                    <ol>
+                        <li><div>G.W.P.K.P. Pathirana</div><div>(+94)715965649</div></li>
+                        <li><div>M.M.N. Marasinghe</div><div>(+94)712480415</div></li>
+                        <li><div>M.A.D.K. Munasinghe</div><div>(+94)716553999</div></li>
+                        <li><div>W.M.N. Wickramasinghe</div><div>(+94)774226714</div></li>
+                        <li><div>M.M.K.H. Mudalige</div><div>(+94)717562323</div></li>
+                    </ol>
+                </li>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>      
