@@ -23,6 +23,7 @@ $(document).on('click', '.info_ly .close', function () {
 
 $(document).on('click', '.slide-content .close', function () {
     $(this).parent('div').slideUp();
+    // $(this).parents('div').slideUp();
 });
 
 $(document).ready(function(){
@@ -95,7 +96,12 @@ $(document).ready(function(){
         lastData = data;
     }
 
+    // $(".contact-sus").click(function(e) {
+    //     $(".slide-content").load("../includes/country-list.html");
+    // });
+
     $(".contact-sus").click(function(e) {
+        $(".slide-content").load("../includes/country-list.html");
         loadCountryData($("." + $(this).attr('rel')).html());
         $(".slide-content").focus();
         e.preventDefault();
@@ -114,6 +120,8 @@ $(document).ready(function(){
         lastData = data;
     }
 
+    
+
     $('#dynamic_select').bind('change', function () {
         var url = $(this).val(); // get selected value
             if (url) { // require a URL
@@ -124,4 +132,6 @@ $(document).ready(function(){
 
     $('#dynamic_select').addClass('form-control');
 });
+
+
 
