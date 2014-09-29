@@ -167,8 +167,8 @@ header .centerheader .bottomheader .main-navigation .nav-bar ul li.active a { ba
 
 #primary-content .contact-sus { position: relative; margin-top: -110px; margin-bottom: 40px; margin-left: 465px; z-index: 1500; width: 170px; border-radius: 10px; border: 2px solid #ffffff; background: #003e7a; text-align: center; }
 #primary-content .contact-sus a p { color: #ffffff; font-size: 13px; font-weight: bold; padding: 0; margin: 0 -20px -6px;}
-header .select_country { border: medium none; margin: -20px 15px -1px 824px; position: relative; z-index: 100; }
-header .select_country .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 5px; color: #428bca; padding: 5px; width: 100%; }
+header .select_country { border: medium none; margin: -15px 0 0 870px; position: relative; z-index: 100; }
+header .select_country .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 5px; color: #428bca; width: 130px; }
 
 #primary-content .info_ly .sample-report img { border: 2px solid #8a8a8a; margin-bottom: 5px; margin-left: 20px; width: 92.5%; }
 #primary-column p { line-height: 2.0em; }
