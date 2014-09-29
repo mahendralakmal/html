@@ -14,7 +14,7 @@
 
 #primary-content .info_ly .right-pane p b { font-size: 19px !important; }
 #primary-content .info_ly li b { font-size: 16px !important; }
-#primary-column p { line-height: 2.0em; /*font-weight: bold;*/ }
+#primary-column p { line-height: 2.0em; }
 
 #primary-column p, #primary-column li, #primary-column table, #primary-column dl { color: #000000; /*font-weight: bold;*/ }
 .callout-relative-bullet { background-position: 38px 4px; }
@@ -22,5 +22,5 @@
 #primary-column .CEO p { color: #000000; font-weight: normal;  font-size: 13px; }
 #callout-column .callout-actions .descript span { margin-right: 1px; padding-right: 14px; }
 .callout-relative-bullet { background-position: 55px 4px; }
-.callout-relative-bullet-base { background-position: 66px 4px; }
+.callout-relative-bullet-base { background-position: 85px 4px; }
 
