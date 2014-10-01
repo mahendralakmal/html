@@ -27,10 +27,10 @@ $(document).on('click', '.slide-content .close', function () {
 
 $(document).ready(function(){
     var lastData;
-
+    /******** THIS IS FOR THE NAVIGATION ********/
     $(".nav-bar li").click(function(e) {
         loadData($("." + $(this).attr('rel')).html());
-        $(".info_ly").focus();
+        $(".info_ly").focus();        
         e.preventDefault();
     });
 
@@ -94,7 +94,7 @@ $(document).ready(function(){
         $(".slide-content").slideDown();
         lastData = data;
     }
-
+    /******** THIS IS FOR THE CONTACT A SUS BANNER TO LOAD THE COUNTRY LIST ********/
     $(".contact-sus").click(function(e) {
         $(".slide-content").load("../includes/country-list.html"),1000;
         loadCountryData($("." + $(this).attr('rel')).html());
@@ -116,6 +116,7 @@ $(document).ready(function(){
         lastData = data;
     }
 
+
     $('#dynamic_select').bind('change', function () {
         var url = $(this).val(); // get selected value
             if (url) { // require a URL
@@ -125,6 +126,29 @@ $(document).ready(function(){
     });
 
     $('#dynamic_select').addClass('form-control');
+});
+
+
+
+$(document).ready(function(){
+    $('.form-horizontal').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            name: {
+                message: 'The name is required',
+                validators: {
+                    notEmpty: {
+                        message: 'The name is required and cannot be empty'
+                    }
+                }
+            }
+        }
+    });
 });
 
 
