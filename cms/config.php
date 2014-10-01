@@ -1,6 +1,6 @@
 <?php
 $Title="SportUnleash";
-$base="localhost/cms";
+$base="localhost/cms/cms_admin/image_adder";
 $basemain="localhost/cms/cms_admin";
 $dbname="sportunleash";
 $dbuser="root";
