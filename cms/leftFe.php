@@ -12,7 +12,7 @@
         while($row=mysql_fetch_array($result)) {                                                                                            
         if($row['id'] != 1) {?>
 
-        <!-- <div id="Feature">
+        <div id="Feature">
             <?php
             $id =$row['id'];
             $sql3 = "SELECT * from contents where id='{$id}'";
@@ -42,7 +42,7 @@
         $sql3 = "SELECT * from contents where id='{$id}'";
         $result3= mysql_query($sql3);
         $row3 = mysql_fetch_array($result3);
-        ?> -->
+        ?>
 
         <div id="FeatureB" class="Jumbotron">
             <?php
@@ -53,8 +53,8 @@
             $row31 = mysql_fetch_array($result31);
             ?><a href="subpage.php?id=%3C?php%20echo%20$row['Heading'];?%3E">
             <h1><?php echo $row31['title'];?></h1></a>
-
-            <div id="img"><img src="$row['Image'];" style=
+            <p><?=$row['Image'];?></p>
+            <div id="img"><img src=<?=$base.$row['Image'];?> style=
             "width:200px;height:180px;float:left;margin:5px;"></div>
 
 
