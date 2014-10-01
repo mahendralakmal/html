@@ -1,0 +1,4 @@
+<?php
+$current_file_name = basename($_SERVER['REQUEST_URI'], ".php"); /* supposing filetype .php*/
+echo $current_file_name;
+?>

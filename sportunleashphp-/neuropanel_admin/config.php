@@ -1,0 +1,9 @@
+<?php
+$Title="SportUnleash";
+$base="/sportunleash/neuropanel_admin";
+$basemain="localhost/sportunleash/";
+$dbname="sportunleash";
+$dbuser="root";
+$dbpass="p3roo7";
+$dbhost="localhost";  
+?>
