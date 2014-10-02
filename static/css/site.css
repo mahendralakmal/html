@@ -191,7 +191,7 @@ header .select_country .form-control { -webkit-border-radius: 0; -moz-border-rad
 #primary-content .slide-content .modal-body ul li { margin-bottom: 20px; padding: 0; margin-left: -5px; }
 #primary-content .slide-content .modal-body ul li ul li{ margin-bottom: 0;}
 #primary-content .slide-content .modal-body ul li div { padding: 0; font-size: 11px; }
-#primary-content .slide-content .sus-cntry .inner-content ul li a { font-weight: bold; font-size: 14px; }
+#primary-content .slide-content .sus-cntry .inner-content ul li a { font-weight: bold; font-size: 13px; }
 hr { border-color: silver; }
 
 .country-tab { border-bottom: none; }

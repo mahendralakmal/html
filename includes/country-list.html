@@ -33,8 +33,20 @@
             }
             $(".inner-content").slideUp();
             $(".inner-content").html(data);
+            $(".inner-content ul").addClass('sort');
+            sortContent();
             $(".inner-content").slideDown();
             lastData = data;
+        }
+
+        function sortContent() {
+            var listitems = $('ul.sort').children('li').get();
+                listitems.sort(function(a, b) {
+                    var compA = $(a).text().toUpperCase();
+                    var compB = $(b).text().toUpperCase();
+                return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+                })
+            $.each(listitems, function(idx, itm) { $('ul.sort').append(itm); });
         }
     </script>
     
@@ -156,7 +168,19 @@
     <div class="europe div-hide">
         <div class="container">
             <ul>
-                <li class="col-md-3">...</li>
+                <li class="col-md-3">Ukraine</li>
+                <li class="col-md-3">Romania</li>
+                <li class="col-md-3">Belarus</li>
+                <li class="col-md-3">Bulgaria</li>
+                <li class="col-md-3">Lithuania</li>
+                <li class="col-md-3">Latvia</li>
+                <li class="col-md-3">Albania</li>
+                <li class="col-md-3">Georgia</li>
+                <li class="col-md-3">Moldova</li>
+                <li class="col-md-3">Macedonia</li>
+                <li class="col-md-3">Italy</li>
+                <li class="col-md-3">Israel</li>
+                <li class="col-md-3">Spain</li>
             </ul>
         </div>
     </div>
@@ -175,6 +199,7 @@
         <div class="container">
             <ul>
                 <li class="col-md-3">Venezuela</li>
+                <li class="col-md-3">Canada</li>
                 <li class="col-md-3">Colombia</li>
                 <li class="col-md-3">Peru</li>
                 <li class="col-md-3">Ecuador</li>
@@ -194,6 +219,7 @@
                 <li class="col-md-3">Dominica</li>
                 <li class="col-md-3">Grenada</li>
                 <li class="col-md-3">St.Lucia</li>
+                <li class="col-md-3">Brazil</li>
             </ul>
         </div>
     </div>                          
