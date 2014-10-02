@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!$_SESSION['Liken']) {
-header("location:/sportunleashphp/neuropanel_admin/Login.php");
+header("location:/cms/cms_admin/Login.php");
 // header("location:localhost/sportunleash/Neur/neuropanel_admin/Login.php");
 }
 ?>

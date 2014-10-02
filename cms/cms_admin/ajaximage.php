@@ -77,6 +77,6 @@ $dpack = array(
 $true = $insert->update($dpack,"feature",$where);
 echo $Heading;
 
-header("location:/sportunleashphp/neuropanel_admin/");
+header("location:/cms/cms_admin/");
 
 ?>

@@ -3,7 +3,7 @@ $(document).ready(function() {
   $(".ipic").click(function() {
     var url = $(this).attr('src');
     var TheTextBox = document.getElementById("url");
-	var base ="http://www.neurosurgerysl.com/neuropanel_admin/";
+	var base ="/cms_admin/";
     TheTextBox.value =base + url;
     
 

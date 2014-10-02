@@ -33,7 +33,7 @@ $_FILES["file"]["name"] = $dum . $_FILES["file"]["name"];
       move_uploaded_file($_FILES["file"]["tmp_name"],$fpath);
      /* echo "Stored in: " . $dir ."/". $_FILES["file"]["name"];
 echo "<br>".$fpath;*/
-  header('Location:http://www.neurosurgerysl.com/neuropanel_admin/imageup.php');
+  header('Location:/cms_admin/imageup.php');
 
       }
     }

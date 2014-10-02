@@ -165,7 +165,7 @@ header .centerheader .bottomheader .main-navigation .nav-bar ul li.active a { ba
 #primary-content .info_ly .right-pane p {text-align:left; padding: 0 0 0 30px !important;}
 #primary-content .info_ly .right-pane p a {padding: 0 !important;}
 
-#primary-content .contact-sus { position: relative; margin-top: -110px; margin-bottom: 40px; margin-left: 465px; z-index: 1500; width: 170px; border-radius: 10px; border: 2px solid #ffffff; background: #003e7a; text-align: center; }
+#primary-content .contact-sus { position: relative; margin-top: -110px; margin-bottom: 40px; margin-left: 465px; z-index: 1000; width: 170px; border-radius: 10px; border: 2px solid #ffffff; background: #003e7a; text-align: center; }
 #primary-content .contact-sus a p { color: #ffffff; font-size: 13px; font-weight: bold; padding: 0; margin: 0 -20px -6px;}
 header .select_country { border: medium none; margin: -15px 0 0 870px; position: relative; z-index: 100; }
 header .select_country .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 5px; color: #428bca; width: 130px; }
@@ -187,7 +187,11 @@ header .select_country .form-control { -webkit-border-radius: 0; -moz-border-rad
 #primary-content .slide-content img { width: 110%; }
 #primary-content .slide-content .close { margin-right: 15px; margin-top: -21px; }
 #primary-content .slide-content .modal-header .close { margin-top: 0; }
-#primary-content .slide-content .modal-body ol li { margin-bottom: 20px; }
+/*#primary-content .slide-content .modal-body ul li { margin-bottom: 20px; }*/
+#primary-content .slide-content .modal-body ul li { margin-bottom: 20px; padding: 0; margin-left: -5px; }
+#primary-content .slide-content .modal-body ul li ul li{ margin-bottom: 0;}
+#primary-content .slide-content .modal-body ul li div { padding: 0; font-size: 11px; }
+#primary-content .slide-content .sus-cntry .inner-content ul li a { font-weight: bold; font-size: 14px; }
 hr { border-color: silver; }
 
 .country-tab { border-bottom: none; }
@@ -203,6 +207,7 @@ hr { border-color: silver; }
 
 #primary-content .inner-content { margin-bottom: 30px; }
 #primary-content .inner-content .close { margin-right: 13px; }
+/*#primary-content .inner-content {  }*/
 
 #primary-column h1 { color: #428bca; font-size: 24px; }
 #primary-column h2 { color: #428bca; font-size: 17px; }

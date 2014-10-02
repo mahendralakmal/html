@@ -1,4 +1,4 @@
 <?php
 
-header("location:localhost/sportunleash/index.php");
+header("location:localhost/cms/index.php");
 ?>
