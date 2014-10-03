@@ -22,6 +22,7 @@ $(document).on('click', '.info_ly .close', function () {
 });
 
 $(document).on('click', '.slide-content .close', function () {
+    $(this).children('.inner-content').slideUp();
     $(this).parents('.slide-content').slideUp();
 });
 
@@ -104,11 +105,6 @@ $(document).ready(function(){
     });
 
     function loadCountryData(data) {
-        if(lastData == data) {
-            $(".slide-content").slideUp();
-            lastData = '';
-            return;
-        }
         $(".slide-content").slideUp();
         $(".slide-content").html(data);        
         $(".slide-content").addClass('jumbotron');
@@ -130,26 +126,26 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-    $('.form-horizontal').bootstrapValidator({
-        message: 'This value is not valid',
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            name: {
-                message: 'The name is required',
-                validators: {
-                    notEmpty: {
-                        message: 'The name is required and cannot be empty'
-                    }
-                }
-            }
-        }
-    });
-});
+// $(document).ready(function(){
+//     $('.form-horizontal').bootstrapValidator({
+//         message: 'This value is not valid',
+//         feedbackIcons: {
+//             valid: 'glyphicon glyphicon-ok',
+//             invalid: 'glyphicon glyphicon-remove',
+//             validating: 'glyphicon glyphicon-refresh'
+//         },
+//         fields: {
+//             name: {
+//                 message: 'The name is required',
+//                 validators: {
+//                     notEmpty: {
+//                         message: 'The name is required and cannot be empty'
+//                     }
+//                 }
+//             }
+//         }
+//     });
+// });
 
 
 

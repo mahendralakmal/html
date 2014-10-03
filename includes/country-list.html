@@ -1,7 +1,8 @@
 
 <!-- COUNTRY LIST OF SUS CONTACT -->
+
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 <div class="sus-cntry">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <script type="text/javascript">
         $('.slide-content .nav-tabs li').click(function(e) {
             $('.slide-content .nav-tabs li.active').removeClass('active');
@@ -12,7 +13,7 @@
             e.preventDefault();
         });
         var lastData;
-        $(".nav-tabs li").click(function(e) {
+        $(".country-tab li").click(function(e) {
             loadData($("." + $(this).attr('rel')).html());
             $(".inner-content").focus();
             e.preventDefault();
@@ -26,11 +27,6 @@
         });
 
         function loadData(data) {
-            if(lastData == data) {
-                $(".inner-content").slideUp();
-                lastData = '';
-                return;
-            }
             $(".inner-content").slideUp();
             $(".inner-content").html(data);
             $(".inner-content ul").addClass('sort');

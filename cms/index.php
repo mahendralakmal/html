@@ -38,6 +38,7 @@ include("db.class.php");?>
     <link rel="icon" type="image/ico" href="../../favicon.png">
 
     <link href="../static/css/site.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/site.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
 	<?php include("header.php");?>		
