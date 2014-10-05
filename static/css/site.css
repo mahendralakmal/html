@@ -54,7 +54,6 @@ header .centerheader .bottomheader .main-navigation .nav-bar ul li.active a { ba
 #primary-content .con-lat-tab .nav-tabs > li { float: none !important; display: inline-block; margin-bottom: 0; margin-left: -2px; margin-right: -1px; }
 #primary-content .con-lat-tab .nav-tabs { text-align: center; }
 
-
 .div-hide{ display: none; }
 
 .tab-content { text-align: justify; }
@@ -166,7 +165,7 @@ header .centerheader .bottomheader .main-navigation .nav-bar ul li.active a { ba
 #primary-content .info_ly .right-pane p a {padding: 0 !important;}
 
 #primary-content .contact-sus { position: relative; margin-top: -110px; margin-bottom: 40px; margin-left: 465px; z-index: 1000; width: 170px; border-radius: 10px; border: 2px solid #ffffff; background: #003e7a; text-align: center; }
-#primary-content .contact-sus a p { color: #ffffff; font-size: 13px; font-weight: bold; padding: 0; margin: 0 -20px -6px;}
+#primary-content .contact-sus a p { color: #ffffff; font-size: 13px; font-weight: bold; padding: 0 0 0.5em !important; margin: 0 0 -6px;}
 header .select_country { border: medium none; margin: -15px 0 0 870px; position: relative; z-index: 100; }
 header .select_country .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 5px; color: #428bca; width: 130px; }
 
