@@ -1,9 +1,0 @@
-<?php
-$Title="SportUnleash";
-$base="/cms/cms_admin";
-$basemain="localhost/cms/";
-$dbname="sportunleash";
-$dbuser="root";
-$dbpass="p3roo7";
-$dbhost="localhost";  
-?>
