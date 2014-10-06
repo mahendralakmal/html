@@ -1,7 +1,8 @@
 
 <!-- COUNTRY LIST OF SUS CONTACT -->
+
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 <div class="sus-cntry">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <script type="text/javascript">
         $('.slide-content .nav-tabs li').click(function(e) {
             $('.slide-content .nav-tabs li.active').removeClass('active');
@@ -12,7 +13,7 @@
             e.preventDefault();
         });
         var lastData;
-        $(".nav-tabs li").click(function(e) {
+        $(".country-tab li").click(function(e) {
             loadData($("." + $(this).attr('rel')).html());
             $(".inner-content").focus();
             e.preventDefault();
@@ -26,15 +27,22 @@
         });
 
         function loadData(data) {
-            if(lastData == data) {
-                $(".inner-content").slideUp();
-                lastData = '';
-                return;
-            }
             $(".inner-content").slideUp();
             $(".inner-content").html(data);
+            $(".inner-content ul").addClass('sort');
+            sortContent();
             $(".inner-content").slideDown();
             lastData = data;
+        }
+
+        function sortContent() {
+            var listitems = $('ul.sort').children('li').get();
+                listitems.sort(function(a, b) {
+                    var compA = $(a).text().toUpperCase();
+                    var compB = $(b).text().toUpperCase();
+                return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+                })
+            $.each(listitems, function(idx, itm) { $('ul.sort').append(itm); });
         }
     </script>
     
@@ -156,7 +164,19 @@
     <div class="europe div-hide">
         <div class="container">
             <ul>
-                <li class="col-md-3">...</li>
+                <li class="col-md-3">Ukraine</li>
+                <li class="col-md-3">Romania</li>
+                <li class="col-md-3">Belarus</li>
+                <li class="col-md-3">Bulgaria</li>
+                <li class="col-md-3">Lithuania</li>
+                <li class="col-md-3">Latvia</li>
+                <li class="col-md-3">Albania</li>
+                <li class="col-md-3">Georgia</li>
+                <li class="col-md-3">Moldova</li>
+                <li class="col-md-3">Macedonia</li>
+                <li class="col-md-3">Italy</li>
+                <li class="col-md-3">Israel</li>
+                <li class="col-md-3">Spain</li>
             </ul>
         </div>
     </div>
@@ -175,6 +195,7 @@
         <div class="container">
             <ul>
                 <li class="col-md-3">Venezuela</li>
+                <li class="col-md-3">Canada</li>
                 <li class="col-md-3">Colombia</li>
                 <li class="col-md-3">Peru</li>
                 <li class="col-md-3">Ecuador</li>
@@ -194,6 +215,7 @@
                 <li class="col-md-3">Dominica</li>
                 <li class="col-md-3">Grenada</li>
                 <li class="col-md-3">St.Lucia</li>
+                <li class="col-md-3">Brazil</li>
             </ul>
         </div>
     </div>                          
@@ -208,54 +230,49 @@
           <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
           <h1 id="myLargeModalLabel" class="modal-title">Sri Lanka</h1>
         </div>
-        <div class="modal-body col-md-12">
-            <div class="row">
-            <ul>
-                <li class="col-md-3">
-                    <h2>Colombo</h2>                            
-                    <ol>                                
-                        <li><div>Mr. M. Hussein Sourjah</div><div>(+94)717684305</div></li>
-                        <li><div>Mr. J.A. Lasantha Kumara</div><div>(+94)717684305</div></li>
-                    </ol>
+        <div class="modal-body">
+            <ul class="row">
+                <li class="col-md-4">
+                    <h2>Colombo</h2>
+                    <ul class="container">                                
+                        <li class="row"><div class="col-md-7">1. Coach. Hussein Sourjah</div><div class="col-md-5">(+94) 717 684 305</div></li>
+                        <li class="row"><div class="col-md-7">2. Coach. Lasantha Kumara</div><div class="col-md-5">(+94) 775 353 476</div></li>
+                    </ul>
                 </li>
-                <li class="col-md-3">
-                    <h2>Galle</h2>                            
-                    <ol>
-                        <li><div>Mr. A. Hewawitharana</div><div>(+94)771035348</div></li>
-                    </ol>
+                <li class="col-md-4">
+                    <h2>Gampaha</h2>                          
+                    <ul class="container">
+                        <li class="row"><div class="col-md-7">1. Coach. Joy Perera</div><div class="col-md-5">(+94) 773 622 383</div></li>
+                    </ul>
                 </li>
-                <li class="col-md-3">
-                    <h2>Gampaha</h2>                            
-                    <ol>
-                        <li><div>Mr. Joy Perera</div><div>(+94)773622383</div></li>
-                    </ol>
+                <li class="col-md-4">
+                    <h2>Kandy</h2>
+                    <ul class="container">                                
+                        <li class="row"><div class="col-md-7">1. Coach. Nuwan Dhananjaya</div><div class="col-md-5">(+94) 777 889 520</div></li>
+                    </ul>
                 </li>
-                <li class="col-md-3">
-                    <h2>Kandy</h2>                            
-                    <ol>
-                        <li><div>Mr. N.N. Dhananjaya</div><div>(+94)777889520</div></li>
-                    </ol>
+            </ul>
+            <ul class="row">
+                <li class="col-md-4">
+                    <h2>Kurnegala</h2>                                                
+                    <ul class="container">
+                        <li class="row"><div class="col-md-7">1. Coach. Amith Nalaka</div><div class="col-md-5">(+94) 711 046 732</div></li>
+                        <li class="row"><div class="col-md-7">2. Coach. Ramya Priyadarshani</div><div class="col-md-5">(+94) 711 046 734</div></li>
+                    </ul>
                 </li>
-                <li class="col-md-3">
-                    <h2>Kurnegala</h2>                            
-                    <ol>
-                        <li><div>Mr. Amith Nalaka</div><div>(+94)711046732</div></li>
-                        <li><div>Miss. N.P. Ramya Priyadarshani</div><div>(+94)711046734</div></li>
-                    </ol>
+                <li class="col-md-4">
+                    <h2>Mathara</h2>                          
+                    <ul class="container">
+                        <li class="row"><div class="col-md-7">1. Coach. Ananda Hewavitharane</div><div class="col-md-5">(+94) 771 035 348</div></li>
+                    </ul>
                 </li>
-                <li class="col-md-3">
-                    <h2>Mathara</h2>                            
-                    <ol>
-                        <li><div>Mr. Ananda Hewavitharane</div><div>(+94)771035348</div></li>
-                    </ol>
-                </li>
-                <li class="col-md-3">
+                <li class="col-md-4">
                     <h2>Rathnapura</h2>                            
-                    <ol>
-                        <li><div>Mr. G.W.P.Kumudu Priyankara Pathirana</div><div>(+94)715965649</div></li>
-                    </ol>
+                    <ul class="container">
+                        <li class="row"><div class="col-md-7">1. Coach. Kumudu Pathirana</div><div class="col-md-5">(+94) 715 965 649</div></li>
+                    </ul>
                 </li>
-            </div>
+            </ul>
         </div>
     </div>
   </div>

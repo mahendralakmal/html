@@ -34,6 +34,7 @@
     </script>
 
     <!-- News - Google Feed script -->
+    <link rel="icon" type="image/ico" href="../favicon.png">
 
     <link href="../static/css/site.css" rel="stylesheet" type="text/css" media="all">
     <link href="static/css/site.css" rel="stylesheet" type="text/css" media="all">
@@ -125,6 +126,7 @@
                                     <li rel="div4"><a href="#">Ejemplo de Informe – Sección 1</a></li>
                                     <li rel="div5"><a href="#">Sección 2 - Temas</a></li>
                                     <li rel="div6"><a href="#">Testez votre enfant</a></li>
+                                    <li id="contact" rel="div8"><a href="#">Contact Us</a></li>
                                     <li rel="div7"><a href="#">Founder &amp; CEO</a></li>
                                 </ul>
                             </div>
@@ -272,7 +274,7 @@
                                 <h1>Founder &amp; CEO</h1>
                         		<div class="row">
                         			<div class="col-md-7">
-                    					<p>Talavou Alailima, the inventor and the architect of the SportUnleash talent identification system, pioneered the emerging world fitness industry with his chain of “Power World’ Fitness Centres (1994), “Edge” Sports Nutrition Supplements (2005), and “Lion Warrior” Sports High performance program (2008). He is a US qualified Strength Training and Sports Nutrition Consultant, educated at Franklin & Marshall College in Pennsylvania, USA and holds a Master of Sports Management degree from the IE Business School in Madrid, Spain.</p>
+                    					<p>Talavou Alailima, the inventor and the architect of the SportUnleash talent identification system, is a pioneer of the emerging world fitness industry with his chain of “Power World’ Fitness Centres (1994), “Edge” Sports Nutrition Supplements (2005), and “Lion Warrior” Sports High performance program (2008). He is a US qualified Strength Training and Sports Nutrition Consultant, educated at Franklin & Marshall College in Pennsylvania, USA and holds a Master of Sports Management degree from the IE Business School in Madrid, Spain.</p>
                         			</div>
                                     <div class="col-md-3 founder">
                                         <img src="../static/images/founder/Talavou-Alailima.jpg">
@@ -292,6 +294,26 @@
                 					</div>
                                 </div>
                                 <hr>
+                            </div>
+                            <div class="div8 div-hide">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h1>Contact Us</h1>
+                                   <h3 style="color:#FF6633;"><?php echo $_GET[msg];?></h3>
+                                                                                        
+                                <form name="enq" method="post" action="../email/contact.php" onsubmit="return validation();">
+                                <fieldset>
+                                    <div class="container">
+                                        <div class="form-group"><input type="text" name="name" id="name" value=""  class="form-control" placeholder="Name" /></div>
+                                        <div class="form-group"><input type="text" name="email" id="email" value="" class="form-control" placeholder="Email" /></div>
+                                        <div class="form-group"><textarea rows="11" name="message" id="message" class="form-control" placeholder="Enquiry"></textarea></div>
+                                        <div class="actions">
+                                            <input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-info" title="Click here to submit your message!" />
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </fieldset>
+                                </form> 
                             </div>
                         </section>
                         <!-- END OF TOP NAVIGATION CONTENTS -->

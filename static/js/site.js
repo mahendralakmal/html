@@ -22,15 +22,16 @@ $(document).on('click', '.info_ly .close', function () {
 });
 
 $(document).on('click', '.slide-content .close', function () {
+    $(this).children('.inner-content').slideUp();
     $(this).parents('.slide-content').slideUp();
 });
 
 $(document).ready(function(){
     var lastData;
-
+    /******** THIS IS FOR THE NAVIGATION ********/
     $(".nav-bar li").click(function(e) {
         loadData($("." + $(this).attr('rel')).html());
-        $(".info_ly").focus();
+        $(".info_ly").focus();        
         e.preventDefault();
     });
 
@@ -94,7 +95,7 @@ $(document).ready(function(){
         $(".slide-content").slideDown();
         lastData = data;
     }
-
+    /******** THIS IS FOR THE CONTACT A SUS BANNER TO LOAD THE COUNTRY LIST ********/
     $(".contact-sus").click(function(e) {
         $(".slide-content").load("../includes/country-list.html"),1000;
         loadCountryData($("." + $(this).attr('rel')).html());
@@ -104,17 +105,13 @@ $(document).ready(function(){
     });
 
     function loadCountryData(data) {
-        if(lastData == data) {
-            $(".slide-content").slideUp();
-            lastData = '';
-            return;
-        }
         $(".slide-content").slideUp();
         $(".slide-content").html(data);        
         $(".slide-content").addClass('jumbotron');
         $(".slide-content").slideDown();
         lastData = data;
     }
+
 
     $('#dynamic_select').bind('change', function () {
         var url = $(this).val(); // get selected value
@@ -126,6 +123,29 @@ $(document).ready(function(){
 
     $('#dynamic_select').addClass('form-control');
 });
+
+
+
+// $(document).ready(function(){
+//     $('.form-horizontal').bootstrapValidator({
+//         message: 'This value is not valid',
+//         feedbackIcons: {
+//             valid: 'glyphicon glyphicon-ok',
+//             invalid: 'glyphicon glyphicon-remove',
+//             validating: 'glyphicon glyphicon-refresh'
+//         },
+//         fields: {
+//             name: {
+//                 message: 'The name is required',
+//                 validators: {
+//                     notEmpty: {
+//                         message: 'The name is required and cannot be empty'
+//                     }
+//                 }
+//             }
+//         }
+//     });
+// });
 
 
 
