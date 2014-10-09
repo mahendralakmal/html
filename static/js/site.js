@@ -126,26 +126,7 @@ $(document).ready(function(){
 
 
 
-// $(document).ready(function(){
-//     $('.form-horizontal').bootstrapValidator({
-//         message: 'This value is not valid',
-//         feedbackIcons: {
-//             valid: 'glyphicon glyphicon-ok',
-//             invalid: 'glyphicon glyphicon-remove',
-//             validating: 'glyphicon glyphicon-refresh'
-//         },
-//         fields: {
-//             name: {
-//                 message: 'The name is required',
-//                 validators: {
-//                     notEmpty: {
-//                         message: 'The name is required and cannot be empty'
-//                     }
-//                 }
-//             }
-//         }
-//     });
-// });
+
 
 
 

@@ -9962,22 +9962,22 @@ $.widget( "ui.dialog", {
 			}
 		});
 
-		this.uiDialogTitlebarClose = $("<button></button>")
-			.button({
-				label: this.options.closeText,
-				icons: {
-					primary: "ui-icon-closethick"
-				},
-				text: false
-			})
-			.addClass("ui-dialog-titlebar-close")
-			.appendTo( this.uiDialogTitlebar );
-		this._on( this.uiDialogTitlebarClose, {
-			click: function( event ) {
-				event.preventDefault();
-				this.close( event );
-			}
-		});
+		// this.uiDialogTitlebarClose = $("<button></button>")
+		// 	.button({
+		// 		label: this.options.closeText,
+		// 		icons: {
+		// 			primary: "ui-icon-closethick"
+		// 		},
+		// 		text: false
+		// 	})
+		// 	.addClass("ui-dialog-titlebar-close")
+		// 	.appendTo( this.uiDialogTitlebar );
+		// this._on( this.uiDialogTitlebarClose, {
+		// 	click: function( event ) {
+		// 		event.preventDefault();
+		// 		this.close( event );
+		// 	}
+		// });
 
 		uiDialogTitle = $("<span>")
 			.uniqueId()

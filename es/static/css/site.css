@@ -24,3 +24,7 @@
 .callout-relative-bullet { background-position: 55px 4px; }
 .callout-relative-bullet-base { background-position: 55px 4px; }
 
+#primary-content .con-lat-tab .nav-tabs li a { font-size: 11px; padding: 5px; }
+header .centerheader .bottomheader .main-navigation .nav-bar ul li a { font-size: 10px; padding: 12px 0 6px; }
+
+#primary-content .contact-sus { width: 195px; margin-left: 440px; }

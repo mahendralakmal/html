@@ -22,5 +22,8 @@
 #primary-column .CEO p { color: #000000; font-weight: normal;  font-size: 13px; }
 #callout-column .callout-actions .descript span { margin-right: 1px; padding-right: 14px; }
 .callout-relative-bullet { background-position: 55px 4px; }
-.callout-relative-bullet-base { background-position: 66px 4px; }
+.callout-relative-bullet-base { background-position: 85px 4px; }
 
+header .centerheader .bottomheader .main-navigation .nav-bar ul li a { font-size: 10px; padding: 13px 0 6px; }
+
+#primary-content .contact-sus { width: 195px; margin-left: 440px; }
