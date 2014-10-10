@@ -14,7 +14,7 @@
 
 #primary-content .info_ly .right-pane p b { font-size: 19px !important; }
 #primary-content .info_ly li b { font-size: 16px !important; }
-#primary-column p { line-height: 2.0em; /*font-weight: bold;*/ }
+#primary-column p { line-height: 2.0em;  }
 
-#primary-column p, #primary-column li, #primary-column table, #primary-column dl { color: #000000; /*font-weight: bold;*/ }
+#primary-column p, #primary-column li, #primary-column table, #primary-column dl { color: #000000; }
 .callout-relative-bullet { background-position: 38px 4px; }
