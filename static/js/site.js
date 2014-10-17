@@ -21,9 +21,8 @@ $(document).on('click', '.info_ly .close', function () {
     $(this).parent('div').slideUp();
 });
 
-$(document).on('click', '.slide-content .close', function () {
+$(document).on('click', '.slide-content #sus-cntry', function () {
     $(this).parent('div').slideUp();
-    $(this).children('.inner-content').slideUp
 });
 
 $(document).ready(function(){
