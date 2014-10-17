@@ -19,13 +19,6 @@
             e.preventDefault();
         });
 
-        $(".asia li").click(function(e) {
-            $(this).parents('.inner-content').slideUp();
-            loadData($("." + $(this).attr('rel')).html());
-            $(".inner-content").focus();
-            e.preventDefault();
-        });
-
         function loadData(data) {
             $(".inner-content").slideUp();
             $(".inner-content").html(data);
@@ -141,7 +134,7 @@
         </div>
     </div>
     <div class="asia div-hide">
-        <div class="container">
+        <div class="container asia-paci">
             <ul>
                 <li class="col-md-4">Australia</li>
                 <li class="col-md-4">Brunei</li>
@@ -178,7 +171,7 @@
                 <li class="col-md-4">Bhutan</li> 
                 <li class="col-md-4">Bangladesh</li> 
                 <li class="col-md-4">India</li> 
-                <li class="col-md-4"><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Sri Lanka</a></li>                
+                <li class="col-md-4" rel="SL"><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">Sri Lanka</a></li>
                 <li class="col-md-4">Maldives</li> 
                 <li class="col-md-4">Pakistan</li> 
                 <li class="col-md-4">Afghanistan</li> 
@@ -319,7 +312,38 @@
                 <li class="col-md-4">Montserrat</li>
             </ul>
         </div>
-    </div>                          
+    </div>   
+<!--     <div class="SL div-hide">
+        <div class="container">
+            <ul class="row">
+                <li class="col-md-4">Ampara</li>
+                <li class="col-md-4">Anuradhapura</li>
+                <li class="col-md-4">Badulla</li>
+                <li class="col-md-4">Batticaloa</li>
+                <li class="col-md-4">Colombo</li>             
+                <li class="col-md-4">Galle</li>
+                <li class="col-md-4">Gampaha</li>
+                <li class="col-md-4">Hambantota</li>
+                <li class="col-md-4">Jaffna</li>
+                <li class="col-md-4">Kalutara</li>
+                <li class="col-md-4">Kandy</li>
+                <li class="col-md-4">Kegalle</li>
+                <li class="col-md-4">Kilinochchi</li>
+                <li class="col-md-4">Kurnegala</li>
+                <li class="col-md-4">Mannar</li>
+                <li class="col-md-4">Matale</li>
+                <li class="col-md-4">Matara</li>
+                <li class="col-md-4">Moneragala</li>
+                <li class="col-md-4">Mullaitivu</li>
+                <li class="col-md-4">Nuwara Eliya</li>
+                <li class="col-md-4">Polonnaruwa</li>
+                <li class="col-md-4">Puttalam</li>
+                <li class="col-md-4">Rathnapura</li>
+                <li class="col-md-4">Trincomalee</li>
+                <li class="col-md-4">Vavuniya</li>
+            </ul>
+        </div>
+    </div>    -->                       
     <div class="inner-content"></div>
 </div>
 <!-- END OF COUNTRY LIST OF SUS CONTACT -->
@@ -333,14 +357,47 @@
         </div>
         <div class="modal-body">
             <ul class="row">
-                <li class="col-md-4">
-                    <h2>Badulla</h2>
-                    <ul>                                
-                        <li class="row"><div class="col-md-8">Coach. Nevika Pradeep</div><div class="col-md-4">(+94) 777 453 280</div></li>
-                    </ul>
-                </li>
-                <li class="col-md-4">
-                    <h2>Colombo</h2>
+                <li class="col-md-2">Ampara</li>
+                <li class="col-md-2">Anuradhapura</li>
+                <li class="col-md-2"><a href="#" data-toggle="modal" data-target=".bdla">Badulla</a></li>
+                <li class="col-md-2">Batticaloa</li>
+                <li class="col-md-2"><a href="#" data-toggle="modal" data-target=".cmb">Colombo</a></li>             
+                <li class="col-md-2"><a href="#" data-toggle="modal" data-target=".galle">Galle</a></li>
+                <li class="col-md-2"><a href="#" data-toggle="modal" data-target=".gam5">Gampaha</a></li>
+                <li class="col-md-2">Hambantota</li>
+                <li class="col-md-2">Jaffna</li>
+                <li class="col-md-2">Kalutara</li>
+                <li class="col-md-2"><a href="#" data-toggle="modal" data-target=".kandy">Kandy</a></li>
+                <li class="col-md-2">Kegalle</li>
+                <li class="col-md-2">Kilinochchi</li>
+                <li class="col-md-2"><a href="#" data-toggle="modal" data-target=".kurnegala">Kurnegala</a></li>
+                <li class="col-md-2">Mannar</li>
+                <li class="col-md-2">Matale</li>
+                <li class="col-md-2"><a href="#" data-toggle="modal" data-target=".matara">Matara</a></li>
+                <li class="col-md-2">Moneragala</li>
+                <li class="col-md-2">Mullaitivu</li>
+                <li class="col-md-2">Nuwara Eliya</li>
+                <li class="col-md-2">Polonnaruwa</li>
+                <li class="col-md-2">Puttalam</li>
+                <li class="col-md-2"><a href="#" data-toggle="modal" data-target=".rathnapura">Rathnapura</a></li>
+                <li class="col-md-2">Trincomalee</li>
+                <li class="col-md-2">Vavuniya</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade cmb" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content col-md-12">
+        <div class="modal-header">
+          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+          <h1 id="myLargeModalLabel" class="modal-title">Sri Lanka | Colombo</h1>
+        </div>
+        <div class="modal-body">
+            <div class="row jumbotron">
+                <li class="col-md-12">
                     <ul class="container">                                
                         <li class="row"><div class="col-md-8">Coach. Hussein Sourjah(Narahempita)</div><div class="col-md-4">(+94) 717 684 305</div></li>
                         <li class="row"><div class="col-md-8">Coach. Lasantha Kumara(Kolonnawa)</div><div class="col-md-4">(+94) 775 353 476</div></li>
@@ -357,12 +414,43 @@
                         <li class="row"><div class="col-md-8">Coach. Amila Nuwarapakshe(Nugegoda)</div><div class="col-md-4">(+94) 718 294 201</div></li>
                         <li class="row"><div class="col-md-8">Coach. Nimal Nandasiri(Awissawella)</div><div class="col-md-4">(+94) 728 021 866</div></li>
                         <li class="row"><div class="col-md-8">Coach. Y.M. Pathirana(Thalwathugoda)</div><div class="col-md-4">(+94) 112 773 083</div></li>
-                        <!-- <li class="row"><div class="col-md-8">Coach. A.M. Sagarika()</div><div class="col-md-4">(+94) 724 913 997</div></li> -->
                     </ul>
                 </li>
-                <li class="col-md-4">
-                    <h2>Gampaha</h2>                          
-                    <ul class="container">
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bdla" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content col-md-12">
+        <div class="modal-header">
+          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+          <h1 id="myLargeModalLabel" class="modal-title">Sri Lanka | Badulla</h1>
+        </div>
+        <div class="modal-body">
+            <div class="row jumbotron">
+                <li class="col-md-12">
+                    <ul class="container">                                
+                        <li class="row"><div class="col-md-8">Coach. Nevika Pradeep</div><div class="col-md-4">(+94) 777 453 280</div></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade gam5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content col-md-12">
+        <div class="modal-header">
+          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+          <h1 id="myLargeModalLabel" class="modal-title">Sri Lanka | Gampaha</h1>
+        </div>
+        <div class="modal-body">
+            <div class="row jumbotron">
+                <li class="col-md-12">
+                    <ul class="container">                                
                         <li class="row"><div class="col-md-8">Coach. Joy Perera(Jaela)</div><div class="col-md-4">(+94) 773 622 383</div></li>
                         <li class="row"><div class="col-md-8">Coach. Subhash Siriwardhana(Kiribathgoda)</div><div class="col-md-4">(+94) 777 999 946</div></li>
                         <li class="row"><div class="col-md-8">Coach. Shiromi Dias</div><div class="col-md-4">(+94) 717 431 717</div></li>
@@ -371,40 +459,105 @@
                         <li class="row"><div class="col-md-8">Coach. Rohana Kusumsiri(Kalagedihena)</div><div class="col-md-4">(+94) 710 708 668</div></li>
                         <li class="row"><div class="col-md-8">Coach. Irangani Amarasinghe(Mirigama)</div><div class="col-md-4">(+94) 788 054 550</div></li>
                     </ul>
-                </li>                
-                <li class="col-md-4">
-                    <h2>Galle</h2>                          
+                </li>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade galle" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content col-md-12">
+        <div class="modal-header">
+          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+          <h1 id="myLargeModalLabel" class="modal-title">Sri Lanka | Galle</h1>
+        </div>
+        <div class="modal-body">
+            <div class="row jumbotron">
+                <li class="col-md-12">
                     <ul class="container">
                         <li class="row"><div class="col-md-8">Coach. Namal Priyashanthe</div><div class="col-md-4">(+94) 772 902 666</div></li>
                     </ul>
                 </li>
-                <li class="col-md-4">
-                    <h2>Kandy</h2>
-                    <ul class="container">                                
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade kandy" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content col-md-12">
+        <div class="modal-header">
+          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+          <h1 id="myLargeModalLabel" class="modal-title">Sri Lanka | Kandy</h1>
+        </div>
+        <div class="modal-body">
+            <div class="row jumbotron">
+                <li class="col-md-12">
+                    <ul class="container">
                         <li class="row"><div class="col-md-8">Coach. Nuwan Dhananjaya(Peradeniya)</div><div class="col-md-4">(+94) 777 889 520</div></li>
                         <li class="row"><div class="col-md-8">Coach. Chandrika Wickramarachchi(Pilimathalawa)</div><div class="col-md-4">(+94) 777 267 768</div></li>
                     </ul>
                 </li>
-                <li class="col-md-4">
-                    <h2>Kurnegala</h2>                                                
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade kurnegala" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content col-md-12">
+        <div class="modal-header">
+          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+          <h1 id="myLargeModalLabel" class="modal-title">Sri Lanka | Kurnegala</h1>
+        </div>
+        <div class="modal-body">
+            <div class="row jumbotron">
+                <li class="col-md-12">
                     <ul class="container">
                         <li class="row"><div class="col-md-8">Coach. Amith Nalaka</div><div class="col-md-4">(+94) 711 046 732</div></li>
                         <li class="row"><div class="col-md-8">Coach. Ramya Priyadarshani</div><div class="col-md-4">(+94) 711 046 734</div></li>
                     </ul>
                 </li>
-                <li class="col-md-4">
-                    <h2>Mathara</h2>                          
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade matara" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content col-md-12">
+        <div class="modal-header">
+          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+          <h1 id="myLargeModalLabel" class="modal-title">Sri Lanka | Matara</h1>
+        </div>
+        <div class="modal-body">
+            <div class="row jumbotron">
+                <li class="col-md-12">
                     <ul class="container">
                         <li class="row"><div class="col-md-8">Coach. Ananda Hewavitharane</div><div class="col-md-4">(+94) 771 035 348</div></li>
                     </ul>
                 </li>
-                <li class="col-md-4">
-                    <h2>Rathnapura</h2>                            
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade rathnapura" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content col-md-12">
+        <div class="modal-header">
+          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+          <h1 id="myLargeModalLabel" class="modal-title">Sri Lanka | Rathnapura</h1>
+        </div>
+        <div class="modal-body">
+            <div class="row jumbotron">
+                <li class="col-md-12">
                     <ul class="container">
                         <li class="row"><div class="col-md-8">Coach. Kumudu Pathirana</div><div class="col-md-4">(+94) 715 965 649</div></li>
                     </ul>
                 </li>
-            </ul>
+            </div>
         </div>
     </div>
   </div>

@@ -76,7 +76,8 @@ header .centerheader .bottomheader .main-navigation .nav-bar ul li.active a { ba
 .tab-content .tab-hide{display: none;}
 .tab-content .active{display: block; margin-top: 15px;}
 
-.jumbotron{ padding-bottom: 10px; padding-top: 10px; background-color: transparent; margin-bottom: 10px; }
+.jumbotron{ background-color: transparent; margin-bottom: 0; }
+/*.jumbotron{ padding-bottom: 10px; padding-top: 10px; background-color: transparent; margin-bottom: 10px; }*/
 
 .container .jumbotron { padding-left: 30px; padding-right: 30px; }
 #callout-column { width: 370px; float: right; margin: 5px 0 0; }
@@ -227,7 +228,7 @@ hr { border-color: silver; }
 #primary-column h1 { color: #428bca; font-size: 24px; }
 #primary-column h2 { color: #428bca; font-size: 17px; }
 
-.modal-dialog { width: 1170px; }
+.modal-dialog { /*width: 1170px;*/ width: 900px; }
 /*.modal-header { background-color: #f7f7f7; border-radius: 10px 10px 0 0; }*/
 .form-group { margin-bottom: 15px; margin-right: 50px !important; }
 .form-group label { color: #000000; font-weight: normal; padding: 0; font-size: 13px; }
@@ -309,6 +310,19 @@ html[xmlns] .slides { display: block; }
 #primary-column #primary-content p.flex-caption a:visited { color: #79CFFF; text-decoration:none; }
 #primary-column #primary-content p.flex-caption a:hover { color: #AEE2FF; text-decoration:underline; }
 .modal-body { padding: 0; }
-#primary-content .slide-content .modal-body ul li { padding-left: 0; padding-right: 0; }
+#primary-content .slide-content .modal-body ul li { padding:5px; }
+#primary-content .slide-content .modal-body ul li a { font-weight: bold; }
 #primary-content .slide-content .modal-body ul li ul li{ padding-left: 0; margin-left: -5px;}
 #primary-content .slide-content .modal-body ul li div { font-size: 11px; padding: 0; }
+
+.masthead {background-color: @brand-primary; }
+
+button.close { margin-top: -40px; }
+.modal {
+    display: none;
+    left: none;
+    overflow-x: none;
+    overflow-y: none;
+    right: none;
+
+}

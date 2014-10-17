@@ -22,8 +22,8 @@ $(document).on('click', '.info_ly .close', function () {
 });
 
 $(document).on('click', '.slide-content .close', function () {
-    $(this).children('.inner-content').slideUp();
-    $(this).parents('.slide-content').slideUp();
+    $(this).parent('div').slideUp();
+    $(this).children('.inner-content').slideUp
 });
 
 $(document).ready(function(){
