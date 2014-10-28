@@ -1,152 +1,117 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title>SportUnleash</title>
-
     <script type="text/javascript">
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-52305221-5', 'auto');
-        ga('send', 'pageview');
+    (function(a, m, i, k, l, g, n) {
+        a.GoogleAnalyticsObject = l;
+        a[l] = a[l] || function() {
+            (a[l].q = a[l].q || []).push(arguments)
+        }, a[l].l = 1 * new Date();
+        g = m.createElement(i), n = m.getElementsByTagName(i)[0];
+        g.async = 1;
+        g.src = k;
+        n.parentNode.insertBefore(g, n)
+    })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
+    ga("create", "UA-52305221-5", "auto");
+    ga("send", "pageview");
     </script>
     <link href="../static/css/bootstrap.css" rel="stylesheet" media="all">
     <link href="../static/css/bootstrap-theme.css" rel="stylesheet" media="all">
     <script type="text/javascript" src="../static/js/jquery.js"></script>
-
-    <!--[if lt IE 7]>
-    <link href="/styles/shared/global-styles-ie6.css" rel="stylesheet" type="text/css" media="screen" />
-    <![endif]-->
-    <!--[if IE 7]>
-        <link href="/styles/shared/global-styles-ie7.css" rel="stylesheet" type="text/css" media="screen" />
-    <![endif]-->
-
-    <!-- Flexslider script -->
+    <!--[if lt IE 7]><link href="/styles/shared/global-styles-ie6.css" rel="stylesheet" type="text/css" media="screen"/><![endif]-->
+    <!--[if IE 7]><link href="/styles/shared/global-styles-ie7.css" rel="stylesheet" type="text/css" media="screen"/><![endif]-->
     <script type="text/javascript" src="../static/js/jquery_002.js"></script>
     <link href="../static/css/flexslider-636.css" rel="stylesheet" type="text/css" media="screen">
     <script type="text/javascript">
-        $(window).load(function(){
-            $('.flexslider').flexslider({
-                controlsContainer: "flexSlider",
-                controlNav: true,
-                manualControls: $("flex-control-nav li")
-            });
+    $(window).load(function() {
+        $(".flexslider").flexslider({
+            controlsContainer: "flexSlider",
+            controlNav: true,
+            manualControls: $("flex-control-nav li")
         })
+    });
     </script>
-
-    <!-- News - Google Feed script -->
     <link rel="icon" type="image/ico" href="../favicon.png">
-
     <link href="../static/css/site.css" rel="stylesheet" type="text/css" media="all">
     <link href="static/css/site.css" rel="stylesheet" type="text/css" media="all">
 </head>
-    <body id="home">
-        <header>
-            <div class="topheader">
+
+<body id="home" oncontextmenu="return false;">
+    <header>
+        <div class="topheader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 logo">
+                        <a href="/" title="Sports Unleash" itemprop="url">
+                            <img itemprop="logo" src="../static/images/logo.png" alt="Sport Unleash Logo" id="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-7 mega-title">Have your child SportUnleash tested today!</div>
+                    <div class="col-md-2 right-pane sign-in"></div>
+                </div>
+            </div>
+        </div>
+        <div class="centerheader">
+            <div class="bottomheader">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2 logo">
-                            <a href="/" title="Sports Unleash" itemprop="url">
-                                <img itemprop="logo" src="../static/images/logo.png" alt="Sport Unleash Logo" id="logo">
-                            </a>
-                        </div>
-                        <div class="col-md-7 mega-title">Have your child SportUnleash tested today!</div>
-                        <div class="col-md-2 right-pane sign-in">
-                            <!-- <a href="" data-toggle="modal" data-target=".bs-example-modal-sm">Sign In Here</a> -->
-                        </div>
-                        <!-- <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-sm">
-                            <div class="modal-content">Login Login
-                            <div class="main-body-inner">
-                                <div class="container login-box">
-                                    <div class="login-main-box">
-                                        <h3>Log In.</h3> 
-                                        <form method="post" class="form-horizontal">
-                                            <input type="hidden" value="5dlgbgMnKPk4WnBisfaw4HppggGKeQsY" name="csrfmiddlewaretoken">
-                                            <fieldset>
-                                                <div class="form-group" id="div_id_username">
-                                                    <label class="control-label  requiredField" for="id_username">Username<span class="asteriskField">*</span></label>
-                                                    <div class="controls ">
-                                                        <input type="text" name="username" maxlength="254" id="id_username" class="textinput textInput form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group" id="div_id_password">
-                                                    <label class="control-label  requiredField" for="id_password">Password<span class="asteriskField">*</span></label>
-                                                    <div class="controls ">
-                                                        <input type="password" name="password" id="id_password" class="textinput textInput form-control">
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                            <div class="form-actions">
-                                                <input type="submit" id="submit-id-submit" class="btn btn-primary" value="Sign In" name="submit">
-                                                <a class="btn btn-primary" href="/hi">Cancel</a>
-                                            </div>
-                                        </form>
-                                    </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5 left-pane">The Sports Talent Identifying System</div>
+                                <div class="col-md-5 right-pane">"Unlocking your child's sport gifting today"</div>
+                            </div>
+                            <div class="col-md-12 text-center center-pane">for 9 - 11 year olds
+                                <div class="select_country">
+                                    <select name="formal" id="dynamic_select">
+                                        <option value="/">English</option>
+                                        <option value="/si/">සිංහල</option>
+                                        <option selected="True" value="/hi/">हिन्दी</option>
+                                        <option value="/ta/">தமிழ்</option>
+                                        <option value="/zh/">中國</option>
+                                        <option value="/fr/">français</option>
+                                        <option value="/es/">espagnol</option>
+                                        <option value="/he/">עברית</option>
+                                    </select>
                                 </div>
-                            </div>
-                            </div>
-                          </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div class="centerheader">
-                <div class="bottomheader">
-                    <div class="container">
-                        <div class="row">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-5 left-pane">The Sports Talent Identifying System</div>
-                                    <div class="col-md-5 right-pane">"Unlocking your child's sport gifting today"</div>
-                                </div>
-                                <div class="col-md-12 text-center center-pane">for 9 - 11 year olds
-                                    <div class="select_country">
-                                        <select name="formal" id="dynamic_select">
-                                            <option value="/">English</option>
-                                            <option value="/si/">සිංහල</option>
-                                            <option selected="True" value="/hi/">हिन्दी</option>
-                                            <option value="/ta/">தமிழ்</option>
-                                            <option value="/zh/">中國</option>
-                                            <option value="/fr/">français</option>
-                                            <option value="/es/">espagnol</option>                                            
-                                            <option value="/he/">עברית</option>
-                                        </select>
-                                    </div>
-                                </div>                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="col-xs-12 col-md-12 col-sm-12 main-navigation">
-                            <div class="nav-bar">
-                                <ul>
-                                    <li rel="div1"><a href="#">अलगोरिथम</a></li>
-                                    <li rel="div2"><a href="#">रिपोर्ट</a></li>
-                                    <li rel="div3"><a href="#">लाभ</a></li>
-                                    <li rel="div4"><a href="#">रिपोर्ट नमूना – सेक्सन 1</a></li>
-                                    <li rel="div5"><a href="#">सेक्सन 2 – विषय</a></li>
-                                    <li rel="div6"><a href="#">कदम – जांच</a></li>
-                                    <li id="contact" rel="div8"><a href="#">Contact Us</a></li>
-                                    <li rel="div7"><a href="#">Founder &amp; CEO</a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="col-xs-12 col-md-12 col-sm-12 main-navigation">
+                        <div class="nav-bar">
+                            <ul>
+                                <li rel="div1"><a href="#">अलगोरिथम</a> 
+                                </li>
+                                <li rel="div2"><a href="#">रिपोर्ट</a> 
+                                </li>
+                                <li rel="div3"><a href="#">लाभ</a> 
+                                </li>
+                                <li rel="div4"><a href="#">रिपोर्ट नमूना – सेक्सन 1</a> 
+                                </li>
+                                <li rel="div5"><a href="#">सेक्सन 2 – विषय</a> 
+                                </li>
+                                <li rel="div6"><a href="#">कदम – जांच</a> 
+                                </li>
+                                <li id="contact" rel="div8"><a href="#">Contact Us</a> 
+                                </li>
+                                <li rel="div7"><a href="#">Founder &amp; CEO</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
-        <div id="wrapper">
-            <div id="site-container">
-                <div id="content-container">
-
-                    <div id="primary-column">
-                        <div id="primary-content">
-                        <!-- TOP NAVIGATION CONTENTS -->
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="site-container">
+            <div id="content-container">
+                <div id="primary-column">
+                    <div id="primary-content">
                         <section id="nav-contents">
                             <div class="div1 div-hide">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -164,30 +129,41 @@
                                 <h1>लाभ</h1>
                                 <ol>
                                     <li>
-                                        <div><b>त्वरित कार्य-संपादन</b></div>
-                                        <div><p>जैसे-जैसेआपका बालक स्पोर्टअनलिश द्वारा सुझाए गए खेल मेंस्पर्धाकरना शुरूकरता है, आपका बालक तीव्रता सेनई ऊंचाइयों को छूते हुए अपने समकालीन बालको के बीच एक सर्वोत्तम प्रतियोगी के रूप में उभरकर आना शुरूकर देगा।</p></div>
+                                        <div><b>त्वरित कार्य-संपादन</b> 
+                                        </div>
+                                        <div>
+                                            <p>जैसे-जैसेआपका बालक स्पोर्टअनलिश द्वारा सुझाए गए खेल मेंस्पर्धाकरना शुरूकरता है, आपका बालक तीव्रता सेनई ऊंचाइयों को छूते हुए अपने समकालीन बालको के बीच एक सर्वोत्तम प्रतियोगी के रूप में उभरकर आना शुरूकर देगा।</p>
+                                        </div>
                                     </li>
                                     <li>
-                                        <div><b>सही रवैयेका निर्माण</b></div>
-                                        <div><p>उस खेल मेंस्पर्धा करना जिसमेंआपका बालक कुदरती रूप सेसफलताकी संभावना रखता हो, जो उसको अधिक प्रशिक्षण केलिए प्रेरित कर सर्वोच्च स्थान तक लेजासके। इस प्रकार, प्रेरित करने या फिर अपने कार्य के प्रति समर्पित रहने केलिए उसेकमसेकम अभिभावकीय उपदेशोंकी जरूरत पड़ेगी।</p></div>
+                                        <div><b>सही रवैयेका निर्माण</b> 
+                                        </div>
+                                        <div>
+                                            <p>उस खेल मेंस्पर्धा करना जिसमेंआपका बालक कुदरती रूप सेसफलताकी संभावना रखता हो, जो उसको अधिक प्रशिक्षण केलिए प्रेरित कर सर्वोच्च स्थान तक लेजासके। इस प्रकार, प्रेरित करने या फिर अपने कार्य के प्रति समर्पित रहने केलिए उसेकमसेकम अभिभावकीय उपदेशोंकी जरूरत पड़ेगी।</p>
+                                        </div>
                                     </li>
                                     <li>
-                                        <div><b>निराशा सेदूर रखना</b></div>
-                                        <div><p>सामान्यतः, बालक की किशोरावस्था में प्रतिभा की पहचान हो जाती है।दुर्भाग्य सेइस समय तक, असफलता के कारण बहुत लोग रुचि खो देतेहै, और बहुत कम उत्सुकबालको केपास, स्कूल में, अपनेकौशल को निखारनेकेलिए बहुत कम साल बचेरह पातेहै। इसप्रकार, उनका संभावित सफल स्पोर्टिंग कैरियर काफी छोटा रह जाता है। स्पोर्टअनलिश रिपोर्टआपको अग्रिम सूचना प्रदान करतेहुए होनेवाली सामान्य निराशाओंसेआपको बचाती है।</p></div>
+                                        <div><b>निराशा सेदूर रखना</b> 
+                                        </div>
+                                        <div>
+                                            <p>सामान्यतः, बालक की किशोरावस्था में प्रतिभा की पहचान हो जाती है।दुर्भाग्य सेइस समय तक, असफलता के कारण बहुत लोग रुचि खो देतेहै, और बहुत कम उत्सुकबालको केपास, स्कूल में, अपनेकौशल को निखारनेकेलिए बहुत कम साल बचेरह पातेहै। इसप्रकार, उनका संभावित सफल स्पोर्टिंग कैरियर काफी छोटा रह जाता है। स्पोर्टअनलिश रिपोर्टआपको अग्रिम सूचना प्रदान करतेहुए होनेवाली सामान्य निराशाओंसेआपको बचाती है।</p>
+                                        </div>
                                     </li>
                                     <li>
-                                        <div><b>खेल केसाथ व्यस्त रखना</b></div>
+                                        <div><b>खेल केसाथ व्यस्त रखना</b> 
+                                        </div>
                                         <p>बच्चेयह विचार जमा पातेहैकि वेजीत सकतेहै। अपनेकठिनपरिश्रम सेहासिल की हुई जीत का वे मजा लेनेलगतेहैकि जो उन्हेऔर अधिक परिश्रम करनेकेलिए प्रेरित करती है। दूसरी तरफ, वेटीम-कार्य केलाभ भी महसूस करनेलगतेहैऔर प्रगति केइससोपान मेंजीत और हार को पचानेकि क्षमता भी हासिल करनेलगतेहै। यह एक चरित्र विकास कीप्रक्रिया है, जिसका प्रभाव आपकेबालक पर सकारात्मक ही रहता है।</p>
                                     </li>
                                     <li>
-                                        <div><b>निवेश को उच्चतम सीमा तक बढ़ाना</b></div>
+                                        <div><b>निवेश को उच्चतम सीमा तक बढ़ाना</b> 
+                                        </div>
                                         <p>स्पोर्टअनलिश रिपोर्ट आपको यह बताता हैकि आपकेकीमती संशाधनोंको कहाँनिवेश करना ताकि आपका बालक खेल का आनंद उठातेहुए आगेबढ़ सके, और सफलता प्राप्त कर सके।</p>
                                     </li>
                                 </ol>
                             </div>
                             <div class="div4 div-hide">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h1>रिपोर्ट नमूना – सेक्सन 1</h1> 
+                                <h1>रिपोर्ट नमूना – सेक्सन 1</h1>
                                 <div class="sample-report">
                                     <img src="/static/images/Sports-Talent-Profile-Sample-Report.png">
                                 </div>
@@ -211,7 +187,7 @@
                                             <li>कितना</li>
                                             <li>आपकेबालक की जरूरत</li>
                                             <li>आहार</li>
-                                         </ul>
+                                        </ul>
                                     </li>
                                     <li>कार्बोहाइड्रेट्स: आपके बालक की जरूरत।</li>
                                     <li>पोषण ग्रहण करना:
@@ -223,8 +199,7 @@
                                             <li>सभी प्रकार केपोषण ग्रहण करने मेंभूले</li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        चोट सेबचना:
+                                    <li>चोट सेबचना:
                                         <ul>
                                             <li>प्रशिक्षण</li>
                                             <li>खेल केहिसाब सेशरीर का पुनर्गठन करना</li>
@@ -233,8 +208,7 @@
                                             <li>प्ल्याओमेट्रिक</li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        सतर्कता:
+                                    <li>सतर्कता:
                                         <ul>
                                             <li>अधिक चर्बी</li>
                                             <li>चर्बी का वजन अनुपात</li>
@@ -254,80 +228,90 @@
                                 <h1>कदम – जांच</h1>
                                 <div>
                                     <dl>
-                                        <dt>कदम 1</dt><dd>अपनेक्षेत्र केस्पोर्टअनलिश विशेषज्ञ (SUS) सेसंपर्क करें, और जांच केलिए फॉर्म कोभरे।</dd>
-                                        <dt>कदम 2</dt><dd>SUS अफ़सर आपकेबालक की जांच करनेकेलिए समय लेगा।</dd>
-                                        <dt>कदम 3</dt><dd>जब SUS अफ़सर आपकेबालक केआंकड़ेको स्पोर्टअनलिश मुख्य कार्यालय को भेजेगा तबएक संदेश आपकेदूरभाष पर प्रेषित होगा यह बतातेहुए कि हमनेआपकेबालक केजांच आंकड़ेप्राप्तकर लिए है।</dd>
-                                        <dt>कदम 4</dt><dd>जब आप यह संदेश पा लेकि हमे आपकेबालक केजांच आंकड़ेप्राप्त हो गए हैतोस्पोर्टअनलिश विशेषज्ञ को भुगतान कर दे।</dd>
-                                        <dt>कदम 5</dt><dd>स्पोर्टअनलिश विशेषज्ञ को एक बार आपका भुगतान प्राप्त हो जाता हैतब वह इस बात कीपुष्टि करेगा कि भुगतान मुख्य कार्यालय को प्राप्त हो गया हैतब आपको भुगतान की पावती एक संदेश के द्वारा फोन पर प्राप्त हो जाएगी।</dd>
-                                        <dt>कदम 6</dt><dd>कोई 7 दिनो केअंदर आपकेबालक की स्पोर्टअनलिश रिपोर्ट SUS अफ़सर को भेज दी जाएगी औरइसकी पुष्टि भी संदेश केजरिए आपको प्राप्त होगी।</dd>
-                                        <dt>कदम 7</dt><dd>SUS अफ़सर तब आपको रिपोर्ट हस्तांतरित करेगा।</dd>
-                                        <dt>कदम 8</dt><dd>एकबार आपको रिपोर्ट मिल जाए तो “yes” टाइप कर जवाब भेज दे।</dd>
+                                        <dt>कदम 1</dt>
+                                        <dd>अपनेक्षेत्र केस्पोर्टअनलिश विशेषज्ञ (SUS) सेसंपर्क करें, और जांच केलिए फॉर्म कोभरे।</dd>
+                                        <dt>कदम 2</dt>
+                                        <dd>SUS अफ़सर आपकेबालक की जांच करनेकेलिए समय लेगा।</dd>
+                                        <dt>कदम 3</dt>
+                                        <dd>जब SUS अफ़सर आपकेबालक केआंकड़ेको स्पोर्टअनलिश मुख्य कार्यालय को भेजेगा तबएक संदेश आपकेदूरभाष पर प्रेषित होगा यह बतातेहुए कि हमनेआपकेबालक केजांच आंकड़ेप्राप्तकर लिए है।</dd>
+                                        <dt>कदम 4</dt>
+                                        <dd>जब आप यह संदेश पा लेकि हमे आपकेबालक केजांच आंकड़ेप्राप्त हो गए हैतोस्पोर्टअनलिश विशेषज्ञ को भुगतान कर दे।</dd>
+                                        <dt>कदम 5</dt>
+                                        <dd>स्पोर्टअनलिश विशेषज्ञ को एक बार आपका भुगतान प्राप्त हो जाता हैतब वह इस बात कीपुष्टि करेगा कि भुगतान मुख्य कार्यालय को प्राप्त हो गया हैतब आपको भुगतान की पावती एक संदेश के द्वारा फोन पर प्राप्त हो जाएगी।</dd>
+                                        <dt>कदम 6</dt>
+                                        <dd>कोई 7 दिनो केअंदर आपकेबालक की स्पोर्टअनलिश रिपोर्ट SUS अफ़सर को भेज दी जाएगी औरइसकी पुष्टि भी संदेश केजरिए आपको प्राप्त होगी।</dd>
+                                        <dt>कदम 7</dt>
+                                        <dd>SUS अफ़सर तब आपको रिपोर्ट हस्तांतरित करेगा।</dd>
+                                        <dt>कदम 8</dt>
+                                        <dd>एकबार आपको रिपोर्ट मिल जाए तो “yes” टाइप कर जवाब भेज दे।</dd>
                                     </dl>
                                 </div>
                             </div>
                             <div class="div7 div-hide">
-                        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <h1>Founder &amp; CEO</h1>
-                        		<div class="row">
-                        			<div class="col-md-7">
-                    					<p>Talavou Alailima, the inventor and the architect of the SportUnleash talent identification system, is a pioneer of the emerging world fitness industry with his chain of “Power World’ Fitness Centres (1994), “Edge” Sports Nutrition Supplements (2005), and “Lion Warrior” Sports High performance program (2008). He is a US qualified Strength Training and Sports Nutrition Consultant, educated at Franklin & Marshall College in Pennsylvania, USA and holds a Master of Sports Management degree from the IE Business School in Madrid, Spain.</p>
-                        			</div>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p>Talavou Alailima, the inventor and the architect of the SportUnleash talent identification system, is a pioneer of the emerging world fitness industry with his chain of “Power World’ Fitness Centres (1994), “Edge” Sports Nutrition Supplements (2005), and “Lion Warrior” Sports High performance program (2008). He is a US qualified Strength Training and Sports Nutrition Consultant, educated at Franklin & Marshall College in Pennsylvania, USA and holds a Master of Sports Management degree from the IE Business School in Madrid, Spain.</p>
+                                    </div>
                                     <div class="col-md-3 founder">
                                         <img src="../static/images/founder/Talavou-Alailima.jpg">
-                                        <p><b>Talavou F. Alailima</b></p>
+                                        <p><b>Talavou F. Alailima</b> 
+                                        </p>
                                     </div>
-                        		</div>
-            					<p>During the past five years, he has contributed substantially to the “Manual of Sports Medicine” published by the Colombo Medical Faculty. He is an NCAA All American Athlete, South Asian Games Medalist, and the former national record holder for the Shot Putt and Discus events. For the past twenty years, he has been the Sports Nutrition and Strength training consultant for many national clubs, school teams and champion athletes.</p>
-            					<p>The SportUnleash Algorithm is a result of over two decades of first-hand experience in the physical attribute transformation of sportspersons, education in a wide range of sports science and performance disciplines and research in Sports high performance and Fitness.</p>
+                                </div>
+                                <p>During the past five years, he has contributed substantially to the “Manual of Sports Medicine” published by the Colombo Medical Faculty. He is an NCAA All American Athlete, South Asian Games Medalist, and the former national record holder for the Shot Putt and Discus events. For the past twenty years, he has been the Sports Nutrition and Strength training consultant for many national clubs, school teams and champion athletes.</p>
+                                <p>The SportUnleash Algorithm is a result of over two decades of first-hand experience in the physical attribute transformation of sportspersons, education in a wide range of sports science and performance disciplines and research in Sports high performance and Fitness.</p>
                                 <hr>
                                 <h1>Talavou's Pioneering Businesses</h1>
                                 <div class="product-line container col-md-12 container">
                                     <div class="row">
-                                        <div class="col-md-2 product"><a href="http://www.powerworldgyms.com/dir/" title="http://www.powerworldgyms.com/"><img class="col-md-3" src="../static/images/pwg.png"></a></div>
-
-                                        <div class="col-md-2 product"><a href="http://www.lionwarriors.com/cms/" title="http://www.lionwarriors.com/"><img class="col-md-3" src="../static/images/lion_warrior.png"><p>Sports High<br>Performance</p></a></div>
-
-                                        <div class="col-md-2 product"><a href="http://gympioneers.com/dir/" title="http://gympioneers.com/"><img class="col-md-3 gympioneers_logo" src="../static/images/gympioneers_logo.png"></a></div>
-
-                                        <div class="col-md-2 product"><a href="http://gympioneers.com/dir/" title="http://gympioneers.com/"><img class="col-md-3 gympioneers_logo" src="../static/images/PWFranchise.png"></a></div>
-
-                                        <div class="col-md-2 product"><a href="http://edgenutritioninc.com/" title="http://edgenutritioninc.com/"><img src="../static/images/edge.png"><p>Sports Nutrition</p></a></div>
+                                        <div class="col-md-2 product">
+                                            <a href="http://www.powerworldgyms.com/dir/" title="http://www.powerworldgyms.com/">
+                                                <img class="col-md-3" src="../static/images/pwg.png">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 product">
+                                            <a href="http://www.lionwarriors.com/cms/" title="http://www.lionwarriors.com/">
+                                                <img class="col-md-3" src="../static/images/lion_warrior.png">
+                                                <p>Sports High
+                                                    <br>Performance</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 product">
+                                            <a href="http://gympioneers.com/dir/" title="http://gympioneers.com/">
+                                                <img class="col-md-3 gympioneers_logo" src="../static/images/gympioneers_logo.png">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 product">
+                                            <a href="http://gympioneers.com/dir/" title="http://gympioneers.com/">
+                                                <img class="col-md-3 gympioneers_logo" src="../static/images/PWFranchise.png">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 product">
+                                            <a href="http://edgenutritioninc.com/" title="http://edgenutritioninc.com/">
+                                                <img src="../static/images/edge.png">
+                                                <p>Sports Nutrition</p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <hr>
                             </div>
-                            <div class="div8 div-hide">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h1>Contact Us</h1>                                                       
-                                <form name="enq" method="post" action="./email/contact.php" class="form-horizontal" id="enqForm">
-                                <fieldset>
-                                    <div class="container">
-                                        <div class="form-group">
-                                            <input type="text" name="name" id="name" value=""  class="form-control" placeholder="Name" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="email" id="email" value="" class="form-control" placeholder="Email" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea rows="11" name="message" id="message" class="form-control" placeholder="Enquiry" required></textarea>
-                                        </div>                                        
-                                        <button type="submit" class="btn btn-primary">Send Your Message</button>      
-                                    </div>
-                                </fieldset>
-                                </form>
-                            </div>
+                            <div class="div8 div-hide enquir"></div>
                         </section>
-                        <!-- END OF TOP NAVIGATION CONTENTS -->
-                        <!-- ENDOSEMENTS CONTENTS -->
                         <section id="endosement-contents">
                             <div class="endosement1 div-hide">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <p>““I“मै स्पोर्टअनलिश पद्धति को स्वीकार्य विज्ञान के अनुरूप और एक 9 साल के बच्चे की प्रतिभा को किसी खास स्पोर्ट के लिए पहचान पाने की क्षमता के लिए देखता हूँ, इससे पहले कि बालक को एक संगठित स्पोर्ट या गतिविधि का अवसर प्राप्त हो सके, स्पोर्टअनलिश परीक्षण प्रोग्राम एक खास स्थान रखता है””</p>
                                 <p>. …जो लोग स्पोर्टअनलिश परीक्षण करवा लेते है उनको लंबे अंतराल में कम से कम चोट लगने की संभावना रहती है क्योंकि उनका कुदरती शारीरिक मेकअप मेल खाएगा और उनके द्वारा चुने गए स्पोर्ट की शारीरिक अपेक्षाओं को सहन कर पाएगा”</p>
                                 <div class="row">
-                                    <div class="col-md-3"><img src="../static/images/Endorsement/SportUnleash-Dr-David-Young.jpg" alt="SportUnleash-Dr-David-Young"></div>
+                                    <div class="col-md-3">
+                                        <img src="../static/images/Endorsement/SportUnleash-Dr-David-Young.jpg" alt="SportUnleash-Dr-David-Young">
+                                    </div>
                                     <div class="col-md-7 right-pane">
-                                        <p><b>डा. डेविड यंग</b></p>
+                                        <p><b>डा. डेविड यंग</b> 
+                                        </p>
                                         <p>मेलबर्न ओर्थोपीडिक ग्रुप, ऑस्ट्रेलिया</p>
                                         <p>ओर्थोपीडिक सर्जन, स्पेसियल एरिया ऑफ इंटरेस्ट: स्पोर्ट्स इंजरिज, हिप एंड नी सर्जरी ओर्थोपीडिक सर्जन फॉर ध ऑस्ट्रेलियन एंड श्रीलंकन क्रिकेट टीम</p>
                                     </div>
@@ -338,9 +322,12 @@
                                 <p>"स्पोर्ट्स विज्ञान और चिकित्सीय समुदाय के क्षेत्र में काफी सालों से कम आयु में स्पोर्ट्स प्रतिभा पहचान का विचार व्यापक रूप से चर्चा में रहा है। स्पोर्टअनलिश ने वह सब समाहित किया हुआ है जो एक सिद्धान्त के रूप में था और अब उसे एक वास्तविकता बना दिया है। इस नवरचना से अब यह संभव हो पाया है कि मानव शरीर की सही संभावनाओं को खोला जाए और उसे एक नई ऊंचाइयों की तरफ ले जाया जाए।</p>
                                 <p>. …निष्कर्ष निकालने के लिए परीक्षण के बिन-आक्रमक परिवेश के कारण, और शरीर-रचना के विज्ञान के अनुरूप कि जो चार दशको तक मेरे जीवन का हिस्सा रहा है,, अपने जैसे देश के लिए स्पोर्ट्स के क्षेत्र में एक स्मरणीय प्रदर्शन का सही साधन रहा है। स्पोर्ट्स के विकास के लिए बच्चों की स्पोर्टअनलिश जांच करवाना एक राष्ट्रिय आवश्यकता है और इसलिए यह सभी बच्चों को प्राप्त होना चाहिए।"</p>
                                 <div class="row">
-                                    <div class="col-md-3"><img src="../static/images/Endorsement/SportUnleash-SportUnleash-Prof-Rohan-Jayasekara.jpg" alt="SportUnleash-SportUnleash-Prof-Rohan-Jayasekara"></div>
+                                    <div class="col-md-3">
+                                        <img src="../static/images/Endorsement/SportUnleash-SportUnleash-Prof-Rohan-Jayasekara.jpg" alt="SportUnleash-SportUnleash-Prof-Rohan-Jayasekara">
+                                    </div>
                                     <div class="col-md-7 right-pane">
-                                        <p><b>प्रो. रोहन जयसेकरा</b></p>
+                                        <p><b>प्रो. रोहन जयसेकरा</b> 
+                                        </p>
                                         <p>डीन, फेकलटी ऑफ मेडिसिन, यूनिवर्सिटी ऑफ कोलोम्बो</p>
                                         <p>चेयर एंड सीनियर प्रोफेसर इन अनाटोमी</p>
                                         <p>फाउंडर डिरेक्टर और मेडिकल जेनेटिसिस्ट, ह्यूमन जेनेटिक्स यूनिट यूनिट</p>
@@ -351,11 +338,15 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <p>“…मैंने विज्ञान, अलगोरिथम, रिपोर्ट और स्पोर्टअनलिश प्रणाली के पूरे उपयोग की संभावनाओं का सर्वांगीं तथा खास तौर से मूल्यांकन किया है... मैंने इसे वैज्ञानिक तौर पर सही और इस्तेमाल में सुदृढ़ पाया है। आविष्कारक ने जैविक प्रणाली में मूलभूत विशाल परिवर्तनशीलता के मद्दे नजर, जैविक और मानवमिति संबंधी आंकड़ो के विश्लेषण से होने वाली विसंगति को कम करने के लिए सभी संभावित प्रक्रिया को अपनाया है... यह प्रणाली समयानुसार और प्रासंगिक है। मैं यह मानता हूँ कि स्पोर्टअनलिश नवजवानों को पहचानने में सहायक रहेगी जिनको सर्वाधिक अनुकूल स्पोर्टिंग गतिविधि में महानता और संतोष हासिल करने के लिए मार्गदर्शन दिया जा सके।”</p>
                                 <div class="row">
-                                    <div class="col-md-3"><img src="../static/images/Endorsement/SportUnleash-Dr-Nishantha-Gunasekera.jpg" alt="SportUnleash-Dr-Nishantha-Gunasekera"></div>
+                                    <div class="col-md-3">
+                                        <img src="../static/images/Endorsement/SportUnleash-Dr-Nishantha-Gunasekera.jpg" alt="SportUnleash-Dr-Nishantha-Gunasekera">
+                                    </div>
                                     <div class="col-md-7 right-pane">
-                                        <p><b><b>डा . निशान्थ गुणसेकेरा</b></p>
+                                        <p><b><b>डा . निशान्थ गुणसेकेरा</b></b>
+                                        </p>
                                         <p>कंसल्टेंट न्यूरोसर्जन, स्पेसियालाइज़िंग इन ट्रौमेटिक स्पाइनल इंजरिज एंड स्टेम सेल थेरेपी।</p>
-                                        <p><a href="http://www.neurosurgerysl.com/">www.neurosurgerysl.com</a></p>
+                                        <p><a href="http://www.neurosurgerysl.com/">www.neurosurgerysl.com</a> 
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -363,9 +354,12 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <p>“प्रत्येक समय अचूक परिणाम हासिल करने के लिए, मैं स्पोर्टअनलिश की प्रतिभा पहचान प्रणाली की क्षमता से आश्चर्यचकित हूँ। ...यदि सभी अभिवावक अपने 9-11 साल के बच्चों का परीक्षण करवा ले...यह केवल समय का ही सवाल है कि जब उभरते हुए देश विकसित देशों की स्पोर्टिंग शक्ति को हासिल कर लेंगे”</p>
                                 <div class="row">
-                                    <div class="col-md-3"><img src="../static/images/Endorsement/SportUnleash-dav-whatmore.jpg" alt="SportUnleash-dav-whatmore"></div>
+                                    <div class="col-md-3">
+                                        <img src="../static/images/Endorsement/SportUnleash-dav-whatmore.jpg" alt="SportUnleash-dav-whatmore">
+                                    </div>
                                     <div class="col-md-7 right-pane">
-                                        <p><b>देव व्हाट्मोर</b></p>
+                                        <p><b>देव व्हाट्मोर</b> 
+                                        </p>
                                         <p>औस्ट्रेलियन क्रिकेटर (fmr) और एक क्रिकेट वर्ल्ड कल विनिंग कोच कि जिसके पास एक सामान्य क्रिकेटिंग टेलेंट को महान बनाने की क्षमता है।</p>
                                     </div>
                                 </div>
@@ -375,9 +369,12 @@
                                 <p>““किसी भी खेल में शुरुआती सालों से ही एक विशेष क्षमता दर्शाने के लिए एथलीट के शरीर सौष्ठव को खेल के लिए आवश्यक योग्यता से मेल कराने के लिए प्रशिक्षण की आवश्यकता रहती है। उस काल में, जब अच्छेखासे धन के निवेश, उपकरण और सुविधाओं के साथ उचित कोच और प्रशिक्षक की आवश्यकता रहती है, सही प्रतिभा विकसित करते हुए बच्चे के लिए, अभिवावक और देश के खेल संगठनो में बच्चे के विषय में कि वह किस खेल में आगे बढ़ेगा, केवल एकमात्र जरूरत रह जाती है।”</p>
                                 <p>एक खास अलगोरिथम को शारीरिक क्षमता मापन के साथ समायोजित करते हुए स्पोर्टअनलिश द्वारा दी गई यह प्रतिभा पहचान प्रणाली कम उम्र में दिशानिर्देश देने में सक्षम एक विशेष आविष्कार है कि जो एथलीट की प्रतिभा का संबन्धित स्पोर्ट से मेल करा देती है”</p>
                                 <div class="row">
-                                    <div class="col-md-3"><img src="../static/images/Endorsement/SportUnleash-Major-General-Dr-C-Thurairaja.jpg" alt="SportUnleash-Major-General-Dr-C-Thurairaja"></div>
+                                    <div class="col-md-3">
+                                        <img src="../static/images/Endorsement/SportUnleash-Major-General-Dr-C-Thurairaja.jpg" alt="SportUnleash-Major-General-Dr-C-Thurairaja">
+                                    </div>
                                     <div class="col-md-7 right-pane">
-                                        <p><b>मेजर जरनल डॉ. सी. थुराईराजा</b></p>
+                                        <p><b>मेजर जरनल डॉ. सी. थुराईराजा</b> 
+                                        </p>
                                         <p>कंसल्टेंट स्पोर्ट मेडिसिन एंड रेडिओलोजी</p>
                                         <p>प्रेसिडेंट, एसियन फेडरेसन ऑफ स्पोर्ट्स मेडिसिन</p>
                                     </div>
@@ -387,118 +384,138 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <p>“A predictive test is exactly what is needed for the long term development of sports. It is not enough to tell children to do a sport, but the knowledge of which sport they should pursue at an early age is invaluable for them to successfully progress.”</p>
                                 <div class="row">
-                                    <div class="col-md-3"><img src="../static/images/Endorsement/SportUnleash-Arjuna-P-de-silva.jpg" alt="SportUnleash-Arjuna-P-de-silva"></div>
+                                    <div class="col-md-3">
+                                        <img src="../static/images/Endorsement/SportUnleash-Arjuna-P-de-silva.jpg" alt="SportUnleash-Arjuna-P-de-silva">
+                                    </div>
                                     <div class="col-md-7 right-pane">
-                                        <p><b>Prof. Arjuna P De Silva</b></p>
+                                        <p><b>Prof. Arjuna P De Silva</b> 
+                                        </p>
                                         <p>MBBS, MD, MSc (Oxon), FRCP (Lond),FCCP Professor in Medicine</p>
                                         <p>Chairman SL Anti-doping Agency</p>
                                     </div>
                                 </div>
                             </div>
                         </section>
-                        <!-- END OF ENDOSEMENTS CONTENTS -->
-                        <!-- DISPLAY TOP NAVIGATION / ENDOSEMENTS CONTENTS -->
                         <div class="info_ly"></div>
-                        <!-- END OF DISPLAY TOP NAVIGATION / ENDOSEMENTS CONTENTS -->
-                       <!-- Flexslider Start -->
                         <div class="flexslider">
-                            <!-- If there is no JS, this slide will show up -->
-                           <a class="non-js-slide-link" href="/" onclick="pageTracker._trackEvent('home-slide', '0', '../static/images/slides/Unleash-banner-Murally-with-Son.jpg')" title="">
-                               <div id="no_js_slide">
-                                <div id="slide-0">
-                                    <!-- <p class="flex-caption"></em>.</p> -->
+                            <a class="non-js-slide-link" href="/" onclick="pageTracker._trackEvent('home-slide', '0', '../static/images/slides/Unleash-banner-Murally-with-Son.jpg')" title="">
+                                <div id="no_js_slide">
+                                    <div id="slide-0"></div>
                                 </div>
-                            </div></a>
-                            <!-- end of no JS -->
+                            </a>
                             <ul class="slides">
-                               <!-- slide 1 -->
-                               <li rel="slide-1" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                <li rel="slide-1" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1">
                                     <div id="slide-1">
-                                         <a class="slide-link" href="" title="">
-                                         <img draggable="false" src="../static/images/slides/SportUnleash-banner-Murally-with-Son.jpg" alt="SportUnleash-banner-Murally-with-Son" height="424" width="636">
-                                         </a>
-                                         <p class="flex-caption"><b>Muttiah Muralitharan</b> - The Greatest Test Cricket Bowler in History </em></p>
-                                    </div>
-                               </li>
-                                <!-- slide 2 -->
-                              <li rel="slide-2" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
-                                    <div id="slide-2"><a class="slide-link" href="" title="">
-                                        <img draggable="false" src="../static/images/slides/SportUnleash-Boy-playing-tennis.jpg" alt="SportUnleash-Boy-playing-tennis" height="424" width="636"></a>
-                                        <!-- <p class="flex-caption"></p> -->
+                                        <a class="slide-link" href="" title="">
+                                            <img draggable="false" src="../static/images/slides/SportUnleash-banner-Murally-with-Son.jpg" alt="SportUnleash-banner-Murally-with-Son" height="424" width="636">
+                                        </a>
+                                        <p class="flex-caption"><b>Muttiah Muralitharan</b> - The Greatest Test Cricket Bowler in History</p>
                                     </div>
                                 </li>
-                                <!-- slide 3 -->
-                                <li rel="slide-3" class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
-                                    <div id="slide-3"><a class="slide-link" href="" title="">
-                                        <img draggable="false" src="../static/images/slides/SportUnleash-Father-and-doughter-practis-cycling.jpg" alt="SportUnleash-Father-and-doughter-practis-cycling" height="424" width="636"></a>
-                                        <!-- <p class="flex-caption"></p> -->
+                                <li rel="slide-2" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1">
+                                    <div id="slide-2">
+                                        <a class="slide-link" href="" title="">
+                                            <img draggable="false" src="../static/images/slides/SportUnleash-Boy-playing-tennis.jpg" alt="SportUnleash-Boy-playing-tennis" height="424" width="636">
+                                        </a>
                                     </div>
                                 </li>
-                                <!-- slide 4 -->
-                                <li rel="slide-4" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
-                                    <div id="slide-5"><a class="slide-link" href="" title="">
-                                        <img draggable="false" src="../static/images/slides/SportUnleash-Father-and-son-playing-basketball.jpg" alt="SportUnleash-Father-and-son-playing-basketball" height="424" width="636"></a>
-                                        <!-- <p class="flex-caption"></p> -->
+                                <li rel="slide-3" class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2">
+                                    <div id="slide-3">
+                                        <a class="slide-link" href="" title="">
+                                            <img draggable="false" src="../static/images/slides/SportUnleash-Father-and-doughter-practis-cycling.jpg" alt="SportUnleash-Father-and-doughter-practis-cycling" height="424" width="636">
+                                        </a>
                                     </div>
                                 </li>
-                                <!-- slide 5 -->
-                                <li rel="slide-5" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
-                                    <div id="slide-5"><a class="slide-link" href="" title="">
-                                        <img draggable="false" src="../static/images/slides/SportUnleash-Father-and-son-playing-football.jpg" alt="SportUnleash-Father-and-son-playing-football" height="424" width="636"></a>
-                                        <!-- <p class="flex-caption"></p> -->
+                                <li rel="slide-4" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1">
+                                    <div id="slide-5">
+                                        <a class="slide-link" href="" title="">
+                                            <img draggable="false" src="../static/images/slides/SportUnleash-Father-and-son-playing-basketball.jpg" alt="SportUnleash-Father-and-son-playing-basketball" height="424" width="636">
+                                        </a>
                                     </div>
                                 </li>
-                                <!-- slide 6 -->
-                                <li rel="slide-6" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
-                                    <div id="slide-6"><a class="slide-link" href="" title="">
-                                        <img draggable="false" src="../static/images/slides/SportUnleash-Father-and-son-playing-golf.jpg" alt="SportUnleash-Father-and-son-playing-golf" height="424" width="636"></a>
-                                        <!-- <p class="flex-caption"></p> -->
+                                <li rel="slide-5" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1">
+                                    <div id="slide-5">
+                                        <a class="slide-link" href="" title="">
+                                            <img draggable="false" src="../static/images/slides/SportUnleash-Father-and-son-playing-football.jpg" alt="SportUnleash-Father-and-son-playing-football" height="424" width="636">
+                                        </a>
                                     </div>
                                 </li>
-                                <!-- slide 7 -->
-                                <li rel="slide-7" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
-                                    <div id="slide-7"><a class="slide-link" href="" title="">
-                                        <img draggable="false" src="../static/images/slides/SportUnleash-Father-teaching-to-son-to-row.jpg" alt="SportUnleash-Father-teaching-to-son-to-row" height="424" width="636"></a>
-                                        <!-- <p class="flex-caption"></p> -->
+                                <li rel="slide-6" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1">
+                                    <div id="slide-6">
+                                        <a class="slide-link" href="" title="">
+                                            <img draggable="false" src="../static/images/slides/SportUnleash-Father-and-son-playing-golf.jpg" alt="SportUnleash-Father-and-son-playing-golf" height="424" width="636">
+                                        </a>
                                     </div>
                                 </li>
-                                <!-- slide 8 -->
-                                <li rel="slide-8" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
-                                    <div id="slide-8"><a class="slide-link" href="" title="">
-                                        <img draggable="false" src="../static/images/slides/SportUnleash-Mother-teaches-to-doughter-to-ice-skiing.jpg" alt="SportUnleash-Mother-teaches-to-doughter-to-ice-skiing" height="424" width="636"></a>
-                                        <!-- <p class="flex-caption"></p> -->
+                                <li rel="slide-7" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1">
+                                    <div id="slide-7">
+                                        <a class="slide-link" href="" title="">
+                                            <img draggable="false" src="../static/images/slides/SportUnleash-Father-teaching-to-son-to-row.jpg" alt="SportUnleash-Father-teaching-to-son-to-row" height="424" width="636">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li rel="slide-8" class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1">
+                                    <div id="slide-8">
+                                        <a class="slide-link" href="" title="">
+                                            <img draggable="false" src="../static/images/slides/SportUnleash-Mother-teaches-to-doughter-to-ice-skiing.jpg" alt="SportUnleash-Mother-teaches-to-doughter-to-ice-skiing" height="424" width="636">
+                                        </a>
                                     </div>
                                 </li>
                             </ul>
-                        <ul class="flex-direction-nav">
-                            <li><a class="flex-prev" href="#">Previous</a></li>
-                            <li><a class="flex-next" href="#">Next</a></li>
-                        </ul>
+                            <ul class="flex-direction-nav">
+                                <li><a class="flex-prev" href="#">Previous</a> 
+                                </li>
+                                <li><a class="flex-next" href="#">Next</a> 
+                                </li>
+                            </ul>
                         </div>
-                        <!-- Flexslider end -->
-                        <div rel="sus-cntry" class="contact-sus"><a href="#">
-                            <p>Contact</p>
-                            <p>a SportUnleash Specialist</p>
-                            <p>Today...!</p>
-                        </a></div>
-
-                        <div class="slide-1 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 1</h1></div>
-                        <div class="slide-2 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 2</h1></div>
-                        <div class="slide-3 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 3</h1></div>
-                        <div class="slide-4 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 4</h1></div>
-                        <div class="slide-5 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 5</h1></div>
-                        <div class="slide-6 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 6</h1></div>
-                        <div class="slide-7 div-hide"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h1>Slide 7</h1></div>
+                        <div rel="sus-cntry" class="contact-sus">
+                            <a href="#">
+                                <p>Contact</p>
+                                <p>a SportUnleash Specialist</p>
+                                <p>Today...!</p>
+                            </a>
+                        </div>
+                        <div class="slide-1 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>Slide 1</h1>
+                        </div>
+                        <div class="slide-2 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>Slide 2</h1>
+                        </div>
+                        <div class="slide-3 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>Slide 3</h1>
+                        </div>
+                        <div class="slide-4 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>Slide 4</h1>
+                        </div>
+                        <div class="slide-5 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>Slide 5</h1>
+                        </div>
+                        <div class="slide-6 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>Slide 6</h1>
+                        </div>
+                        <div class="slide-7 div-hide">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h1>Slide 7</h1>
+                        </div>
                         <div class="slide-content"></div>
-
                         <div class="container con-lat-tab">
                             <ul class="nav nav-tabs latter-tab" role="tablist">
-                              <li class="active left-tab"><a class="tab1" href="#">The Game Has<br>Changed</a></li>
-                              <li class="second-tab"><a class="tab2" href="#">The Prize Money Bigger<br>Than Ever!</a></li>
-                              <li class="third-tab"><a class="tab3" href="#">Emerging/Developing Nation<br>Changing The Game</a></li>
-                              <li class="fourth-tab"><a class="tab4" href="#">Stunted By Lack<br>Of Expertise</a></li>
+                                <li class="active left-tab"><a class="tab1" href="#">The Game Has<br>Changed</a> 
+                                </li>
+                                <li class="second-tab"><a class="tab2" href="#">The Prize Money Bigger<br>Than Ever!</a> 
+                                </li>
+                                <li class="third-tab"><a class="tab3" href="#">Emerging/Developing Nation<br>Changing The Game</a> 
+                                </li>
+                                <li class="fourth-tab"><a class="tab4" href="#">Stunted By Lack<br>Of Expertise</a> 
+                                </li>
                             </ul>
-
                             <div class="tab-content jumbotron">
                                 <div class="tab1 tab-hide active">
                                     <h1>The Game Has Changed</h1>
@@ -523,129 +540,147 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        </div>
-                    </div><!-- primary-column -->
-                    <div id="callout-column">
-                        <ul class="callout-actions">
-                            <li class="container" rel="endosement1">
-                                <div class="col-md-11 container">
-                                    <div class="row">
-                                        <div class="col-md-12 descript">
-                                            <p>“I“मै स्पोर्टअनलिश पद्धति को स्वीकार्य विज्ञान के अनुरूप और एक 9 साल के बच्चे की प्रतिभा को किसी खास स्पोर्ट के लिए पहचान पाने की क्षमता के लिए देखता हूँ, इससे पहले कि बालक को एक संगठित स्पोर्ट या गतिविधि का अवसर प्राप्त हो सके, स्पोर्टअनलिश परीक्षण प्रोग्राम एक खास स्थान रखता है”<span class="callout-relative-bullet">&nbsp;और पढ़ें</span></p>
-                                        </div>
-                                        <div class="col-md-4 descript">
-                                            <img src="../static/images/Endorsement/SportUnleash-Dr-David-Young.jpg" alt="SportUnleash-Dr-David-Young">
-                                        </div>
-                                        <div class="col-md-8 right-pane">
-                                            <p><b>डा. डेविड यंग</b></p>
-                                            <p>मेलबर्न ओर्थोपीडिक ग्रुप, ऑस्ट्रेलिया</p>
-                                            <p>ओर्थोपीडिक सर्जन, स्पेसियल एरिया ऑफ इंटरेस्ट: स्पोर्ट्स इंजरिज, हिप एंड नी सर्जरी ओर्थोपीडिक सर्जन फॉर ध ऑस्ट्रेलियन एंड श्रीलंकन क्रिकेट टीम</p>
-                                        </div>
+                        <div class="video-content container con-lat-tab"></div>
+                    </div>
+                </div>
+                <div id="callout-column">
+                    <ul class="callout-actions">
+                        <li class="container" rel="endosement1">
+                            <div class="col-md-11 container">
+                                <div class="row">
+                                    <div class="col-md-12 descript">
+                                        <p>“I“मै स्पोर्टअनलिश पद्धति को स्वीकार्य विज्ञान के अनुरूप और एक 9 साल के बच्चे की प्रतिभा को किसी खास स्पोर्ट के लिए पहचान पाने की क्षमता के लिए देखता हूँ, इससे पहले कि बालक को एक संगठित स्पोर्ट या गतिविधि का अवसर प्राप्त हो सके, स्पोर्टअनलिश परीक्षण प्रोग्राम एक खास स्थान रखता है”
+                                            <span class="callout-relative-bullet">&nbsp;और पढ़ें</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 descript">
+                                        <img src="../static/images/Endorsement/SportUnleash-Dr-David-Young.jpg" alt="SportUnleash-Dr-David-Young">
+                                    </div>
+                                    <div class="col-md-8 right-pane">
+                                        <p><b>डा. डेविड यंग</b> 
+                                        </p>
+                                        <p>मेलबर्न ओर्थोपीडिक ग्रुप, ऑस्ट्रेलिया</p>
+                                        <p>ओर्थोपीडिक सर्जन, स्पेसियल एरिया ऑफ इंटरेस्ट: स्पोर्ट्स इंजरिज, हिप एंड नी सर्जरी ओर्थोपीडिक सर्जन फॉर ध ऑस्ट्रेलियन एंड श्रीलंकन क्रिकेट टीम</p>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="container" rel="endosement2">
-                                <div class="col-md-11 container">
-                                    <div class="row">
-                                        <div class="col-md-12 descript">
-                                            <p>“स्पोर्ट्स विज्ञान और चिकित्सीय समुदाय के क्षेत्र में काफी सालों से कम आयु में स्पोर्ट्स प्रतिभा पहचान का विचार व्यापक रूप से चर्चा में रहा है। स्पोर्टअनलिश ने वह सब समाहित किया हुआ है जो एक सिद्धान्त के रूप में था और अब उसे एक वास्तविकता बना दिया है”<span class="callout-relative-bullet">&nbsp;और पढ़ें</span></p>
-                                        </div>
-                                        <div class="col-md-4 descript">
-                                            <img src="../static/images/Endorsement/SportUnleash-Prof-Rohan-Jayasekara.jpg" alt="SportUnleash-Prof-Rohan-Jayasekara">
-                                        </div>
-                                        <div class="col-md-8 right-pane">
-                                            <p><b>प्रो. रोहन जयसेकरा</b></p>
-                                            <p>डीन, फेकलटी ऑफ मेडिसिन, यूनिवर्सिटी ऑफ कोलोम्बो</p>
-                                            <p>चेयर एंड सीनियर प्रोफेसर इन अनाटोमी</p>
-                                            <p>फाउंडर डिरेक्टर और मेडिकल जेनेटिसिस्ट, ह्यूमन जेनेटिक्स यूनिट यूनिट</p>
-                                        </div>
+                            </div>
+                        </li>
+                        <li class="container" rel="endosement2">
+                            <div class="col-md-11 container">
+                                <div class="row">
+                                    <div class="col-md-12 descript">
+                                        <p>“स्पोर्ट्स विज्ञान और चिकित्सीय समुदाय के क्षेत्र में काफी सालों से कम आयु में स्पोर्ट्स प्रतिभा पहचान का विचार व्यापक रूप से चर्चा में रहा है। स्पोर्टअनलिश ने वह सब समाहित किया हुआ है जो एक सिद्धान्त के रूप में था और अब उसे एक वास्तविकता बना दिया है”
+                                            <span class="callout-relative-bullet">&nbsp;और पढ़ें</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 descript">
+                                        <img src="../static/images/Endorsement/SportUnleash-Prof-Rohan-Jayasekara.jpg" alt="SportUnleash-Prof-Rohan-Jayasekara">
+                                    </div>
+                                    <div class="col-md-8 right-pane">
+                                        <p><b>प्रो. रोहन जयसेकरा</b> 
+                                        </p>
+                                        <p>डीन, फेकलटी ऑफ मेडिसिन, यूनिवर्सिटी ऑफ कोलोम्बो</p>
+                                        <p>चेयर एंड सीनियर प्रोफेसर इन अनाटोमी</p>
+                                        <p>फाउंडर डिरेक्टर और मेडिकल जेनेटिसिस्ट, ह्यूमन जेनेटिक्स यूनिट यूनिट</p>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="container" rel="endosement3">
-                                <div class="col-md-11 container">
-                                    <div class="row">
-                                        <div class="col-md-12 descript">
-                                            <p>“…मैंने विज्ञान, अलगोरिथम, रिपोर्ट और स्पोर्टअनलिश प्रणाली के पूरे उपयोग की संभावनाओं का सर्वांगीं तथा खास तौर से मूल्यांकन किया है..."<span class="callout-relative-bullet">&nbsp;और पढ़ें</span></p>
-                                        </div>
-                                        <div class="col-md-4 descript">
-                                            <img src="../static/images/Endorsement/SportUnleash-Dr-Nishantha-Gunasekera.jpg" alt="SportUnleash-Dr-Nishantha-Gunasekera">
-                                        </div>
-                                        <div class="col-md-8 right-pane">
-                                        <p><b>डा . निशान्थ गुणसेकेरा</b></p>
+                            </div>
+                        </li>
+                        <li class="container" rel="endosement3">
+                            <div class="col-md-11 container">
+                                <div class="row">
+                                    <div class="col-md-12 descript">
+                                        <p>“…मैंने विज्ञान, अलगोरिथम, रिपोर्ट और स्पोर्टअनलिश प्रणाली के पूरे उपयोग की संभावनाओं का सर्वांगीं तथा खास तौर से मूल्यांकन किया है..."
+                                            <span class="callout-relative-bullet">&nbsp;और पढ़ें</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 descript">
+                                        <img src="../static/images/Endorsement/SportUnleash-Dr-Nishantha-Gunasekera.jpg" alt="SportUnleash-Dr-Nishantha-Gunasekera">
+                                    </div>
+                                    <div class="col-md-8 right-pane">
+                                        <p><b>डा . निशान्थ गुणसेकेरा</b> 
+                                        </p>
                                         <p>कंसल्टेंट न्यूरोसर्जन, स्पेसियालाइज़िंग इन ट्रौमेटिक स्पाइनल इंजरिज एंड स्टेम सेल थेरेपी।</p>
-                                        <p><a href="http://www.neurosurgerysl.com/">www.neurosurgerysl.com</a></p>
-                                        </div>
+                                        <p><a href="http://www.neurosurgerysl.com/">www.neurosurgerysl.com</a> 
+                                        </p>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="container" rel="endosement4">
-                                <div class="col-md-11 container">
-                                    <div class="row">
-                                        <div class="col-md-12 descript">
-                                            <p>“प्रत्येक समय अचूक परिणाम हासिल करने के लिए, मैं स्पोर्टअनलिश की प्रतिभा पहचान प्रणाली की क्षमता से आश्चर्यचकित हूँ। ...यदि सभी अभिवावक अपने 9-11 साल के बच्चों का परीक्षण करवा ले...यह केवल समय का ही सवाल है कि जब उभरते हुए देश विकसित देशों की स्पोर्टिंग शक्ति को हासिल कर लेंगे”<span class="callout-relative-bullet">&nbsp;और पढ़ें</span></p>
-                                        </div>
-                                        <div class="col-md-4 descript">
-                                            <img src="../static/images/Endorsement/SportUnleash-dav-whatmore.jpg" alt="SportUnleash-dav-whatmore">
-                                        </div>
-                                        <div class="col-md-8 right-pane">
-                                            <p><b>देव व्हाट्मोर</b></p>
-                                            <p>औस्ट्रेलियन क्रिकेटर (fmr) और एक क्रिकेट वर्ल्ड कल विनिंग कोच कि जिसके पास एक सामान्य क्रिकेटिंग टेलेंट को महान बनाने की क्षमता है।</p>
-                                        </div>
+                            </div>
+                        </li>
+                        <li class="container" rel="endosement4">
+                            <div class="col-md-11 container">
+                                <div class="row">
+                                    <div class="col-md-12 descript">
+                                        <p>“प्रत्येक समय अचूक परिणाम हासिल करने के लिए, मैं स्पोर्टअनलिश की प्रतिभा पहचान प्रणाली की क्षमता से आश्चर्यचकित हूँ। ...यदि सभी अभिवावक अपने 9-11 साल के बच्चों का परीक्षण करवा ले...यह केवल समय का ही सवाल है कि जब उभरते हुए देश विकसित देशों की स्पोर्टिंग शक्ति को हासिल कर लेंगे”
+                                            <span class="callout-relative-bullet">&nbsp;और पढ़ें</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 descript">
+                                        <img src="../static/images/Endorsement/SportUnleash-dav-whatmore.jpg" alt="SportUnleash-dav-whatmore">
+                                    </div>
+                                    <div class="col-md-8 right-pane">
+                                        <p><b>देव व्हाट्मोर</b> 
+                                        </p>
+                                        <p>औस्ट्रेलियन क्रिकेटर (fmr) और एक क्रिकेट वर्ल्ड कल विनिंग कोच कि जिसके पास एक सामान्य क्रिकेटिंग टेलेंट को महान बनाने की क्षमता है।</p>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="container" rel="endosement5">
-                                <div class="col-md-11 container">
-                                    <div class="row">
-                                        <div class="col-md-12 descript">
-                                            <p>“किसी भी खेल में शुरुआती सालों से ही एक विशेष क्षमता दर्शाने के लिए एथलीट के शरीर सौष्ठव को खेल के लिए आवश्यक योग्यता से मेल कराने के लिए प्रशिक्षण की आवश्यकता रहती है।<span class="callout-relative-bullet">&nbsp;और पढ़ें</span></p>
-                                        </div>
-                                        <div class="col-md-4 descript">
-                                            <img src="../static/images/Endorsement/SportUnleash-Major-General-Dr-C-Thurairaja.jpg" alt="SportUnleash-Major-General-Dr-C-Thurairaja">
-                                        </div>
-                                        <div class="col-md-8 right-pane">
-                                            <p><b>मेजर जरनल डॉ. सी. थुराईराजा</b></p>
-                                            <p>कंसल्टेंट स्पोर्ट मेडिसिन एंड रेडिओलोजी</p>
-                                            <p>प्रेसिडेंट, एसियन फेडरेसन ऑफ स्पोर्ट्स मेडिसिन</p>
-                                        </div>
+                            </div>
+                        </li>
+                        <li class="container" rel="endosement5">
+                            <div class="col-md-11 container">
+                                <div class="row">
+                                    <div class="col-md-12 descript">
+                                        <p>“किसी भी खेल में शुरुआती सालों से ही एक विशेष क्षमता दर्शाने के लिए एथलीट के शरीर सौष्ठव को खेल के लिए आवश्यक योग्यता से मेल कराने के लिए प्रशिक्षण की आवश्यकता रहती है।
+                                            <span class="callout-relative-bullet">&nbsp;और पढ़ें</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 descript">
+                                        <img src="../static/images/Endorsement/SportUnleash-Major-General-Dr-C-Thurairaja.jpg" alt="SportUnleash-Major-General-Dr-C-Thurairaja">
+                                    </div>
+                                    <div class="col-md-8 right-pane">
+                                        <p><b>मेजर जरनल डॉ. सी. थुराईराजा</b> 
+                                        </p>
+                                        <p>कंसल्टेंट स्पोर्ट मेडिसिन एंड रेडिओलोजी</p>
+                                        <p>प्रेसिडेंट, एसियन फेडरेसन ऑफ स्पोर्ट्स मेडिसिन</p>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="container" rel="endosement6">
-                                <div class="col-md-11 container">
-                                    <div class="row">
-                                        <div class="col-md-12 descript">
-                                            <p>““A predictive test is exactly what is needed for the long term development of sports.”<span class="callout-relative-bullet-base">&nbsp;Read More</span></p>
-                                        </div>
-                                        <div class="col-md-4 descript">
-                                            <img src="../static/images/Endorsement/SportUnleash-Arjuna-P-de-silva.jpg" alt="SportUnleash-Arjuna-P-de-silva">
-                                        </div>
-                                        <div class="col-md-8 right-pane">
-                                            <p><b>Prof. Arjuna P De Silva</b></p>
-                                            <p>MBBS, MD, MSc (Oxon), FRCP (Lond),FCCP Professor in Medicine</p>
-                                            <p>Chairman SL Anti-doping Agency</p>
-                                        </div>
+                            </div>
+                        </li>
+                        <li class="container" rel="endosement6">
+                            <div class="col-md-11 container">
+                                <div class="row">
+                                    <div class="col-md-12 descript">
+                                        <p>““A predictive test is exactly what is needed for the long term development of sports.”
+                                            <span class="callout-relative-bullet-base">&nbsp;Read More</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 descript">
+                                        <img src="../static/images/Endorsement/SportUnleash-Arjuna-P-de-silva.jpg" alt="SportUnleash-Arjuna-P-de-silva">
+                                    </div>
+                                    <div class="col-md-8 right-pane">
+                                        <p><b>Prof. Arjuna P De Silva</b> 
+                                        </p>
+                                        <p>MBBS, MD, MSc (Oxon), FRCP (Lond),FCCP Professor in Medicine</p>
+                                        <p>Chairman SL Anti-doping Agency</p>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div><!-- callout-column -->
-                </div> <!-- content-container -->
-            </div> <!-- end site-container -->
-        </div> <!-- end wrapper -->
-        <footer>
-            <div id="global-footer">
-                <p id="global-footer-disclaimer">
-                    SportUnleash © 2014. 
-                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </footer>        
-        <script src="../static/js/site.js"></script>
-        <script src="../static/js/bootstrap.js"></script>
-        <script>
-            $("#enqForm").validate();
-        </script>
-    </body>
+        </div>
+    </div>
+    <footer>
+        <div id="global-footer">
+            <p id="global-footer-disclaimer">SportUnleash © 2014.</p>
+        </div>
+    </footer>
+    <script src="../static/js/site.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script>
+    $("#enqForm").validate();
+    </script>
+</body>
+
 </html>
