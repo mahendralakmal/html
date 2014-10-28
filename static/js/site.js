@@ -76,6 +76,7 @@ $(document).ready(function(){
         }
         $(".tab_info_ly").slideUp();
         $(".tab_info_ly").html(data);
+        $(".tab_info_ly").addClass('jumbotron');
         $(".tab_info_ly").slideDown();
         lastData = data;
     }
