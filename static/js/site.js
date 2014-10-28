@@ -20,6 +20,9 @@ $('.nav-bar li').click(function(e) {
 $(document).on('click', '.info_ly .close', function () {
     $(this).parent('div').slideUp();
 });
+$(document).on('click', '.tab_info_ly .close', function () {
+    $(this).parent('div').slideUp();
+});
 
 $(document).on('click', '.slide-content #sus-cntry', function () {
     $(this).parent('div').slideUp();
