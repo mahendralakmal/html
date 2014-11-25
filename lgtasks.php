@@ -25,6 +25,12 @@
         	$this->passwd = $_GET["passwd"];
 
         	$sql = "SELECT usr_id, usr_name, usr_passwd FROM user";
+        	$result = mysql_query($sql);
+        	if(mysql_num_rows($result) > 0)
+        	{
+        		return "true";//$this->processRowSet($result, true); 
+        	}
+        	else { return "false"}
 
         }
 	}
