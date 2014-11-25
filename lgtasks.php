@@ -19,6 +19,23 @@
             mysql_select_db($this->db_name);  
             return true;  
         }
+        //takes a mysql row set and returns an associative array, where the keys  
+        //in the array are the column names in the row set. If singleRow is set to  
+        //true, then it will return a single row instead of an array of rows.  
+        public function processRowSet($rowSet, $singleRow=false)  
+        {  
+            $resultArray = array();  
+            while($row = mysql_fetch_assoc($rowSet))  
+            {  
+                array_push($resultArray, $row);  
+            }  
+      
+            if($singleRow === true)  
+                return $resultArray[0];  
+      
+            return $resultArray;  
+        }
+
         public function login() 
         {
         	$this->user_name = $_GET["username"];
@@ -27,10 +44,9 @@
         	$sql = "SELECT usr_id, usr_name, usr_passwd FROM user";
         	$result = mysql_query($sql);
         	if(mysql_num_rows($result) > 0)
-        	{
-        		return "true";//$this->processRowSet($result, true); 
-        	}
-        	else { return "false"}
+        		return $this->processRowSet($result, true); 
+
+        	return $this->processRowSet($result);        	
 
         }
 	}
