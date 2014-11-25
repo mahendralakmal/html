@@ -1,0 +1,9 @@
+<?php
+$Title="sportunleash";
+$base="http://www.sportunleash.com/";
+$basemain="http://www.sportunleash.com/sus_admin";
+$dbname="sportunleash"; 
+$dbuser="root"; 
+$dbpass="p3roo7";
+$dbhost="localhost";  
+?>
