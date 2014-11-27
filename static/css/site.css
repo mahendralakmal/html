@@ -1265,5 +1265,4 @@ button.close {
     margin-right: 2px;
 }
 .login-pnl { margin-left: 20px; border-right: 1px solid #ccc; }
-/*.lgoin-pnl{ margin-left: 20px; border: 1px solid silver; }*/
-/*.signup-scrn { border-left: 1px solid silver; }*/
+.login-error { color: red; font-size: 20px; }

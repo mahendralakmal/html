@@ -1,3 +1,7 @@
+<?php 
+    include('lgtasks.php');
+    include('encdec.php');
+?>
 <!DOCTYPE html>
 <html>
 
@@ -61,16 +65,27 @@
                 <div class="login-scrn">
                     <div class="row">
                         <div class="col-md-6 login-pnl">
-                            <form>                        
+                            <form action="" method="post">
                             <h2>Sign In</h2>
-                            <div class="form-group"><input class="form-control" type="text" id="username" placeholder="User Name" name="username"></div>
-                            <div class="form-group"><input class="form-control" type="text" id="passwd" placeholder="Password" name="passwd"></div>
-                            <button class="btn btn-primary">Sign In</button>
+                            <div class="form-group"><input class="form-control" id="username" name="username" placeholder="User Name" type="text"></div>
+                            <div class="form-group"><input class="form-control" id="passwd" name="passwd" placeholder="Password" type="password"></div>
+                            <button name="submit" type="submit" class="btn btn-primary">Sign In</button><br>                            
+                            <span class="login-error"><?php echo $error; ?></span>
                         </form>
                         </div>
                         <div class="col-md-5 signup-pnl">
                             <h3 class="error">Not registered yet?</h3>
                             <p>Please take this path to <a href="#">Sign Up</a></p>
+                            <p><?php 
+                                $plain_txt = "123456";
+                                echo "Plain Text = $plain_txt\n";
+
+                                $encrypted_txt = encrypt_decrypt('enc', $plain_txt);
+                                echo "Encrypted Text = $encrypted_txt\n";
+
+                                $decrypted_txt = encrypt_decrypt('dec', $encrypted_txt);
+                                echo "Decrypted Text = $decrypted_txt\n";                              
+                            ?></p>
                         </div>
                     </div>                    
                 </div>
