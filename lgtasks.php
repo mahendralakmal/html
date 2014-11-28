@@ -37,7 +37,8 @@
 			if ($rows > 0) {
 				$error = "Correct";
 				$_SESSION['login_user']=$username; // Initializing Session
-				header("location: /sports/cricket/"); // Redirecting To Other Page
+				header("location: /"); // Redirecting To Other Page
+				// header("location: /sports/cricket/"); // Redirecting To Other Page
 			} else {
 				$error = "Username or Password is invalid";
 			}

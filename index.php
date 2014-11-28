@@ -1,6 +1,4 @@
-<?php
-    include('session.php');
-?>
+<?php include('session.php'); ?>
 <!DOCTYPE html>
 <html>
 
@@ -48,14 +46,18 @@
                             <img itemprop="logo" src="static/images/logo.png" alt="Sport Unleash Logo" id="logo">
                         </a>
                     </div>
-                    <div class="col-md-7 mega-title">Have your child SportUnleash tested today!</div>
+                    <div class="col-md-6 mega-title">Have your child SportUnleash tested today!</div>
                     
-                    <div class="col-md-2 right-pane sign-in">
-                        <?php 
-                            echo <p>Test</p>;
+                        <?php
+                            if(!isset($login_session)){
+                                echo '<div class="col-md-3 right-pane sign-in"><a href="./login.php">Sign In Here</a></div>';
+                            } else {
+                                echo '<div class="col-md-3 right-pane-out sign-in">';
+                                echo "You are loged in as $login_session<br>";
+                                echo '<a href="logout.php">Sign Out</a></div>';
+                            }
                         ?>
-                        <!-- <a href="./login.php">Sign In</a> -->
-                    </div>
+                    
                 </div>
             </div>
         </div>

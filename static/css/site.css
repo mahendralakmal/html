@@ -30,7 +30,7 @@ body p {
 }
 .topheader .right-pane {
     text-align: right;
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 20px;
     margin-left: 10px
 }
@@ -40,6 +40,18 @@ body p {
     font-size: 15px;
     position: relative;
     text-decoration: none
+}
+.topheader .right-pane-out {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.topheader .right-pane-out a {
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
 }
 .topheader .right-pane a:hover {
     text-decoration: underline
