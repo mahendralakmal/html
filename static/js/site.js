@@ -23,7 +23,7 @@ $(document).ready(function() {
          
     /*transition effect*/
     $(id).fadeIn(1000);      
-    $(id).fadeTo("slow",0.8);    
+    $(id).fadeTo("slow",0.9);    
          
     /*if close button is clicked*/
     $('.window .close').click(function (e) {
