@@ -11,7 +11,7 @@ $(document).ready(function() {
      
     /*transition effect*/
     $('#mask').fadeIn(10); 
-    $('#mask').fadeTo("slow",0.4);  
+    $('#mask').fadeTo("slow",0.2);  
          
     /*Get the window height and width*/
     var winH = $(window).height();
