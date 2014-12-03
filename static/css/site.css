@@ -1269,8 +1269,8 @@ button.close {
 .login-scrn { background-color: #fff;
     color: #000000;
     margin-top: 4px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 1px 4px;
     margin-left: 2px;
@@ -1278,3 +1278,19 @@ button.close {
 }
 .login-pnl { margin-left: 20px; border-right: 1px solid #ccc; }
 .login-error { color: red; font-size: 20px; }
+
+.content-main { background-color: #fff; padding-top: 10px; padding-bottom: 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, .45) 0 3px 10px;
+    -moz-box-shadow: rgba(0, 0, 0, .45) 0 3px 10px;
+    box-shadow: rgba(0, 0, 0, .45) 0 3px 10px;
+}
+
+.wrap-logo {
+    background-image: url(../../admin/static/images/wrap-logo.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    height: 410px;
+    margin: -10px;
+    padding: 20px 20px;
+}

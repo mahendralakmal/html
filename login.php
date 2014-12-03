@@ -76,16 +76,6 @@
                         <div class="col-md-5 signup-pnl">
                             <h3 class="error">Not registered yet?</h3>
                             <p>Please take this path to <a href="#">Sign Up</a></p>
-                            <p><?php 
-                                $plain_txt = "123456";
-                                echo "Plain Text = $plain_txt\n";
-
-                                $encrypted_txt = encrypt_decrypt('enc', $plain_txt);
-                                echo "Encrypted Text = $encrypted_txt\n";
-
-                                $decrypted_txt = encrypt_decrypt('dec', $encrypted_txt);
-                                echo "Decrypted Text = $decrypted_txt\n";                              
-                            ?></p>
                         </div>
                     </div>                    
                 </div>
