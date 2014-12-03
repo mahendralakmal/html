@@ -1279,75 +1279,34 @@ button.close {
 .login-pnl { margin-left: 20px; border-right: 1px solid #ccc; }
 .login-error { color: red; font-size: 20px; }
 
-.content-main { background-color: #fff; padding-top: 10px; padding-bottom: 10px;
+.content-main { background-color: #fff; padding-top: 10px; padding-bottom: 10px; color: #000;
     -webkit-box-shadow: rgba(0, 0, 0, .45) 0 3px 10px;
     -moz-box-shadow: rgba(0, 0, 0, .45) 0 3px 10px;
     box-shadow: rgba(0, 0, 0, .45) 0 3px 10px;
 }
 
+.content-admin-login { 
+    background-color: #fff; padding-top: 10px; padding-bottom: 10px; margin-top: 50px;
+    -webkit-box-shadow: rgba(0, 0, 0, .45) 0 3px 10px;
+    -moz-box-shadow: rgba(0, 0, 0, .45) 0 3px 10px;
+    box-shadow: rgba(0, 0, 0, .45) 0 3px 10px;
+    color: #000;
+    font-size: 25px;    
+}
+
+.lg-pane { background-color: #F2F2F2; margin-left: 60px; margin-right: 60px; border: 2px solid #2E2E2E; padding-bottom: 20px; }
+
 .wrap-logo {
     background-image: url(../../admin/static/images/wrap-logo.png);
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
+    background-position: fixed;
     opacity: 0.5;
-    height: 410px;
     margin: -10px;
     padding: 20px 20px;
 }
 
-
-#mask {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 9000;
-    background-color: #000000;
-}
-#boxes .window {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 440px;
-    height: 200px;
-    display: none;
-    z-index: 9999;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: left;
-    padding: 40px;
-}
-#boxes .window p {
-    color: #000;
-    line-height: 38px !important;
-}
-#boxes .window span {
-    color: #000;
-    font-size: 15px;
-    float: right;
-}
-#boxes .window .author {
-    padding: 40px 40px 50px 40px;
-}
-#boxes #dialog {
-    width: 625px;
-    height: 270px;
-    padding: 10px;
-    background-color: #F2F2F2;
-    font-family: 'Century Schoolbook L';
-    font-size: 15pt;
-}
-#boxes #dialog button {
-    margin-top: 8px;
-    margin-right: 10px;
-}
-#popupfoot {
-    font-size: 16pt;
-    position: absolute;
-    bottom: 0px;
-    width: 250px;
-    left: 250px;
-}
-.close {
-    opacity: 0.8;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
-}
+.admin-login { color: #428BCA; }
+.left-align { text-align: left; }
+.right-align { text-align: right; }
+.content-height { height:450px; }

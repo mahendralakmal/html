@@ -1,3 +1,7 @@
+<?php 
+    include('adminlg.php');
+    include('encdec.php');
+?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -12,33 +16,28 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="./static/dist/js/bootstrap.min.js"></script>
-	<script src="./static/dist/js/site.js"></script>
 </head>
 <body>
-	<div id="boxes">
-	    <div id="dialog" class="window">
-	        <button class="close exit" type="button">x</button>
-	        <div class="author">
-	            <p>
-	                <strong>“SportUnleash <i>is a sport talent identification system which scientifically matches the physical abilities of your child with the physical requirements of a sport and the position within that sport</i>”</strong>
-	            </p>
-	            <span>
-	                <strong>- Talavou F. Alailima, SportUnleash Founder &amp; CEO</strong>
-	            </span>
-	        </div>
-	    </div>
-	    <div id="mask"></div>
-	</div>
 
 
-	<div class="container content-main">
-		<?php include_once('./includes/header.php'); ?>
-		
-		<div class="wrap-logo"></div>
-		
+	<div class="container content-admin-login">		
+		<div class="wrap-logo">
+			<div class="jumbotron">
+				<form action="" method="post" class="lg-pane">
+                    <h1>Sign In</h1>
+                    <div class="row">
+                    <div class="form-group col-md-4">User Name</div>
+                    <div class="form-group col-md-6"><input class="form-control" id="username" name="username" placeholder="User Name" type="text"></div>
+                    </div>
+                    <div class="row">
+                    <div class="form-group col-md-4">Password&nbsp;&nbsp;</div>
+                    <div class="form-group col-md-6"><input class="form-control" id="passwd" name="passwd" placeholder="Password" type="password"></div>
+                    </div>
+                    <button name="submit" type="submit" class="btn-lg btn-primary">Sign In</button><br>                            
+                    <span class="login-error"><?php echo $error; ?></span>
+                </form>
+			</div>
+		</div>		
 	</div>
-	<footer>
-	<?php include_once('./includes/footer.php'); ?>
-	</footer>
 </body>
 </html>
