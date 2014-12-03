@@ -17,7 +17,9 @@
 	<div class="container content-main">
 		<?php include_once('./includes/header.php'); ?>
 		
-		<div class="wrap-logo"></div>
+		<div class="wrap-logo">
+			
+		</div>
 		
 	</div>
 	<footer>
