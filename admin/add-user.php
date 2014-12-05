@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -64,9 +65,19 @@
                     	<div class="form-group col-md-4 right-align">Country</div>
                     	<div class="form-group col-md-6 left-align">
                     		<select name="select"  class="form-control">
-							  <option value="value1">Value 1</option> 
-							  <option value="value2" selected>Value 2</option>
-							  <option value="value3">Value 3</option>
+							  <option value="value2" selected>Select Country</option>
+                                     <?php 
+                                     // require_once('dbtasks.class.php');
+                                        $connection = mysql_connect("localhost", "root", "p3roo7");
+                                        $database = mysql_select_db("sportunleash");
+                                        $query = mysql_query("select * from country", $connection);
+                                        // $db = new dbtasks();
+                                        // $query = $db->select("select * from country")
+                                        while ($row = mysql_fetch_array($query)) {
+                                            echo "<option value='".$row[0]."'>".$row[1]."</option>";
+                                        }
+                                        
+                                     ?>
 							</select>
                     	</div>
                     </div>
@@ -86,8 +97,9 @@
                     	<div class="form-group col-md-4 right-align">Prefered Sports</div>
                     	<div class="form-group col-md-6 left-align"><textarea cols="50" rows="5" class="form-control" id="sports" name="sports" placeholder="Prefered Sports" type="text"></textarea></div>
                     </div>
+                    <?php mysql_close($connection); ?>
+                    <button name="addusr" type="submit" class="btn-lg btn-primary">Add</button><br>   
 
-                    <button name="addusr" type="submit" class="btn-lg btn-primary">Add</button><br>                                                
                 </form>
 			</div>
 		</div>		
