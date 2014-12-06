@@ -1,6 +1,11 @@
 <?php 
     include('adminlg.php');
     include('encdec.php');
+    include('session.php');
+
+    if(!isset($login_session)){
+        header('Location: /admin/admin.php'); // Redirecting To Home Page
+    }
 ?>
 <!DOCTYPE html>
 <html>

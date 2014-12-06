@@ -22,7 +22,7 @@ if (isset($_POST['submit'])){
 
 	$query = mysql_query($qry, $connection);
 	if ($query) {
-	  header("location: /admin/");
+	  header("location: /admin/admin.php");
 	}
 	else{
 	  $error = "Somthing is wrong!";

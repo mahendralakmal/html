@@ -11,6 +11,6 @@
 	$login_id = $row['userid'];
 	if(!isset($login_session)){
 		mysql_close($connection); // Closing Connection
-		//header('Location: index.php'); // Redirecting To Home Page
+		header('Location: index.php'); // Redirecting To Home Page
 	}
 ?>
