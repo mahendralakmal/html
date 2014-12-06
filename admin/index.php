@@ -6,13 +6,7 @@
 <html>
 <head lang="en">
 	<title>Admin</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="./static/dist/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="./static/dist/css/bootstrap-theme.min.css">
-
-	<link rel="stylesheet" href="../static/css/site.css">
+	<?php include_once('./includes/css.php'); ?>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="./static/dist/js/bootstrap.min.js"></script>

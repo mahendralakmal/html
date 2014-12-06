@@ -10,7 +10,7 @@
     $iv = substr(hash('sha256', $siv), 0, 16);
 	if (isset($_POST['submit'])){
 		if(isset($_POST['username']) && empty($_POST['passwd'])){
-			$error = "User name or Password is invalid1";
+			$error = "User name or Password is invalid";
 		}
 		else{
 			// Define $username and $password
@@ -40,7 +40,7 @@
 				header("location: /admin/admin.php"); // Redirecting To Other Page
 				// header("location: /sports/cricket/"); // Redirecting To Other Page
 			} else {
-				$error = "Username or Password is invalid2";
+				$error = "Username or Password is invalid";
 			}
 			mysql_close($connection);
 		}
