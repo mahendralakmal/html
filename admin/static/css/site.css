@@ -45,3 +45,11 @@
 .content-height { height:450px; }
 
 #sport1,#sport2,#sport3,#sport4,#sport5 { margin-bottom: 15px; }
+
+.pnl-left { padding-left: 0; }
+.pnl-left ul { float: left; width: 100%; padding-left: 0; background-color: #FAFAFA; }
+.pnl-left li { display: block; color: #000; text-align: left; padding: 5px; border-bottom: 1px solid silver; box-shadow: 0 4px 5px; }
+.pnl-left li:hover { background-color: #58ACFA; }
+.pnl-left li a { color: #000; font-weight: bold; text-align: left; }
+
+.pnl-right { border-left: 1px solid silver; }

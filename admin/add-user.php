@@ -44,8 +44,9 @@ if (isset($_POST['addusr'])){
 <body>
 	<div class="container content-main">
 		<?php include_once('./includes/header.php'); ?>		
-		<div class="wrap-logo">
-			<div class="jumbotron">
+		<div class="wrap-logo row">
+      <?php include_once('./includes/menu.php'); ?>
+			<div class="col-md-9 pnl-right">
 				<form action="" id="newusr1" method="post" class="lg-pane">
 					<span class="login-error"><?php echo $error; ?></span>
                     <h1>Add New User</h1>

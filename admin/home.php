@@ -15,7 +15,10 @@
 	<div class="container content-main ">		
 		<?php include_once('./includes/header.php'); ?>
 		
-		<div class="wrap-logo content-height"></div>
+		<div class="wrap-logo row">
+		<?php include_once('./includes/menu.php'); ?>
+		<div class="col-md-9  content-height pnl-right"></div>
+		</div>
 		
 	</div>
 	<footer>
