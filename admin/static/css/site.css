@@ -27,7 +27,7 @@
     font-size: 25px;    
 }
 
-.lg-pane { background-color: #F2F2F2; margin-left: 60px; margin-right: 60px; border: 2px solid #2E2E2E; padding-bottom: 20px; }
+.lg-pane { background-color: #F2F2F2; margin-left: 60px; margin-right: 60px; border: 2px solid #2E2E2E; padding-bottom: 20px; box-shadow: 0 0 10px; }
 
 .wrap-logo {
     background-image: url(../../static/images/wrap-logo.png);
