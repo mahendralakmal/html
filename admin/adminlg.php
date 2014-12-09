@@ -31,14 +31,17 @@
 			// Selecting the database
 			$database = mysql_select_db("sportunleash", $connection);
 			// SQL query to fetch information of registerd users and finds user match.
-			// $query = mysql_query("select * from user", $connection);
-			$query = mysql_query("select * from user where passwd='$decrypted_passwd' AND username='$username'", $connection);
+			$query = mysql_query("select u.userid, u.username, c.usr_category from user_category c, user u where u.categry = c.usr_cate_id and u.username = '$username' and u.passwd = '$decrypted_passwd' and u.categry = c.usr_cate_id", $connection);
 			$rows = mysql_num_rows($query);
 			if ($rows > 0) {
-				$error = "Correct";
-				$_SESSION['login_user']=$username; // Initializing Session
-				header("location: /admin/home.php"); // Redirecting To Other Page
-				// header("location: /sports/cricket/"); // Redirecting To Other Page
+				while ($row = mysql_fetch_array($query)) {
+					if($row[2]=="SuperUser" || $row[2]=="Administrator"){
+						$_SESSION['login_user']=$username; // Initializing Session
+						header("location: /admin/home.php"); // Redirecting To Other Page
+					}else {
+						$error = "You are not authorised!";
+					}
+				}
 			} else {
 				$error = "Username or Password is invalid";
 			}
