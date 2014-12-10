@@ -1,3 +1,35 @@
+<?php
+$error = '';
+if (isset($_POST['addusr'])){
+     $fname=$_POST['fname'];
+     $mname=$_POST['mname'];
+     $lname=$_POST['lname'];
+     $dob=$_POST['dob'];
+     $gender=$_POST['gender'];
+     $addr1=$_POST['addr1'];
+     $addr2=$_POST['addr2'];
+     $city=$_POST['city'];
+     $state=$_POST['state'];
+     $country=$_POST['country'];
+     $tel=$_POST['tel'];
+     $mobile=$_POST['mobile'];
+     $email=$_POST['email'];
+     $csports=$_POST['sport1'].",".$_POST['sport2'].",".$_POST['sport3'].",".$_POST['sport4'].",".$_POST['sport5'];
+
+     $connection = mysql_connect("localhost", "root", "p3roo7");
+     $database = mysql_select_db("sportunleash");
+     $qry = "INSERT INTO user_prof (f_name,m_name,l_name,date_of_birth,gender,address_1,address_2,city,state_region,country,tel,mobile,email,preferd_sport) VALUES ('$fname','$mname','$lname',$dob,$gender,'$addr1','$addr2','$city','$state','$country','$tel','$mobile','$email','$csports')";
+
+     $query = mysql_query($qry, $connection);
+     if ($query) {
+          header("location: /admin/add-user2.php?id=".mysql_insert_id($connection));
+     }
+     else{
+          $error = "Somthing is wrong!";
+     }
+     mysql_close($connection);
+}    
+?>
 <!DOCTYPE html>
 <html>
 <head lang="en">

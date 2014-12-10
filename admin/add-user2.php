@@ -6,11 +6,11 @@ $siv = '@#$%';
 $key = hash('sha256', $skey);
 $iv = substr(hash('sha256', $siv), 0, 16);
 if (isset($_POST['submit'])){
-	$id=$_POST['id'];
-	$created_usr=$_POST['login_id'];
-    $username=$_POST['username'];
-    $passwd=$_POST['passwd'];
-    $usrcate=$_POST['usrcate'];
+  $profid=$_POST['id'];
+  $created_usr=$_POST['login_id'];
+  $username=$_POST['username'];
+  $passwd=$_POST['passwd'];
+  $usrcate=$_POST['usrcate'];
 
 	$connection = mysql_connect("localhost", "root", "p3roo7");
 	$database = mysql_select_db("sportunleash");
@@ -18,7 +18,7 @@ if (isset($_POST['submit'])){
 	$encrypted_passwd = openssl_encrypt($passwd, $encrypt_method, $key, 0, $iv);
 	$encrypted_passwd = base64_encode($encrypted_passwd);
 
-	$qry = "INSERT INTO user (username, passwd, created_date, created_usr, categry, profile) VALUES ('$username', '$encrypted_passwd', CURRENT_TIMESTAMP(), '$created_usr', '$usrcate', '$id')";
+  $qry = "INSERT INTO `user` (`username`, `passwd`, `created_date`, `created_usr`, `categry`, `profile`, `status`) VALUES ('$username', '$encrypted_passwd', CURRENT_TIMESTAMP(), '$created_usr', '$usrcate', '$profid', '2');"
 
 	$query = mysql_query($qry, $connection);
 	if ($query) {
@@ -41,10 +41,12 @@ if (isset($_POST['submit'])){
 </head>
 <body>
 	<div class="container content-main">
-		<?php include_once('./includes/header.php'); ?>		
-		<div class="wrap-logo">
-			<div class="jumbotron">
-				<form action="" method="post" class="lg-pane">
+		<div class="container content-main">
+    <?php include_once('./includes/header.php'); ?>   
+    <div class="wrap-logo row">
+      <?php include_once('./includes/menu.php'); ?>
+      <div class="col-md-9 pnl-right">
+        <form action="" id="newusr1" method="post" class="lg-pane">
 					<span class="login-error"><?php echo $error; ?></span>
                     <h1>Add New User</h1>
                     <div>
@@ -82,8 +84,8 @@ if (isset($_POST['submit'])){
                     <button name="submit" type="submit" class="btn-lg btn-primary">Add</button><br>                                                
                 </form>
 			</div>
-		</div>		
-	</div>
+    </div>    
+  </div>
 	<footer>
 	<?php include_once('./includes/footer.php'); ?>
 	</footer>

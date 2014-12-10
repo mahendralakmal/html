@@ -36,7 +36,7 @@
 
                       $connection = mysql_connect($servername, $username, $password);
                       $database = mysql_select_db($dbname);
-                      $qry = "select u.userid ,u.username ,c.usr_category,s.status,concat(p.f_name,' ' ,p.l_name) as Name from sportunleash.user u, sportunleash.user_category c, sportunleash.user_prof p, sportunleash.user_status s where u.status = s.status_id and u.categry = c.usr_cate_id";
+                      $qry = "select u.userid ,u.username ,c.usr_category,s.status,concat(p.f_name,' ' ,p.l_name) as Name from sportunleash.user u, sportunleash.user_category c, sportunleash.user_prof p, sportunleash.user_status s where u.status = s.status_id and u.categry = c.usr_cate_id and u.profile = p.prof_id";
                       $query = mysql_query($qry, $connection);
 
                       while ($row = mysql_fetch_array($query)) {
