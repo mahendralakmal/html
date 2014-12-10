@@ -43,8 +43,8 @@
 }
 .lg-pane {
     background-color: #F2F2F2;
-    margin-left: 60px;
-    margin-right: 60px;
+    /*margin-left: 60px;
+    margin-right: 60px;*/
     border: 2px solid #2E2E2E;
     padding-bottom: 20px;
     box-shadow: 0 0 10px;
@@ -140,3 +140,9 @@
 .pnl-right {
     border-left: 1px solid silver;
 }
+.form-group {
+    margin-right: 0!important;
+}
+.hrr { border-bottom: 1px solid silver; padding-right: 2px; padding-left: 2px; }
+.ulistp { margin-top: 10px; }
+.ulistc { border-bottom: 1px solid silver; }
